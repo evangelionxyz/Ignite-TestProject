@@ -8,39 +8,54 @@ namespace TestProject;
 
 public class PlayerMovement : Entity
 {
-    public Transform? tr;
-    public Rigidbody2D? rb;
-
-    public Entity? camera;
-    
+    AudioSource? audioSource;
+    Widget? widget;
     public override void OnCreate()
     {
-        rb = GetComponent<Rigidbody2D>();
-        if (rb == null)
-        {
-            Console.WriteLine("Failed to get rigidbody2d");
-        }
+        audioSource = GetComponent<AudioSource>();
+
+        widget = GetComponent<Widget>();
+        var startButton = widget!.GetButton("start_button");
+        var optionsButton = widget!.GetButton("options_button");
+        var exitButton = widget!.GetButton("exit_button");
+
+        startButton!.OnHoverEnterEvent += Buttons_OnHoverEnter;
+        optionsButton!.OnHoverEnterEvent += Buttons_OnHoverEnter;
+        exitButton!.OnHoverEnterEvent += Buttons_OnHoverEnter;
+
+        startButton!.OnHoverExitEvent += Buttons_OnHoverExit;
+        optionsButton!.OnHoverExitEvent += Buttons_OnHoverExit;
+        exitButton!.OnHoverExitEvent += Buttons_OnHoverExit;
+    }
+
+    public override void OnDestroy()
+    {
+        var startButton = widget!.GetButton("start_button");
+        var optionsButton = widget!.GetButton("options_button");
+        var exitButton = widget!.GetButton("exit_button");
+
+        startButton!.OnHoverEnterEvent -= Buttons_OnHoverEnter;
+        optionsButton!.OnHoverEnterEvent -= Buttons_OnHoverEnter;
+        exitButton!.OnHoverEnterEvent -= Buttons_OnHoverEnter;
+
+        startButton!.OnHoverExitEvent -= Buttons_OnHoverExit;
+        optionsButton!.OnHoverExitEvent -= Buttons_OnHoverExit;
+        exitButton!.OnHoverExitEvent -= Buttons_OnHoverExit;
+    }
+
+
+    private void Buttons_OnHoverExit()
+    {
+        Console.WriteLine("C# Button Hover Exit");
+    }
+
+    private void Buttons_OnHoverEnter()
+    {
+        audioSource!.Play();
+        Console.WriteLine("C# Button Hover Entered");
     }
 
     public override void OnUpdate(float deltaTime)
     {
-        if (rb == null)
-            return;
-
-        {
-            if (Input.IsKeyPressed(KeyCode.Space))
-            {
-                rb.ApplyForce(new Vector2(0.0f, 120.0f), new Vector2(0.0f), true);
-            }
-            
-            float speed = 2.0f;
-            float dir = 0.0f;
-            if (Input.IsKeyPressed(KeyCode.A))
-                dir = -1.0f;
-            else if (Input.IsKeyPressed(KeyCode.D))
-                dir = 1.0f;
-
-            rb.LinearVelocity = new Vector2(rb.LinearVelocity.X + (dir * speed), rb.LinearVelocity.Y);
-        }
     }
 }

@@ -30,9 +30,15 @@ AssetRegistry:
     - Handle: 2911764117557659100
       Type: SkeletalAnimation
       Filepath: Meshes/Rig_Medium_General/Death_A.ixanim
+    - Handle: 2914353510642497902
+      Type: Scene
+      Filepath: Scene/Gemastik.ixscene
     - Handle: 4048462957502416051
       Type: Material
       Filepath: Meshes/Rig_Medium_General/Material/Character_Material.ixmat
+    - Handle: 4102674412946893508
+      Type: Font
+      Filepath: LowresPixel-Regular.otf
     - Handle: 4289986983925759502
       Type: SkeletalAnimation
       Filepath: Meshes/Rig_Medium_General/T-Pose.ixanim
@@ -99,12 +105,18 @@ AssetRegistry:
     - Handle: 9894304757204418348
       Type: Scene
       Filepath: Scene/TestScene.ixscene
+    - Handle: 9920694308132549009
+      Type: Audio
+      Filepath: Audio/hover.mp3
     - Handle: 9939151811201080774
       Type: SkeletalAnimation
       Filepath: Meshes/Rig_Medium_General/Spawn_Ground.ixanim
     - Handle: 10605612842897545264
       Type: Material
       Filepath: Meshes/Rig_Medium_General/ranger.ixmat
+    - Handle: 10747028122301333702
+      Type: Scene
+      Filepath: Scene/TestScene_Copy.ixscene
     - Handle: 10855738223547029817
       Type: SkeletalAnimation
       Filepath: Meshes/Rig_Medium_General/Idle_A.ixanim
@@ -120,6 +132,9 @@ AssetRegistry:
     - Handle: 12638210258924878949
       Type: SkeletalAnimation
       Filepath: Meshes/Rig_Medium_General/Idle_B.ixanim
+    - Handle: 12841843139498242276
+      Type: Widget
+      Filepath: NewWidget.wdgt
     - Handle: 13282001555150214542
       Type: AnimatorController
       Filepath: Meshes/Rig_Medium_MovementBasic/PlayerController.ac
@@ -132,12 +147,12 @@ AssetRegistry:
     - Handle: 13827675856264094529
       Type: SkeletalAnimation
       Filepath: Meshes/Rig_Medium_General/Hit_B.ixanim
-    - Handle: 14048962819861439313
-      Type: Texture
-      Filepath: segoeui_msdf.png
     - Handle: 14380288278539004656
       Type: SkeletalAnimation
       Filepath: Meshes/Rig_Medium_General/Throw.ixanim
+    - Handle: 14589354423791555900
+      Type: Font
+      Filepath: FAST BLAZE.otf
     - Handle: 14622531534947396263
       Type: SkeletalAnimation
       Filepath: Meshes/Rig_Medium_General/Death_B.ixanim
