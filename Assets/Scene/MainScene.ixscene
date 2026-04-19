@@ -1,0 +1,211 @@
+Scene:
+  Version: Alpha-0.1
+  Title: New Scene
+  Entities:
+    - ID: 8980548281695294212
+      Name: Widget
+      Type: Node
+      Parent: 4757871801378046330
+      Transform:
+        WorldTranslation: [0, 0, 0]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [1, 1, 1]
+        LocalTranslation: [0, 0, 0]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [1, 1, 1]
+        Visible: true
+      AudioSource:
+        Handle: 9920694308132549009
+        Volume: 1
+        Pitch: 1
+        Pan: 0
+        PlayOnStart: false
+        Loop: false
+        DSPs:
+          []
+      WidgetComponent:
+        WidgetHandle: 12841843139498242276
+      Script:
+        ClassName: TestProject.PlayerMovement
+    - ID: 4757871801378046330
+      Name: WidgetCollection
+      Type: Node
+      Parent: 0
+      Transform:
+        WorldTranslation: [0, 0, 0]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [1, 1, 1]
+        LocalTranslation: [0, 0, 0]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [1, 1, 1]
+        Visible: true
+    - ID: 14847496867223129834
+      Name: Camera
+      Type: Camera
+      Parent: 0
+      Transform:
+        WorldTranslation: [0, 2.6, 11.2]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [1, 1, 1]
+        LocalTranslation: [0, 2.6, 11.2]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [1, 1, 1]
+        Visible: true
+      Camera:
+        ProjectionType: 1
+        AspectRatioPreset: 1
+        OrthoSize: 10
+        NearClip: 1
+        FarClip: 20
+        Fov: 45
+        Primary: true
+        PostProcessing:
+          EnableVignette: false
+          EnableChromAb: true
+          EnableBloom: false
+          EnableSSAO: false
+          DebugSSAO: false
+          BloomIntensity: 1.5
+          BloomThreshold: 0.85
+          BloomKnee: 0.5
+          BloomRadius: 1
+          BloomIterations: 6
+          VignetteRadius: 1.1
+          VignetteSoftness: 0.7
+          VignetteIntensity: 0.8
+          VignetteColor: [0, 0, 0]
+          ChromAbAmount: 0.001
+          ChromAbRadial: 0.1
+          AoRadius: 0.09
+          AoBias: 0.1
+          AoIntensity: 1.5
+          AoPower: 1
+    - ID: 7051120674606278335
+      Name: Card_03
+      Type: Node
+      Parent: 6226697680794071872
+      Transform:
+        WorldTranslation: [1.1000001, -1.5099575e-08, -0.000115102135]
+        WorldRotation: [-7.545446e-08, 0.9999998, -7.5454444e-08, 0.0005755108]
+        WorldScale: [0.99999994, 1, 0.99999994]
+        LocalTranslation: [1.1000001, -1.5099575e-08, -0.000115102135]
+        LocalRotation: [-7.545444e-08, 0.9999998, -7.545444e-08, 0.0005755107]
+        LocalScale: [1, 1, 1]
+        Visible: true
+      Mesh:
+        Handle: 6503228990209563452
+        AnimatorHandle: 0
+        UniqueAnimator: true
+    - ID: 13122724396433857064
+      Name: Card_04
+      Type: Node
+      Parent: 6226697680794071872
+      Transform:
+        WorldTranslation: [3.2500002, 3.3974044e-07, 0.002589798]
+        WorldRotation: [-7.545446e-08, 0.9999998, -7.5454444e-08, 0.0005755108]
+        WorldScale: [0.99999994, 1, 0.99999994]
+        LocalTranslation: [3.2500002, 3.3974044e-07, 0.002589798]
+        LocalRotation: [-7.545444e-08, 0.9999998, -7.545444e-08, 0.0005755107]
+        LocalScale: [1, 1, 1]
+        Visible: true
+      Mesh:
+        Handle: 6503228990209563452
+        AnimatorHandle: 0
+        UniqueAnimator: true
+    - ID: 10598226724644324950
+      Name: GameManager
+      Type: Node
+      Parent: 0
+      Transform:
+        WorldTranslation: [0, 0, 0]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [1, 1, 1]
+        LocalTranslation: [0, 0, 0]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [1, 1, 1]
+        Visible: true
+    - ID: 8432316201469171861
+      Name: World Environment
+      Type: Audio
+      Parent: 0
+      Transform:
+        WorldTranslation: [1.35, 3.95, 0]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [1, 1, 1]
+        LocalTranslation: [1.35, 3.95, 0]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [1, 1, 1]
+        Visible: true
+      WorldEnvironment:
+        Primary: false
+        Enabled: true
+        HDRHandle: 0
+        Exposure: 1.325
+        Gamma: 2.075
+        Ambient: 0.6
+    - ID: 16330931109015756433
+      Name: Card_02
+      Type: Node
+      Parent: 6226697680794071872
+      Transform:
+        WorldTranslation: [-1.1000001, -3.5484e-07, -0.0027049007]
+        WorldRotation: [-7.545446e-08, 0.9999998, -7.5454444e-08, 0.0005755108]
+        WorldScale: [0.99999994, 1, 0.99999994]
+        LocalTranslation: [-1.1000001, -3.5484e-07, -0.0027049007]
+        LocalRotation: [-7.545444e-08, 0.9999998, -7.545444e-08, 0.0005755107]
+        LocalScale: [1, 1, 1]
+        Visible: true
+      Mesh:
+        Handle: 6503228990209563452
+        AnimatorHandle: 0
+        UniqueAnimator: true
+    - ID: 16401229976958502471
+      Name: Card_01
+      Type: Node
+      Parent: 6226697680794071872
+      Transform:
+        WorldTranslation: [-3.3, -7.927277e-07, -0.006042863]
+        WorldRotation: [-7.545446e-08, 0.9999998, -7.5454444e-08, 0.0005755108]
+        WorldScale: [0.99999994, 1, 0.99999994]
+        LocalTranslation: [-3.3, -7.927277e-07, -0.006042863]
+        LocalRotation: [-7.545444e-08, 0.9999998, -7.545444e-08, 0.0005755107]
+        LocalScale: [1, 1, 1]
+        Visible: true
+      Mesh:
+        Handle: 6503228990209563452
+        AnimatorHandle: 0
+        UniqueAnimator: true
+    - ID: 17542772688799778957
+      Name: Directional Light
+      Type: Node
+      Parent: 0
+      Transform:
+        WorldTranslation: [-1.95, 5.3500004, 0]
+        WorldRotation: [-0.24629384, -0.27628434, 0.0014687461, 0.9289802]
+        WorldScale: [1, 1, 1]
+        LocalTranslation: [-1.95, 5.3500004, 0]
+        LocalRotation: [-0.24629384, -0.27628434, 0.0014687479, 0.9289802]
+        LocalScale: [1, 1, 1]
+        Visible: true
+      DirectionalLight:
+        Color: [1, 1, 1, 1]
+        Intensity: 0.73
+        AngularRadius: 45
+        ShadowStrength: 0.5
+        ShadowMinBias: 0.05
+        ShadowMaxBias: 0.001
+        PCFRadius: 0.3
+        ShadowResolution: 2
+        CascadeShadow: true
+    - ID: 6226697680794071872
+      Name: CardCollection
+      Type: Node
+      Parent: 0
+      Transform:
+        WorldTranslation: [0, 0, 0]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [1, 1, 1]
+        LocalTranslation: [0, 0, 0]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [1, 1, 1]
+        Visible: true

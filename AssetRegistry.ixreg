@@ -1,188 +1,53 @@
 AssetRegistry:
   Assets:
-    - Handle: 136403986257482754
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_MovementBasic/Running_A.ixanim
-    - Handle: 696215102341928556
-      Type: Texture
-      Filepath: Meshes/Rig_Medium_General/ranger_texture.png
-    - Handle: 763694931973245279
-      Type: Material
-      Filepath: Meshes/Test/Barbarian/Material/barbarian.ixmat
-    - Handle: 1652736959570923950
-      Type: Material
-      Filepath: Meshes/Rig_Medium_MovementBasic/Material/Character_Material.ixmat
     - Handle: 1671497305426399170
       Type: Texture
-      Filepath: kiara_1_dawn_4k.hdr
-    - Handle: 1737605904372030509
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_General/Use_Item.ixanim
-    - Handle: 2011336085163626583
-      Type: Skeleton
-      Filepath: Meshes/Test/Barbarian/Barbarian.ixskel
-    - Handle: 2033003722293432905
-      Type: Skeleton
-      Filepath: Meshes/Rig_Medium_MovementBasic/Rig_Medium_MovementBasic.ixskel
-    - Handle: 2509991188415991540
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_MovementBasic/Jump_Idle.ixanim
-    - Handle: 2911764117557659100
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_General/Death_A.ixanim
-    - Handle: 2914353510642497902
-      Type: Scene
-      Filepath: Scene/Gemastik.ixscene
-    - Handle: 4048462957502416051
-      Type: Material
-      Filepath: Meshes/Rig_Medium_General/Material/Character_Material.ixmat
+      Filepath: HDRIs/kiara_1_dawn_4k.hdr
+    - Handle: 4020518715610463129
+      Type: Widget
+      Filepath: Widgets/Play.wdgt
     - Handle: 4102674412946893508
       Type: Font
-      Filepath: LowresPixel-Regular.otf
-    - Handle: 4289986983925759502
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_General/T-Pose.ixanim
-    - Handle: 4662770752662770851
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_General/Hit_A.ixanim
-    - Handle: 5283976215023432810
+      Filepath: Fonts/LowresPixel-Regular.otf
+    - Handle: 6503228990209563452
       Type: Mesh
-      Filepath: Meshes/Test/Rogue/Rogue.mesh
-    - Handle: 5437415064669646631
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_MovementBasic/Walking_A.ixanim
-    - Handle: 6660814253640752555
-      Type: Skeleton
-      Filepath: Meshes/Rig_Medium_General/Rig_Medium_General.ixskel
-    - Handle: 7107176194571571486
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_General/Death_B_Pose.ixanim
-    - Handle: 7112204618659569888
-      Type: Mesh
-      Filepath: Meshes/Rig_Medium_General/arrow_bow.mesh
+      Filepath: Meshes/jokercard.mesh
     - Handle: 7201159435847965647
       Type: Texture
-      Filepath: ferndale_studio_04_2k.hdr
-    - Handle: 7374718293940808326
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_General/Interact.ixanim
-    - Handle: 7418336109074341235
-      Type: Audio
-      Filepath: Audio/24 You Can't Just Shoot a Hole Into The Surface of Mars.mp3
-    - Handle: 7438600505215992200
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_General/Death_A_Pose.ixanim
+      Filepath: HDRIs/ferndale_studio_04_2k.hdr
     - Handle: 7504911466409295994
       Type: Texture
-      Filepath: snowy_field_2k.hdr
-    - Handle: 7873282610189936217
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_MovementBasic/Jump_Full_Short.ixanim
-    - Handle: 8266776464494992236
+      Filepath: HDRIs/snowy_field_2k.hdr
+    - Handle: 8190723956520937914
       Type: Material
-      Filepath: Meshes/Test/Rogue/Material/rogue.ixmat
+      Filepath: Meshes/joker.ixmat
     - Handle: 8406749831429556630
       Type: Texture
-      Filepath: ferndale_studio_12_2k.hdr
+      Filepath: HDRIs/ferndale_studio_12_2k.hdr
     - Handle: 8487866291550668718
       Type: Texture
-      Filepath: klippad_sunrise_2_2k.hdr
-    - Handle: 8738385173160371904
-      Type: Mesh
-      Filepath: Meshes/Rig_Medium_MovementBasic/Rig_Medium_MovementBasic.mesh
-    - Handle: 9261473142156649102
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_MovementBasic/Walking_C.ixanim
-    - Handle: 9348847345625918278
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_MovementBasic/Jump_Start.ixanim
+      Filepath: HDRIs/klippad_sunrise_2_2k.hdr
     - Handle: 9420462621085832834
       Type: Font
-      Filepath: segoeui.ttf
-    - Handle: 9794894436694026454
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_General/Spawn_Air.ixanim
-    - Handle: 9894304757204418348
-      Type: Scene
-      Filepath: Scene/TestScene.ixscene
+      Filepath: Fonts/segoeui.ttf
     - Handle: 9920694308132549009
       Type: Audio
       Filepath: Audio/hover.mp3
-    - Handle: 9939151811201080774
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_General/Spawn_Ground.ixanim
-    - Handle: 10605612842897545264
-      Type: Material
-      Filepath: Meshes/Rig_Medium_General/ranger.ixmat
-    - Handle: 10747028122301333702
+    - Handle: 10125969547390959480
       Type: Scene
-      Filepath: Scene/TestScene_Copy.ixscene
-    - Handle: 10855738223547029817
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_General/Idle_A.ixanim
-    - Handle: 11614949986042808900
-      Type: Mesh
-      Filepath: Meshes/Test/Barbarian/Barbarian.mesh
-    - Handle: 12187461829718710664
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_MovementBasic/Jump_Full_Long.ixanim
-    - Handle: 12400141363231814598
-      Type: Mesh
-      Filepath: Meshes/Rig_Medium_General/Rig_Medium_General.mesh
-    - Handle: 12638210258924878949
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_General/Idle_B.ixanim
+      Filepath: Scene/MainScene.ixscene
     - Handle: 12841843139498242276
       Type: Widget
-      Filepath: NewWidget.wdgt
-    - Handle: 13282001555150214542
-      Type: AnimatorController
-      Filepath: Meshes/Rig_Medium_MovementBasic/PlayerController.ac
-    - Handle: 13481965427599055111
-      Type: Texture
-      Filepath: Meshes/Rig_Medium_MovementBasic/Textures/ranger_texture.png
+      Filepath: Widgets/NewWidget.wdgt
     - Handle: 13589769746383350053
       Type: Texture
-      Filepath: checker.jpg
-    - Handle: 13827675856264094529
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_General/Hit_B.ixanim
-    - Handle: 14380288278539004656
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_General/Throw.ixanim
-    - Handle: 14589354423791555900
-      Type: Font
-      Filepath: FAST BLAZE.otf
-    - Handle: 14622531534947396263
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_General/Death_B.ixanim
+      Filepath: Widgets/checker.jpg
     - Handle: 14798869311340847312
       Type: Texture
-      Filepath: rogland_clear_night_4k.hdr
-    - Handle: 14873885195529227946
-      Type: Texture
-      Filepath: Meshes/Test/Barbarian/Material/barbarian_texture.png
+      Filepath: HDRIs/rogland_clear_night_4k.hdr
     - Handle: 15132198631710456398
       Type: Texture
-      Filepath: snowy_cemetery_2k.hdr
-    - Handle: 15333725080859199820
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_MovementBasic/T-Pose.ixanim
-    - Handle: 15630651000061473774
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_General/PickUp.ixanim
-    - Handle: 16061291043522888386
-      Type: Skeleton
-      Filepath: Meshes/Test/Rogue/Rogue.ixskel
-    - Handle: 16350575601374365146
+      Filepath: HDRIs/snowy_cemetery_2k.hdr
+    - Handle: 15252055945203357401
       Type: Texture
-      Filepath: Meshes/Test/Rogue/Textures/rogue_texture.png
-    - Handle: 16527191538466772964
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_MovementBasic/Running_B.ixanim
-    - Handle: 16857719057264105778
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_MovementBasic/Jump_Land.ixanim
-    - Handle: 18261202326917180041
-      Type: SkeletalAnimation
-      Filepath: Meshes/Rig_Medium_MovementBasic/Walking_B.ixanim
+      Filepath: Meshes/joker.png

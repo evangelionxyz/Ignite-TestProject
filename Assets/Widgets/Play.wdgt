@@ -1,0 +1,41 @@
+Widget:
+  Version: Alpha-0.1
+  Name: Play
+  Enabled: true
+  BlocksWidgetsBelow: false
+  NextItemId: 3
+  Items:
+    - Name: Canvas Root
+      ID: 1
+      ParentID: 0
+      Type: 0
+      Position: [0, 0]
+      Size: [252, 344]
+      Alignment: 6
+      SizingMode: 0
+      Visible: true
+      Layout: 1
+      Padding: 0
+      Gap: 0
+    - Name: start_button
+      ID: 2
+      ParentID: 1
+      Type: 1
+      Position: [0, 0]
+      Size: [150, 35]
+      Alignment: 6
+      SizingMode: 0
+      Visible: true
+      ImageHandle: 0
+      NormalColor: [0.76744187, 0, 0, 1]
+      HoverColor: [0.95348835, 0, 0, 1]
+      PressedColor: [0.67441857, 0, 0, 1]
+      BorderColor: [0.5, 0.5, 0.5, 1]
+      Text: Start
+      FontHandle: 4102674412946893508
+      Color: [1, 1, 1, 1]
+      FontSize: 19.525
+      Kerning: 0
+      LineSpacing: -0.025
+  ChildWidgets:
+    []
