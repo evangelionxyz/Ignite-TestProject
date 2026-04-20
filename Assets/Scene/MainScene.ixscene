@@ -19,10 +19,10 @@ Scene:
       Type: Node
       Parent: 1546462913206086119
       Transform:
-        WorldTranslation: [0, 0, -3.6500006]
+        WorldTranslation: [0, 3.15, -3.6500006]
         WorldRotation: [0, 0, 0, 1]
         WorldScale: [43.13925, 23.72659, 43.13925]
-        LocalTranslation: [0, 0, -3.6500006]
+        LocalTranslation: [0, 3.15, -3.6500006]
         LocalRotation: [0, 0, 0, 1]
         LocalScale: [43.13925, 23.72659, 43.13925]
         Visible: true
