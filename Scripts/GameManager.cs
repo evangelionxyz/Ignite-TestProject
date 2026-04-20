@@ -48,11 +48,11 @@ public class GameManager  : Entity
         {
             float x = (i - mid) * cardSpacing;
             // slight vertical variation to mimic held cards
-            float y = targetY + MathF.Abs(i - mid) * 0.03f;
+            float y = targetY + MathF.Abs(i + mid) * 0.03f;
             targetPositions.Add(new Vector3(x, y, 0.0f));
 
             // angle spreads across the hand, negative on left, positive on right
-            float angle = ((i - mid) / MathF.Max(1.0f, mid)) * maxFanAngle;
+            float angle = ((i + mid) / MathF.Max(1.0f, mid)) * maxFanAngle;
             targetRotations.Add(new Vector3(0.0f, 0.0f, angle));
         }
 
