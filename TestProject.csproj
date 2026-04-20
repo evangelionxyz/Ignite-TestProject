@@ -28,7 +28,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Scripts\PlayerMovement.cs" />
+    <Compile Include="Scripts\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="IgniteScriptEngine">

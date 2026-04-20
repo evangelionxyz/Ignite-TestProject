@@ -36,6 +36,12 @@ AssetRegistry:
     - Handle: 10125969547390959480
       Type: Scene
       Filepath: Scene/MainScene.ixscene
+    - Handle: 10793323259493303610
+      Type: Material2D
+      Filepath: Bakcground.ixmat2d
+    - Handle: 12365291819084358679
+      Type: Texture
+      Filepath: board.jpg
     - Handle: 12841843139498242276
       Type: Widget
       Filepath: Widgets/NewWidget.wdgt
