@@ -68,11 +68,6 @@ public class GameManager  : Entity
 
     public override void OnUpdate(float deltaTime)
     {
-        SpawnCards(deltaTime);
-    }
-
-    private void SpawnCards(float deltaTime)
-    {
         // wait for start delay then animate (only once)
         if (!isAnimating)
         {
@@ -103,16 +98,13 @@ public class GameManager  : Entity
                 var start = startPositions[i];
                 var target = targetPositions[i];
 
-                card.Translation = new Vector3(
-                    Lerp(start.X, target.X, ease),
-                    Lerp(start.Y, target.Y, ease),
-                    Lerp(start.Z, target.Z, ease)
-                );
+                card.Translation = Vector3.Lerp(start, target, ease);
 
                 var sR = startRotations[i];
                 var tR = targetRotations[i];
                 // convert Euler angles to a Quaternion for the engine rotation
-                card.Rotation = Quaternion.Euler(
+                card.Rotation = Quaternion.Euler
+                (
                     Lerp(sR.X, tR.X, ease),
                     Lerp(sR.Y, tR.Y, ease),
                     Lerp(sR.Z, tR.Z, ease)
