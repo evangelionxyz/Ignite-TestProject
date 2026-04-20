@@ -2,40 +2,6 @@ Scene:
   Version: Alpha-0.1
   Title: New Scene
   Entities:
-    - ID: 8951002671572419553
-      Name: RightPointLight
-      Type: Node
-      Parent: 1546462913206086119
-      Transform:
-        WorldTranslation: [12.8, 7.5, 0]
-        WorldRotation: [0, 0, 0, 1]
-        WorldScale: [1.4025, 1.4025, 1.4025]
-        LocalTranslation: [12.8, 7.5, 0]
-        LocalRotation: [0, 0, 0, 1]
-        LocalScale: [1.4025, 1.4025, 1.4025]
-        Visible: true
-      PointLight2D:
-        Color: [1.15, 1, -1.675, 1]
-        Radius: 10.2
-        Intensity: 1
-        Enabled: true
-    - ID: 10541829669440570974
-      Name: LeftPointLight
-      Type: Node
-      Parent: 1546462913206086119
-      Transform:
-        WorldTranslation: [-14.949999, -2.8500004, 0]
-        WorldRotation: [0, 0, 0, 1]
-        WorldScale: [1.4025, 1.4025, 1.4025]
-        LocalTranslation: [-14.949999, -2.8500004, 0]
-        LocalRotation: [0, 0, 0, 1]
-        LocalScale: [1.4025, 1.4025, 1.4025]
-        Visible: true
-      PointLight2D:
-        Color: [0.7, 1, 3.575, 1]
-        Radius: 10.2
-        Intensity: 1
-        Enabled: true
     - ID: 1546462913206086119
       Name: Background
       Type: Node
@@ -48,91 +14,27 @@ Scene:
         LocalRotation: [0, 0, 0, 1]
         LocalScale: [1, 1, 1]
         Visible: true
-    - ID: 16330931109015756433
-      Name: Card_02
+    - ID: 2346715395929066108
+      Name: Board
       Type: Node
-      Parent: 6226697680794071872
+      Parent: 1546462913206086119
       Transform:
-        WorldTranslation: [-1.1000001, -3.5484e-07, -0.0027049007]
-        WorldRotation: [-7.545446e-08, 0.9999998, -7.5454444e-08, 0.0005755108]
-        WorldScale: [0.99999994, 1, 0.99999994]
-        LocalTranslation: [-1.1000001, -3.5484e-07, -0.0027049007]
-        LocalRotation: [-7.545444e-08, 0.9999998, -7.545444e-08, 0.0005755107]
-        LocalScale: [1, 1, 1]
-        Visible: false
-      Mesh:
-        Handle: 6503228990209563452
-        AnimatorHandle: 0
-        UniqueAnimator: true
-    - ID: 8432316201469171861
-      Name: World Environment
-      Type: Audio
-      Parent: 0
-      Transform:
-        WorldTranslation: [1.35, 3.95, 0]
+        WorldTranslation: [0, 0, -3.6500006]
         WorldRotation: [0, 0, 0, 1]
-        WorldScale: [1, 1, 1]
-        LocalTranslation: [1.35, 3.95, 0]
+        WorldScale: [43.13925, 23.72659, 43.13925]
+        LocalTranslation: [0, 0, -3.6500006]
         LocalRotation: [0, 0, 0, 1]
-        LocalScale: [1, 1, 1]
+        LocalScale: [43.13925, 23.72659, 43.13925]
         Visible: true
-      WorldEnvironment:
-        Primary: false
-        Enabled: true
-        HDRHandle: 0
-        Exposure: 1
-        Gamma: 2.075
-        Ambient: 0.6
-    - ID: 16401229976958502471
-      Name: Card_01
-      Type: Node
-      Parent: 6226697680794071872
-      Transform:
-        WorldTranslation: [-3.3, -7.927277e-07, -0.006042863]
-        WorldRotation: [-7.545446e-08, 0.9999998, -7.5454444e-08, 0.0005755108]
-        WorldScale: [0.99999994, 1, 0.99999994]
-        LocalTranslation: [-3.3, -7.927277e-07, -0.006042863]
-        LocalRotation: [-7.545444e-08, 0.9999998, -7.545444e-08, 0.0005755107]
-        LocalScale: [1, 1, 1]
-        Visible: false
-      Mesh:
-        Handle: 6503228990209563452
-        AnimatorHandle: 0
-        UniqueAnimator: true
-    - ID: 6226697680794071872
-      Name: CardCollection
-      Type: Node
-      Parent: 0
-      Transform:
-        WorldTranslation: [0, 0, 0]
-        WorldRotation: [0, 0, 0, 1]
-        WorldScale: [1, 1, 1]
-        LocalTranslation: [0, 0, 0]
-        LocalRotation: [0, 0, 0, 1]
-        LocalScale: [1, 1, 1]
-        Visible: true
-    - ID: 17542772688799778957
-      Name: Directional Light
-      Type: Node
-      Parent: 0
-      Transform:
-        WorldTranslation: [-0.19999999, 4.1500006, 1.1999999]
-        WorldRotation: [-0.22654134, 0.052596763, 0.082907975, 0.96904016]
-        WorldScale: [1, 1, 0.99999994]
-        LocalTranslation: [-0.19999999, 4.1500006, 1.1999999]
-        LocalRotation: [-0.22654134, 0.05259676, 0.08290797, 0.9690402]
-        LocalScale: [1, 1, 1]
-        Visible: true
-      DirectionalLight:
-        Color: [1, 1, 1, 1]
-        Intensity: 1.5
-        AngularRadius: 45
-        ShadowStrength: 0.75
-        ShadowMinBias: 0.05
-        ShadowMaxBias: 0.001
-        PCFRadius: 0.3
-        ShadowResolution: 2
-        CascadeShadow: false
+      Sprite2D:
+        MaterialHandle: 10793323259493303610
+        Handle: 12365291819084358679
+        Color: [0.91085273, 0.91085273, 0.91085273, 1]
+        TilingFactor: [1, 1]
+        UV0: [0, 1]
+        UV1: [1, 0]
+        FlipX: false
+        FlipY: false
     - ID: 14847496867223129834
       Name: Camera
       Type: Camera
@@ -174,15 +76,43 @@ Scene:
           AoBias: 0.1
           AoIntensity: 1.5
           AoPower: 1
-    - ID: 13122724396433857064
-      Name: Card_04
+    - ID: 6226697680794071872
+      Name: CardCollection
+      Type: Node
+      Parent: 0
+      Transform:
+        WorldTranslation: [0, 0, 0]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [1, 1, 1]
+        LocalTranslation: [0, 0, 0]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [1, 1, 1]
+        Visible: true
+    - ID: 16401229976958502471
+      Name: Card_01
       Type: Node
       Parent: 6226697680794071872
       Transform:
-        WorldTranslation: [3.2500002, 3.3974044e-07, 0.002589798]
+        WorldTranslation: [-3.3, -7.927277e-07, -0.006042863]
         WorldRotation: [-7.545446e-08, 0.9999998, -7.5454444e-08, 0.0005755108]
         WorldScale: [0.99999994, 1, 0.99999994]
-        LocalTranslation: [3.2500002, 3.3974044e-07, 0.002589798]
+        LocalTranslation: [-3.3, -7.927277e-07, -0.006042863]
+        LocalRotation: [-7.545444e-08, 0.9999998, -7.545444e-08, 0.0005755107]
+        LocalScale: [1, 1, 1]
+        Visible: false
+      Mesh:
+        Handle: 6503228990209563452
+        AnimatorHandle: 0
+        UniqueAnimator: true
+    - ID: 16330931109015756433
+      Name: Card_02
+      Type: Node
+      Parent: 6226697680794071872
+      Transform:
+        WorldTranslation: [-1.1000001, -3.5484e-07, -0.0027049007]
+        WorldRotation: [-7.545446e-08, 0.9999998, -7.5454444e-08, 0.0005755108]
+        WorldScale: [0.99999994, 1, 0.99999994]
+        LocalTranslation: [-1.1000001, -3.5484e-07, -0.0027049007]
         LocalRotation: [-7.545444e-08, 0.9999998, -7.545444e-08, 0.0005755107]
         LocalScale: [1, 1, 1]
         Visible: false
@@ -206,6 +136,44 @@ Scene:
         Handle: 6503228990209563452
         AnimatorHandle: 0
         UniqueAnimator: true
+    - ID: 13122724396433857064
+      Name: Card_04
+      Type: Node
+      Parent: 6226697680794071872
+      Transform:
+        WorldTranslation: [3.2500002, 3.3974044e-07, 0.002589798]
+        WorldRotation: [-7.545446e-08, 0.9999998, -7.5454444e-08, 0.0005755108]
+        WorldScale: [0.99999994, 1, 0.99999994]
+        LocalTranslation: [3.2500002, 3.3974044e-07, 0.002589798]
+        LocalRotation: [-7.545444e-08, 0.9999998, -7.545444e-08, 0.0005755107]
+        LocalScale: [1, 1, 1]
+        Visible: false
+      Mesh:
+        Handle: 6503228990209563452
+        AnimatorHandle: 0
+        UniqueAnimator: true
+    - ID: 17542772688799778957
+      Name: Directional Light
+      Type: Node
+      Parent: 0
+      Transform:
+        WorldTranslation: [-0.19999999, 4.1500006, 1.1999999]
+        WorldRotation: [-0.22654134, 0.052596763, 0.082907975, 0.96904016]
+        WorldScale: [1, 1, 0.99999994]
+        LocalTranslation: [-0.19999999, 4.1500006, 1.1999999]
+        LocalRotation: [-0.22654134, 0.05259676, 0.08290797, 0.9690402]
+        LocalScale: [1, 1, 1]
+        Visible: true
+      DirectionalLight:
+        Color: [1, 1, 1, 1]
+        Intensity: 1.5
+        AngularRadius: 45
+        ShadowStrength: 0.75
+        ShadowMinBias: 0.05
+        ShadowMaxBias: 0.001
+        PCFRadius: 0.3
+        ShadowResolution: 2
+        CascadeShadow: false
     - ID: 10598226724644324950
       Name: GameManager
       Type: Node
@@ -239,24 +207,73 @@ Scene:
           - Name: targetY
             Type: Float
             Value: -2.2
-    - ID: 2346715395929066108
-      Name: Board
+    - ID: 10541829669440570974
+      Name: LeftPointLight
       Type: Node
       Parent: 1546462913206086119
       Transform:
-        WorldTranslation: [0, 0, -3.6500006]
+        WorldTranslation: [-2.9499989, 8.35, 0]
         WorldRotation: [0, 0, 0, 1]
-        WorldScale: [43.13925, 23.72659, 43.13925]
-        LocalTranslation: [0, 0, -3.6500006]
+        WorldScale: [1.4025, 1.4025, 1.4025]
+        LocalTranslation: [-2.9499989, 8.35, 0]
         LocalRotation: [0, 0, 0, 1]
-        LocalScale: [43.13925, 23.72659, 43.13925]
+        LocalScale: [1.4025, 1.4025, 1.4025]
         Visible: true
-      Sprite2D:
-        MaterialHandle: 10793323259493303610
-        Handle: 12365291819084358679
-        Color: [0.91085273, 0.91085273, 0.91085273, 1]
-        TilingFactor: [1, 1]
-        UV0: [0, 1]
-        UV1: [1, 0]
-        FlipX: false
-        FlipY: false
+      PointLight2D:
+        Color: [1, 1, 1, 1]
+        Radius: 27.95
+        Intensity: 1
+        Enabled: true
+    - ID: 3660019371147464895
+      Name: LeftPointLight
+      Type: Node
+      Parent: 1546462913206086119
+      Transform:
+        WorldTranslation: [-14.949999, -2.8500004, 0]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [1.4025, 1.4025, 1.4025]
+        LocalTranslation: [-14.949999, -2.8500004, 0]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [1.4025, 1.4025, 1.4025]
+        Visible: true
+      PointLight2D:
+        Color: [0.7, 1, 3.575, 1]
+        Radius: 10.2
+        Intensity: 1
+        Enabled: true
+    - ID: 8951002671572419553
+      Name: RightPointLight
+      Type: Node
+      Parent: 1546462913206086119
+      Transform:
+        WorldTranslation: [12.8, 7.5, 0]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [1.4025, 1.4025, 1.4025]
+        LocalTranslation: [12.8, 7.5, 0]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [1.4025, 1.4025, 1.4025]
+        Visible: true
+      PointLight2D:
+        Color: [1.15, 1, -1.675, 1]
+        Radius: 10.2
+        Intensity: 1
+        Enabled: true
+    - ID: 8432316201469171861
+      Name: World Environment
+      Type: Audio
+      Parent: 0
+      Transform:
+        WorldTranslation: [1.35, 3.95, 0]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [1, 1, 1]
+        LocalTranslation: [1.35, 3.95, 0]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [1, 1, 1]
+        Visible: true
+      WorldEnvironment:
+        Primary: false
+        Enabled: true
+        HDRHandle: 0
+        Exposure: 1
+        Gamma: 2.075
+        Ambient: 0.6
