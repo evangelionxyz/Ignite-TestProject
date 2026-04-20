@@ -226,13 +226,13 @@ Scene:
             Value: 13122724396433857064
           - Name: maxFanAngle
             Type: Float
-            Value: 0.11
+            Value: 0.05
           - Name: cardCount
             Type: Int
-            Value: 8
+            Value: 6
           - Name: cardSpacing
             Type: Float
-            Value: 2.4
+            Value: 2.7
           - Name: startY
             Type: Float
             Value: -8.2
