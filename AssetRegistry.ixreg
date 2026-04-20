@@ -9,6 +9,9 @@ AssetRegistry:
     - Handle: 4102674412946893508
       Type: Font
       Filepath: Fonts/LowresPixel-Regular.otf
+    - Handle: 4652223434774122064
+      Type: Texture
+      Filepath: Meshes/wood_shutter_diff_4k.jpg
     - Handle: 6503228990209563452
       Type: Mesh
       Filepath: Meshes/jokercard.mesh
@@ -18,6 +21,9 @@ AssetRegistry:
     - Handle: 7504911466409295994
       Type: Texture
       Filepath: HDRIs/snowy_field_2k.hdr
+    - Handle: 7904711996251775767
+      Type: Texture
+      Filepath: Meshes/wood_shutter_rough_4k.exr
     - Handle: 8190723956520937914
       Type: Material
       Filepath: Meshes/joker.ixmat
@@ -27,9 +33,18 @@ AssetRegistry:
     - Handle: 8487866291550668718
       Type: Texture
       Filepath: HDRIs/klippad_sunrise_2_2k.hdr
+    - Handle: 8698036812785186765
+      Type: Material
+      Filepath: Meshes/DefaultMaterial_Copy.ixmat
+    - Handle: 8887644565857882207
+      Type: Mesh
+      Filepath: Meshes/plane.mesh
     - Handle: 9420462621085832834
       Type: Font
       Filepath: Fonts/segoeui.ttf
+    - Handle: 9448493822348066618
+      Type: Texture
+      Filepath: Meshes/wood_shutter_disp_4k.png
     - Handle: 9920694308132549009
       Type: Audio
       Filepath: Audio/hover.mp3
@@ -38,10 +53,16 @@ AssetRegistry:
       Filepath: Scene/MainScene.ixscene
     - Handle: 10793323259493303610
       Type: Material2D
-      Filepath: Bakcground.ixmat2d
+      Filepath: Material2D/Bakcground.ixmat2d
+    - Handle: 11585404433978858968
+      Type: Texture
+      Filepath: Meshes/wood_shutter_nor_gl_4k.exr
     - Handle: 12365291819084358679
       Type: Texture
-      Filepath: board.jpg
+      Filepath: Textures/board.jpg
+    - Handle: 12657237909441167439
+      Type: Material
+      Filepath: Meshes/plane.ixmat
     - Handle: 12841843139498242276
       Type: Widget
       Filepath: Widgets/NewWidget.wdgt
@@ -57,3 +78,6 @@ AssetRegistry:
     - Handle: 15252055945203357401
       Type: Texture
       Filepath: Meshes/joker.png
+    - Handle: 17352258573520661566
+      Type: Material
+      Filepath: Meshes/DefaultMaterial.ixmat

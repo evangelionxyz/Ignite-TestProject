@@ -16,13 +16,13 @@ public class GameManager  : Entity
     private bool isAnimating = false;
     private bool animationPlayed = false;
     private float animationTime = 0.0f;
-    private float animationDuration = 1.2f; // seconds
+    private float animationDuration = 1.2f;
     private float animationStartDelay = 0.2f; // small delay before animation
     private float delayTimer = 0.0f;
     public int cardCount = 8;
     public float cardSpacing = 0.5f; // horizontal spacing between cards
-    public float startY = -3.0f; // bottom center start Y
-    public float targetY = -1.5f; // target Y for the stacked cards
+    public float startZ = -3.0f; // bottom center start Y
+    public float targetZ = -1.5f; // target Y for the stacked cards
     public float maxFanAngle = 18.0f; // max angle in degrees for fanned cards
 
     public override void OnCreate()
@@ -30,30 +30,27 @@ public class GameManager  : Entity
         if (cardTemplate == null)
             return;
 
-        // instantiate cards at bottom center stacked together
         for (int i = 0; i < cardCount; i++)
         {
-            var c = Instantiate(cardTemplate, new Vector3(0.0f, startY, 0.0f));
+            var c = Instantiate(cardTemplate, new Vector3(0.0f, 0.0f, startZ));
             c.Visible = true;
             cards.Add(c);
 
-            // record start positions/rotations (all from bottom center)
-            startPositions.Add(new Vector3(0.0f, startY, 0.0f));
-            startRotations.Add(new Vector3(0.0f, 0.0f, 0.0f));
+            startPositions.Add(new Vector3(0.0f, 0.0f, startZ));
+            startRotations.Add(new Vector3(0.0f, -90.0f * Mathf.Deg2Rad, 0.0f));
         }
 
-        // compute targets: spread left-to-right and slightly fanned
         float mid = (cardCount - 1) / 2.0f;
         for (int i = 0; i < cardCount; i++)
         {
             float x = (i - mid) * cardSpacing;
             // slight vertical variation to mimic held cards
-            float y = targetY + MathF.Abs(i + mid) * 0.03f;
-            targetPositions.Add(new Vector3(x, y, 0.0f));
+            float z = targetZ + MathF.Abs(i + mid) * 0.03f;
+            targetPositions.Add(new Vector3(x, 0.0f, z));
 
             // angle spreads across the hand, negative on left, positive on right
             float angle = ((i + mid) / MathF.Max(1.0f, mid)) * maxFanAngle;
-            targetRotations.Add(new Vector3(0.0f, 0.0f, angle));
+            targetRotations.Add(new Vector3(0.0f, -90.0f * Mathf.Deg2Rad, angle));
         }
 
         // start with a short delay then animate automatically (simulates "push")

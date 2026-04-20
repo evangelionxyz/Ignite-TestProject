@@ -9,7 +9,7 @@ DATA:
   ArraySize: 1
   SampleCount: 1
   SampleQuality: 0
-  Flip: true
+  Flip: false
   IsRenderTarget: false
   IsTypeless: false
   IsUAV: false

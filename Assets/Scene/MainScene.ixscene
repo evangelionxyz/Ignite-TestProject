@@ -7,11 +7,11 @@ Scene:
       Type: Node
       Parent: 0
       Transform:
-        WorldTranslation: [0, 0, 0]
-        WorldRotation: [0, 0, 0, 1]
-        WorldScale: [1, 1, 1]
-        LocalTranslation: [0, 0, 0]
-        LocalRotation: [0, 0, 0, 1]
+        WorldTranslation: [0, -5.350003, 1.2552739e-05]
+        WorldRotation: [-0.70710754, 0, 0, 0.707106]
+        WorldScale: [1, 0.99999994, 0.99999994]
+        LocalTranslation: [0, -5.350003, 1.2552739e-05]
+        LocalRotation: [-0.70710754, -0, 0, 0.707106]
         LocalScale: [1, 1, 1]
         Visible: true
     - ID: 2346715395929066108
@@ -19,11 +19,11 @@ Scene:
       Type: Node
       Parent: 1546462913206086119
       Transform:
-        WorldTranslation: [0, 3.15, -3.6500006]
-        WorldRotation: [0, 0, 0, 1]
-        WorldScale: [43.13925, 23.72659, 43.13925]
-        LocalTranslation: [0, 3.15, -3.6500006]
-        LocalRotation: [0, 0, 0, 1]
+        WorldTranslation: [0, -1.3500023, 3.969668e-06]
+        WorldRotation: [-0.70710754, 0, 0, 0.707106]
+        WorldScale: [43.13925, 23.726587, 43.139248]
+        LocalTranslation: [0, 2.2737368e-13, 4.000001]
+        LocalRotation: [-1.5332921e-13, -0, 0, 1]
         LocalScale: [43.13925, 23.72659, 43.13925]
         Visible: true
       Sprite2D:
@@ -40,11 +40,11 @@ Scene:
       Type: Camera
       Parent: 0
       Transform:
-        WorldTranslation: [0, 2.6, 15]
-        WorldRotation: [0, 0, 0, 1]
-        WorldScale: [1, 1, 1]
-        LocalTranslation: [0, 2.6, 15]
-        LocalRotation: [0, 0, 0, 1]
+        WorldTranslation: [0, 15, 0]
+        WorldRotation: [0.00017374392, 0.70724744, 0.7069661, -0.0001730318]
+        WorldScale: [0.99999976, 0.9999999, 0.9999999]
+        LocalTranslation: [0, 15, 0]
+        LocalRotation: [0.00017374389, 0.7072474, 0.70696604, -0.00017303176]
         LocalScale: [1, 1, 1]
         Visible: true
       Camera:
@@ -93,11 +93,11 @@ Scene:
       Type: Node
       Parent: 6226697680794071872
       Transform:
-        WorldTranslation: [-3.3, -7.927277e-07, -0.006042863]
-        WorldRotation: [-7.545446e-08, 0.9999998, -7.5454444e-08, 0.0005755108]
-        WorldScale: [0.99999994, 1, 0.99999994]
-        LocalTranslation: [-3.3, -7.927277e-07, -0.006042863]
-        LocalRotation: [-7.545444e-08, 0.9999998, -7.545444e-08, 0.0005755107]
+        WorldTranslation: [-3.3, -0.004853634, -0.001188754]
+        WorldRotation: [-0.00040717341, 0.7071072, -0.7071061, 0.00040704175]
+        WorldScale: [1, 1, 1]
+        LocalTranslation: [-3.3, -0.004853634, -0.001188754]
+        LocalRotation: [-0.00040717344, 0.70710725, -0.7071061, 0.00040704178]
         LocalScale: [1, 1, 1]
         Visible: false
       Mesh:
@@ -110,10 +110,10 @@ Scene:
       Parent: 6226697680794071872
       Transform:
         WorldTranslation: [-1.1000001, -3.5484e-07, -0.0027049007]
-        WorldRotation: [-7.545446e-08, 0.9999998, -7.5454444e-08, 0.0005755108]
-        WorldScale: [0.99999994, 1, 0.99999994]
+        WorldRotation: [-0.00040695712, -0.7069916, 0.70722175, -0.00040693136]
+        WorldScale: [0.99999994, 0.99999994, 1]
         LocalTranslation: [-1.1000001, -3.5484e-07, -0.0027049007]
-        LocalRotation: [-7.545444e-08, 0.9999998, -7.545444e-08, 0.0005755107]
+        LocalRotation: [0.00040695706, 0.70699155, -0.70722175, 0.00040693136]
         LocalScale: [1, 1, 1]
         Visible: false
       Mesh:
@@ -125,11 +125,11 @@ Scene:
       Type: Node
       Parent: 6226697680794071872
       Transform:
-        WorldTranslation: [1.1000001, -1.5099575e-08, -0.000115102135]
-        WorldRotation: [-7.545446e-08, 0.9999998, -7.5454444e-08, 0.0005755108]
-        WorldScale: [0.99999994, 1, 0.99999994]
-        LocalTranslation: [1.1000001, -1.5099575e-08, -0.000115102135]
-        LocalRotation: [-7.545444e-08, 0.9999998, -7.545444e-08, 0.0005755107]
+        WorldTranslation: [1.1000001, 0.0010741331, -0.0011895286]
+        WorldRotation: [-0.00040717341, 0.7071072, -0.7071061, 0.00040704175]
+        WorldScale: [1, 1, 1]
+        LocalTranslation: [1.1000001, 0.0010741331, -0.0011895286]
+        LocalRotation: [-0.00040717344, 0.70710725, -0.7071061, 0.00040704178]
         LocalScale: [1, 1, 1]
         Visible: false
       Mesh:
@@ -141,11 +141,11 @@ Scene:
       Type: Node
       Parent: 6226697680794071872
       Transform:
-        WorldTranslation: [3.2500002, 3.3974044e-07, 0.002589798]
-        WorldRotation: [-7.545446e-08, 0.9999998, -7.5454444e-08, 0.0005755108]
-        WorldScale: [0.99999994, 1, 0.99999994]
-        LocalTranslation: [3.2500002, 3.3974044e-07, 0.002589798]
-        LocalRotation: [-7.545444e-08, 0.9999998, -7.545444e-08, 0.0005755107]
+        WorldTranslation: [3.2500002, 0.003779042, -0.0011898846]
+        WorldRotation: [-0.00040717341, 0.7071072, -0.7071061, 0.00040704175]
+        WorldScale: [1, 1, 1]
+        LocalTranslation: [3.2500002, 0.003779042, -0.0011898846]
+        LocalRotation: [-0.00040717344, 0.70710725, -0.7071061, 0.00040704178]
         LocalScale: [1, 1, 1]
         Visible: false
       Mesh:
@@ -157,11 +157,11 @@ Scene:
       Type: Node
       Parent: 0
       Transform:
-        WorldTranslation: [-0.19999999, 4.1500006, 1.1999999]
-        WorldRotation: [-0.22654134, 0.052596763, 0.082907975, 0.96904016]
-        WorldScale: [1, 1, 0.99999994]
-        LocalTranslation: [-0.19999999, 4.1500006, 1.1999999]
-        LocalRotation: [-0.22654134, 0.05259676, 0.08290797, 0.9690402]
+        WorldTranslation: [0.25097376, 9.702408, -1.3660847]
+        WorldRotation: [-0.3624401, 0.040233906, 0.08956207, 0.92682093]
+        WorldScale: [1, 1, 1]
+        LocalTranslation: [0.25097376, 9.702408, -1.3660847]
+        LocalRotation: [-0.36244008, 0.04023391, 0.08956207, 0.926821]
         LocalScale: [1, 1, 1]
         Visible: true
       DirectionalLight:
@@ -174,6 +174,42 @@ Scene:
         PCFRadius: 0.3
         ShadowResolution: 2
         CascadeShadow: false
+    - ID: 9951354086252950107
+      Name: Empty
+      Type: Node
+      Parent: 0
+      Transform:
+        WorldTranslation: [0, -0.35000038, 0]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [1.5505202, 1.5505202, 1.5505202]
+        LocalTranslation: [0, -0.35000038, 0]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [1.5505202, 1.5505202, 1.5505202]
+        Visible: true
+      Mesh:
+        Handle: 8887644565857882207
+        AnimatorHandle: 0
+        UniqueAnimator: true
+    - ID: 6330544238281680318
+      Name: Empty
+      Type: Node
+      Parent: 0
+      Transform:
+        WorldTranslation: [10.500021, 1.8680126e-05, 4.999955]
+        WorldRotation: [1.5667227e-06, 0.7071082, 0.70710534, -1.4599589e-06]
+        WorldScale: [1, 1, 1]
+        LocalTranslation: [10.500021, 1.8680126e-05, 4.999955]
+        LocalRotation: [1.5667229e-06, 0.70710826, 0.70710534, -1.459959e-06]
+        LocalScale: [1, 1, 1]
+        Visible: true
+      TextComponent:
+        FontHandle: 4102674412946893508
+        Material2DHandle: 0
+        Text: Playing
+        Color: [1, 1, 1, 1]
+        Kerning: 0
+        LineSpacing: -0.025
+        ScreenSpace: false
     - ID: 10598226724644324950
       Name: GameManager
       Type: Node
@@ -198,23 +234,23 @@ Scene:
           - Name: cardCount
             Type: Int
             Value: 6
+          - Name: targetZ
+            Type: Float
+            Value: -1.6
           - Name: cardSpacing
             Type: Float
             Value: 2.7
-          - Name: startY
+          - Name: startZ
             Type: Float
-            Value: -8.2
-          - Name: targetY
-            Type: Float
-            Value: -2.2
+            Value: -8
     - ID: 10541829669440570974
       Name: LeftPointLight
       Type: Node
       Parent: 1546462913206086119
       Transform:
-        WorldTranslation: [-2.9499989, 8.35, 0]
-        WorldRotation: [0, 0, 0, 1]
-        WorldScale: [1.4025, 1.4025, 1.4025]
+        WorldTranslation: [-2.9499989, -5.350021, -8.349987]
+        WorldRotation: [-0.70710754, 0, 0, 0.707106]
+        WorldScale: [1.4025, 1.4024999, 1.4024999]
         LocalTranslation: [-2.9499989, 8.35, 0]
         LocalRotation: [0, 0, 0, 1]
         LocalScale: [1.4025, 1.4025, 1.4025]
@@ -229,9 +265,9 @@ Scene:
       Type: Node
       Parent: 1546462913206086119
       Transform:
-        WorldTranslation: [-14.949999, -2.8500004, 0]
-        WorldRotation: [0, 0, 0, 1]
-        WorldScale: [1.4025, 1.4025, 1.4025]
+        WorldTranslation: [-14.949999, -5.3499966, 2.8500128]
+        WorldRotation: [-0.70710754, 0, 0, 0.707106]
+        WorldScale: [1.4025, 1.4024999, 1.4024999]
         LocalTranslation: [-14.949999, -2.8500004, 0]
         LocalRotation: [0, 0, 0, 1]
         LocalScale: [1.4025, 1.4025, 1.4025]
@@ -246,9 +282,9 @@ Scene:
       Type: Node
       Parent: 1546462913206086119
       Transform:
-        WorldTranslation: [12.8, 7.5, 0]
-        WorldRotation: [0, 0, 0, 1]
-        WorldScale: [1.4025, 1.4025, 1.4025]
+        WorldTranslation: [12.8, -5.350019, -7.499987]
+        WorldRotation: [-0.70710754, 0, 0, 0.707106]
+        WorldScale: [1.4025, 1.4024999, 1.4024999]
         LocalTranslation: [12.8, 7.5, 0]
         LocalRotation: [0, 0, 0, 1]
         LocalScale: [1.4025, 1.4025, 1.4025]
