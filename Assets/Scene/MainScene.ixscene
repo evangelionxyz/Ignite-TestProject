@@ -157,10 +157,10 @@ Scene:
       Type: Node
       Parent: 0
       Transform:
-        WorldTranslation: [0.25097376, 9.702408, -1.3660847]
+        WorldTranslation: [0.25097376, 2.8024077, 0.58391535]
         WorldRotation: [-0.3624401, 0.040233906, 0.08956207, 0.92682093]
         WorldScale: [1, 1, 1]
-        LocalTranslation: [0.25097376, 9.702408, -1.3660847]
+        LocalTranslation: [0.25097376, 2.8024077, 0.58391535]
         LocalRotation: [-0.36244008, 0.04023391, 0.08956207, 0.926821]
         LocalScale: [1, 1, 1]
         Visible: true

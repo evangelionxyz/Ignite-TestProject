@@ -72,7 +72,7 @@ public class GameManager  : Entity
     {
         Entity pickEntity = PickEntityAt(Input.MousePosition.X, Input.MousePosition.Y);
 
-        Entity hovered = null;
+        Entity? hovered = null;
         if (pickEntity != null)
         {
             for (int i = 0; i < cards.Count; i++)
@@ -170,7 +170,6 @@ public class GameManager  : Entity
                         cards.Remove(lastHoveredEntity);
                         cards.Add(lastHoveredEntity);
 
-                        var start = lastHoveredEntity.Translation;
                         singleStartPos = lastHoveredEntity.Translation;
                         singleTargetPos = lastHoveredEntity.Translation;
                         singleAnimatingEntity = lastHoveredEntity;
