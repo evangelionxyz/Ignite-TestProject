@@ -3,15 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TestProject.Scripts.Cards.Effects;
 
-namespace TestProject.Scripts.Class.Base
+namespace TestProject.Scripts.Cards
 {
     public abstract class ActionCard: Card
     {
-        public ActionCard(string name, string effectDesc) : base(name, effectDesc)
-        {
-        }
+        public readonly int SellPrice;
 
-        public abstract void Use(PolicyCard card);
+        public ActionCard(
+            string id, 
+            string name, 
+            string effectDesc, 
+            List<IEffect> effects, 
+            int sellPrice
+        ): base(id, name, effectDesc, effects)
+        {
+            SellPrice = sellPrice;
+        }
     }
 }

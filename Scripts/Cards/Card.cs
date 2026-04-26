@@ -9,14 +9,22 @@ namespace TestProject.Scripts.Cards
 {
     public abstract class Card
     {
-        string name;
-        string effectDesc;
-        List<IEffect> effects;
+        string _id; 
+        string _name;
+        string _effectDesc;
+        List<IEffect> _effects;
 
-        public Card(string name, string effectDesc)
+        public string Id => _id;
+        public string Name => _name;
+        public string EffectDesc => _effectDesc;
+        public IReadOnlyList<IEffect> Effects => _effects;
+
+        public Card(string id, string name, string effectDesc, List<IEffect> effects)
         {
-            this.name = name;
-            this.effectDesc = effectDesc;
+            _id = id;
+            _name = name;
+            _effectDesc = effectDesc;
+            _effects = effects;
         }
     }
 }

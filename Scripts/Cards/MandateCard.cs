@@ -3,20 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TestProject.Scripts.Cards.Effects;
 
-namespace TestProject.Scripts.Class.Base
+namespace TestProject.Scripts.Cards
 {
-    public abstract class MandateCard : Card
+    public class MandateCard : Card
     {
-        ERarity rarity;
-        public readonly bool isSellable;
+        public readonly ERarity Rarity;
+        public readonly bool IsSellable;
+        public readonly int SellPrice;
 
-        public MandateCard(string name, string effectDesc, ERarity rarity, bool isSellable) : base(name, effectDesc)
+        public MandateCard(
+            string id, 
+            string name, 
+            string effectDesc, 
+            List<IEffect> effects,
+            ERarity rarity, 
+            bool isSellable, 
+            int sellPrice
+        ) : base(id, name, effectDesc, effects)
         {
-            this.rarity = rarity;
-            this.isSellable = isSellable;
+            Rarity = rarity;
+            IsSellable = isSellable;
+            SellPrice = sellPrice;
         }
-
-        public abstract void ApplyMandate();
     }
 }

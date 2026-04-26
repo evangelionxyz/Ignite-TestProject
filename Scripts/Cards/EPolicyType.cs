@@ -8,5 +8,6 @@ namespace TestProject.Scripts.Cards
         Industry = 1,
         Welfare = 2,
         Green = 3,
+        Junk = 4,
     }
 }
