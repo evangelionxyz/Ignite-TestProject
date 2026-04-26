@@ -1,4 +1,4 @@
-﻿namespace TestProject.Class.Base
+﻿namespace TestProject.Scripts.Cards
 {
     public enum ERarity : byte
     {

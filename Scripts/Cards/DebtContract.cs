@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestProject.Class.Base
+namespace TestProject.Scripts.Cards
 {
     public abstract class DebtContract
     {
