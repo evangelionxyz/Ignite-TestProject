@@ -8,19 +8,25 @@ namespace TestProject.Scripts.Cards
 {
     public abstract class DebtContract
     {
-        string name;
-        int amountToGet;
-        int countdown;
-        string penaltyDesc;
+        public readonly string Name;
+        public readonly int AmountToGet;
+        private int _countdown;
+        public readonly string PenaltyDesc;
+
+        public int Countdown => _countdown;
+        public bool IsExpired => _countdown < 0;
 
         public DebtContract(string name, int amountToGet, int countdown, string penaltyDesc)
         {
-            this.name = name;
-            this.amountToGet = amountToGet;
-            this.countdown = countdown;
-            this.penaltyDesc = penaltyDesc;
+            Name = name;
+            AmountToGet = amountToGet;
+            _countdown = countdown;
+            PenaltyDesc = penaltyDesc;
         }
 
-        public abstract void ApplyPenalty();
+        public void TickDown()
+        {
+            _countdown--;
+        }
     }
 }
