@@ -10,9 +10,9 @@ namespace TestProject.Scripts.Cards.Effects
 {
     public class SpawnCardEffect : IEffect
     {
-        private string _cardId;
+        private int _cardId;
 
-        public SpawnCardEffect(string cardId)
+        public SpawnCardEffect(int cardId)
         {
             _cardId = cardId;
         }

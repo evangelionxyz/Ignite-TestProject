@@ -12,8 +12,8 @@ namespace TestProject.Scripts.Run
         public int TotalHighClassApprovalChange;
         public int TotalLowClassApprovalChange;
 
-        public List<string> CardIdToSpawn = [];
-        public List<string> CardIdToRemove = [];
+        public List<int> CardIdToSpawn = [];
+        public List<int> CardIdToRemove = [];
 
         public TermContext(int maxDockCount)
         {

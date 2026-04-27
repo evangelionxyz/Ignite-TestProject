@@ -60,6 +60,16 @@ namespace TestProject.Scripts.Games
             _hand.Add(card);
         }
 
+        public bool TryAddCardToDeck(PolicyCard card)
+        {
+            if (_hand.Contains(card))
+            {
+                _deck.Add(card);
+                return true;
+            }
+            return false;
+        }
+
         public bool TryRemoveCardFromDeck(PolicyCard card)
         {
             if (_hand.Contains(card))

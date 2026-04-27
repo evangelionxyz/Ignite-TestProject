@@ -1,6 +1,10 @@
 using Ignite;
 using System;
 using System.Collections.Generic;
+using TestProject.Scripts;
+using TestProject.Scripts.Cards;
+using TestProject.Scripts.Run;
+using TestProject.Scripts.Run.Misc;
 
 namespace TestProject;
 
@@ -36,6 +40,8 @@ public class GameManager  : Entity
     public float startZ = -3.0f;
     public float targetZ = -1.5f;
     public float maxFanAngle = 18.0f;
+
+    private Run? _run;
 
     public override void OnCreate()
     {
@@ -205,5 +211,93 @@ public class GameManager  : Entity
     private static float Lerp(float a, float b, float t)
     {
         return a + (b - a) * t;
+    }
+
+    public void NewRun(string seed)
+    {
+        _run = new Run(seed);
+        BeginNewShopPhase();
+    }
+
+    private void BeginNewShopPhase()
+    {
+        if (_run == null) return;
+
+        var shop = _run.StartShop();
+        EventBus.EmitShopStarted(shop);
+    }
+
+    public void OnShopFinished() => BeginNewTermPhase();
+
+    private void BeginNewTermPhase()
+    {
+        if (_run == null) return;
+
+        var term = _run.StartTerm();
+        term.DrawHand();
+        EventBus.EmitTermStarted(term);
+    }
+
+    public void OnTermExecuted()
+    {
+        if (_run == null) return;
+        if (_run.CurrentTerm == null) return;
+
+        var result = _run.CurrentTerm.ExecuteTerm();
+
+        CommitMetricsChanges(result);
+        CommitEffects(result);
+
+        if (CheckGameOver(result)) return;
+
+        EventBus.EmitTermResolved(result);
+        BeginNewShopPhase();
+    }
+
+    private bool CheckGameOver(TermContext result)
+    {
+        if (result is null) return false;
+        if (_run == null) return false;
+
+        if (_run.State.GdpTarget > result.TotalGdpGenerated)
+        {
+            EventBus.EmitGameOver(EGameOverReason.EconomicCollapse);
+            return true;
+        }
+
+        if (_run.State.Biosphere < 0)
+        {
+            EventBus.EmitGameOver(EGameOverReason.EcologicalDisaster);
+            return true;
+        } 
+
+        if (_run.State.LowClassApproval < 0 || _run.State.HighClassApproval < 0)
+        {
+            EventBus.EmitGameOver(EGameOverReason.Revolution);
+            return true;
+        }
+
+        return false;
+    }
+
+    private void CommitEffects(TermContext result)
+    {
+        foreach (var cardId in result.CardIdToSpawn)
+        {
+            if (cardId == null) continue;
+            var card = CardRegistry.Get(cardId) as PolicyCard;
+            
+            if (card == null) continue;
+            _run!.DeckManager.TryAddCardToDeck(card);
+        }
+    }
+
+    private void CommitMetricsChanges(TermContext result)
+    {
+        var surplus = result.TotalGdpGenerated - _run!.State.GdpTarget;
+        _run.State.AddTreasury(surplus);
+        _run.State.ApplyBiosphereChange(result.TotalBiosphereChange);
+        _run.State.ApplyHighClassApprovalChange(result.TotalHighClassApprovalChange);
+        _run.State.ApplyLowClassApprovalChange(result.TotalLowClassApprovalChange);
     }
 }

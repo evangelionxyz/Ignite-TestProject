@@ -18,7 +18,7 @@ namespace TestProject.Scripts.Games
 
         public string Seed;
         public int RoundNumber = 1;
-        public int NextTermGdpTarget = FIRST_GDP_TARGET;
+        public int GdpTarget = FIRST_GDP_TARGET;
 
         public int Treasury = STARTING_TREASURY;
         public int Biosphere = STARTING_BIOSPHERE;
@@ -46,7 +46,7 @@ namespace TestProject.Scripts.Games
         public void AdvanceRound()
         {
             RoundNumber++;
-            NextTermGdpTarget = CalculateNextTermGdpTarget();
+            GdpTarget = CalculateNextTermGdpTarget();
         }
 
         public void ApplyBiosphereChange(int delta) => Biosphere = Math.Clamp(Biosphere + delta, 0, MAX_METRICS);
@@ -85,7 +85,7 @@ namespace TestProject.Scripts.Games
 
         private int CalculateNextTermGdpTarget()
         {
-            return (int)(NextTermGdpTarget * GDP_TARGET_INCREMENT);
+            return (int)(GdpTarget * Math.Pow(GDP_TARGET_INCREMENT, RoundNumber));
         }
     }
 }
