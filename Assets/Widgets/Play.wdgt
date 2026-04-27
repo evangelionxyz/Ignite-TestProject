@@ -3,29 +3,52 @@ Widget:
   Name: Play
   Enabled: true
   BlocksWidgetsBelow: false
-  NextItemId: 3
+  NextItemId: 20
   Items:
-    - Name: Canvas Root
+    - Name: Test
       ID: 1
       ParentID: 0
       Type: 0
-      Position: [0, 0]
-      Size: [252, 344]
-      Alignment: 6
+      Position: [0, 56]
+      Size: [159.72217, 530.3336]
+      Alignment: 0
       SizingMode: 0
       Visible: true
+      ZIndex: 0
       Layout: 1
       Padding: 0
-      Gap: 0
+      Gap: 5
+    - Name: ""
+      ID: 17
+      ParentID: 1
+      Type: 1
+      Position: [0, 0]
+      Size: [159, 88]
+      Alignment: 0
+      SizingMode: 0
+      Visible: true
+      ZIndex: 0
+      ImageHandle: 0
+      NormalColor: [0.25, 0.25, 0.25, 1]
+      HoverColor: [0.5, 0.5, 0.5, 1]
+      PressedColor: [0.25, 0.25, 0.25, 1]
+      BorderColor: [0.5, 0.5, 0.5, 1]
+      Text: Button
+      FontHandle: 0
+      Color: [1, 1, 1, 1]
+      FontSize: 16
+      Kerning: 0
+      LineSpacing: -0.025
     - Name: start_button
       ID: 2
       ParentID: 1
       Type: 1
       Position: [0, 0]
-      Size: [150, 35]
-      Alignment: 6
+      Size: [157, 95]
+      Alignment: 0
       SizingMode: 0
       Visible: true
+      ZIndex: 6
       ImageHandle: 0
       NormalColor: [0.76744187, 0, 0, 1]
       HoverColor: [0.95348835, 0, 0, 1]
@@ -35,6 +58,132 @@ Widget:
       FontHandle: 4102674412946893508
       Color: [1, 1, 1, 1]
       FontSize: 19.525
+      Kerning: 0
+      LineSpacing: -0.025
+    - Name: ""
+      ID: 18
+      ParentID: 1
+      Type: 1
+      Position: [0, 0]
+      Size: [157, 50]
+      Alignment: 0
+      SizingMode: 0
+      Visible: true
+      ZIndex: 0
+      ImageHandle: 0
+      NormalColor: [0.25, 0.25, 0.25, 1]
+      HoverColor: [0.5, 0.5, 0.5, 1]
+      PressedColor: [0.25, 0.25, 0.25, 1]
+      BorderColor: [0.5, 0.5, 0.5, 1]
+      Text: Button
+      FontHandle: 0
+      Color: [1, 1, 1, 1]
+      FontSize: 16
+      Kerning: 0
+      LineSpacing: -0.025
+    - Name: ""
+      ID: 13
+      ParentID: 0
+      Type: 1
+      Position: [0, 0]
+      Size: [150, 50]
+      Alignment: 0
+      SizingMode: 0
+      Visible: true
+      ZIndex: 0
+      ImageHandle: 0
+      NormalColor: [0.25, 0.25, 0.25, 1]
+      HoverColor: [0.5, 0.5, 0.5, 1]
+      PressedColor: [0.25, 0.25, 0.25, 1]
+      BorderColor: [0.5, 0.5, 0.5, 1]
+      Text: Button
+      FontHandle: 0
+      Color: [1, 1, 1, 1]
+      FontSize: 16
+      Kerning: 0
+      LineSpacing: -0.025
+    - Name: ""
+      ID: 14
+      ParentID: 0
+      Type: 1
+      Position: [0, 0]
+      Size: [150, 50]
+      Alignment: 0
+      SizingMode: 0
+      Visible: true
+      ZIndex: 0
+      ImageHandle: 0
+      NormalColor: [0.25, 0.25, 0.25, 1]
+      HoverColor: [0.5, 0.5, 0.5, 1]
+      PressedColor: [0.25, 0.25, 0.25, 1]
+      BorderColor: [0.5, 0.5, 0.5, 1]
+      Text: Button
+      FontHandle: 0
+      Color: [1, 1, 1, 1]
+      FontSize: 16
+      Kerning: 0
+      LineSpacing: -0.025
+    - Name: ""
+      ID: 15
+      ParentID: 1
+      Type: 1
+      Position: [0, 0]
+      Size: [155, 50]
+      Alignment: 0
+      SizingMode: 0
+      Visible: true
+      ZIndex: 0
+      ImageHandle: 0
+      NormalColor: [0.25, 0.25, 0.25, 1]
+      HoverColor: [0.5, 0.5, 0.5, 1]
+      PressedColor: [0.25, 0.25, 0.25, 1]
+      BorderColor: [0.5, 0.5, 0.5, 1]
+      Text: Button
+      FontHandle: 0
+      Color: [1, 1, 1, 1]
+      FontSize: 16
+      Kerning: 0
+      LineSpacing: -0.025
+    - Name: ""
+      ID: 16
+      ParentID: 1
+      Type: 1
+      Position: [0, 0]
+      Size: [156, 50]
+      Alignment: 0
+      SizingMode: 0
+      Visible: true
+      ZIndex: 0
+      ImageHandle: 0
+      NormalColor: [0.25, 0.25, 0.25, 1]
+      HoverColor: [0.5, 0.5, 0.5, 1]
+      PressedColor: [0.25, 0.25, 0.25, 1]
+      BorderColor: [0.5, 0.5, 0.5, 1]
+      Text: Button
+      FontHandle: 0
+      Color: [1, 1, 1, 1]
+      FontSize: 16
+      Kerning: 0
+      LineSpacing: -0.025
+    - Name: ""
+      ID: 19
+      ParentID: 1
+      Type: 1
+      Position: [0, 0]
+      Size: [156, 50]
+      Alignment: 0
+      SizingMode: 0
+      Visible: true
+      ZIndex: 0
+      ImageHandle: 0
+      NormalColor: [0.25, 0.25, 0.25, 1]
+      HoverColor: [0.5, 0.5, 0.5, 1]
+      PressedColor: [0.25, 0.25, 0.25, 1]
+      BorderColor: [0.5, 0.5, 0.5, 1]
+      Text: Button
+      FontHandle: 0
+      Color: [1, 1, 1, 1]
+      FontSize: 16
       Kerning: 0
       LineSpacing: -0.025
   ChildWidgets:

@@ -37,6 +37,7 @@
     <Compile Include="Class\Base\PassiveCard.cs" />
     <Compile Include="Class\Base\PolicyCard.cs" />
     <Compile Include="Scripts\GameManager.cs" />
+    <Compile Include="Scripts\TestCard.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="IgniteScriptEngine">

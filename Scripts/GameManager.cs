@@ -14,6 +14,8 @@ public class GameManager  : Entity
     private List<Vector3> targetRotations = new List<Vector3>();
 
     private Entity? lastHoveredEntity = null;
+
+    [SerializeField]
     private float hoverOffset = 0.25f;
     private float hoverSpeed = 8.0f;
     private ulong hoverLastID = 0;
