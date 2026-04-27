@@ -1,4 +1,4 @@
-﻿namespace TestProject.Scripts.Cards.Effects
+﻿namespace TestProject.Scripts.Cards.Effects.EffectMisc
 {
     public enum EMetrics    : byte
     {
