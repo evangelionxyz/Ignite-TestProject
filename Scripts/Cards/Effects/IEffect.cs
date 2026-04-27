@@ -5,6 +5,6 @@ namespace TestProject.Scripts.Cards.Effects
 {
     public interface IEffect
     {
-        public void Apply(CardSlot slot, TermContext pending);
+        public void Apply(Card[] dock, int index, TermContext pending);
     }
 }

@@ -17,9 +17,9 @@ namespace TestProject.Scripts.Games
         private int _maxActionCards = 3;
         private int _ActionCardsCount = 0;
 
-        private List<Card> _deck = [];
-        private List<Card> _hand = [];
-        private List<Card> _discardPile = [] ;
+        private List<PolicyCard> _deck = [];
+        private List<PolicyCard> _hand = [];
+        private List<PolicyCard> _discardPile = [] ;
         private List<MandateCard> _mandates = [];
         private List<ActionCard> _actionCards = [];
 
@@ -45,7 +45,7 @@ namespace TestProject.Scripts.Games
             _deck.RemoveRange(0, handSize);
         }
 
-        public bool TryRemoveCardFromDeck(Card card)
+        public bool TryRemoveCardFromDeck(PolicyCard card)
         {
             if (_hand.Contains(card))
             {
@@ -80,7 +80,7 @@ namespace TestProject.Scripts.Games
 
         public MandateCard? ReplaceMandate(int slotIndex, MandateCard mandate)
         {
-            if (!mandate.isSellable) return null;
+            if (!mandate.IsSellable) return null;
 
             if (slotIndex < 0 || slotIndex >= _mandates.Count) return null;
 
@@ -100,7 +100,7 @@ namespace TestProject.Scripts.Games
 
         public MandateCard? SellMandate(int slotIndex)
         {
-            if (!_mandates[slotIndex].isSellable) return null;
+            if (!_mandates[slotIndex].IsSellable) return null;
 
             if (slotIndex < 0 || slotIndex >= _mandates.Count) return null;
 
