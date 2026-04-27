@@ -8,7 +8,7 @@ using TestProject.Scripts.Cards;
 
 namespace TestProject.Scripts.Games
 {
-    class DeckManager
+    public class DeckManager
     {
         [SerializeField]
         private int _maxMandates = 5;
@@ -23,9 +23,9 @@ namespace TestProject.Scripts.Games
         private List<MandateCard> _mandates = [];
         private List<ActionCard> _actionCards = [];
 
-        public IReadOnlyList<Card> Deck => _deck;
-        public IReadOnlyList<Card> Hand => _hand;
-        public IReadOnlyList<Card> DiscardPile => _discardPile;
+        public IReadOnlyList<PolicyCard> Deck => _deck;
+        public IReadOnlyList<PolicyCard> Hand => _hand;
+        public IReadOnlyList<PolicyCard> DiscardPile => _discardPile;
         public IReadOnlyList<MandateCard> Mandates => _mandates;
         public IReadOnlyList<ActionCard> ActionCards => _actionCards;
 
@@ -43,6 +43,21 @@ namespace TestProject.Scripts.Games
             ShuffleDeck(seed);
             _hand.Concat(_deck[..handSize]);
             _deck.RemoveRange(0, handSize);
+        }
+
+        public PolicyCard? TrySelectCardFromHand(int index) 
+        {
+            if (index < 0 || index >= _hand.Count()) return null;
+
+            var card = _hand[index];
+            _hand.RemoveAt(index);
+            
+            return card;
+        }
+
+        public void UnselectCardToHand(PolicyCard card)
+        {
+            _hand.Add(card);
         }
 
         public bool TryRemoveCardFromDeck(PolicyCard card)

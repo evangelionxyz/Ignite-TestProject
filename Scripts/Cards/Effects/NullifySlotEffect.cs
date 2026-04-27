@@ -23,6 +23,9 @@ namespace TestProject.Scripts.Cards.Effects
             if (_slotIndexToNullify < 0 || _slotIndexToNullify >= pending.Docks.Length) return;
 
             pending.Docks[_slotIndexToNullify].IsNullified = true;
+            pending.Docks[_slotIndexToNullify].Modifiers.Add(new Games.ModifierEntry(
+                _slotIndexToNullify, EMetrics.Default, 0, Run.Misc.EModifierType.Nullify
+                ));
         }
     }
 }

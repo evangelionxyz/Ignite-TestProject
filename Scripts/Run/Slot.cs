@@ -5,7 +5,6 @@ namespace TestProject.Scripts.Games
 {
     public class Slot
     {
-        public string? CardId;
         public PolicyCard? Card;
 
         public int BaseGdpFlatBonus = 0;
@@ -34,11 +33,10 @@ namespace TestProject.Scripts.Games
 
         public int FinalEffectToLowClass => Card is null ? 0 
             : (int)((Card.EffectToLowClass + EffectToLowClassFlatBonus) * EffectToLowClassMultiplier);
-    
-        public void ResolveCard()
+
+        public Slot(PolicyCard? card)
         {
-            if (CardId is null) return;
-            Card = CardRegistry.Get(CardId) as PolicyCard;
+            Card = card;
         }
     }
 }

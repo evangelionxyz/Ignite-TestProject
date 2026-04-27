@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using TestProject.Scripts.Cards.Effects.EffectHandler;
 using TestProject.Scripts.Cards.Effects.EffectMisc;
+using TestProject.Scripts.Games;
 using TestProject.Scripts.Run;
+using TestProject.Scripts.Run.Misc;
 
 namespace TestProject.Scripts.Cards.Effects
 {
@@ -26,10 +28,14 @@ namespace TestProject.Scripts.Cards.Effects
             if (dock.Length <= 0) return;
 
             if (_adjacentType == EAdjacentType.Left || _adjacentType == EAdjacentType.Both)
+            { 
                 AddMultiplier(_metricsApplied, _multiplier, pending, index - 1);
+            }
 
             if (_adjacentType == EAdjacentType.Right || _adjacentType == EAdjacentType.Both)
+            {
                 AddMultiplier(_metricsApplied, _multiplier, pending, index + 1);
+            }
         }
 
         private void AddMultiplier(EMetrics metric, float multiplier, TermContext pending, int targetIdx)

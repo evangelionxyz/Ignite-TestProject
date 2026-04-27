@@ -1,4 +1,4 @@
-﻿namespace TestProject.Scripts.Games
+﻿namespace TestProject.Scripts.Run.Misc
 {
     public enum EModifierType : byte
     {
