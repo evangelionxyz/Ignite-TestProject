@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TestProject.Class.Base
+namespace TestProject.Scripts.Cards.Misc
 {
     public enum EPolicyType: byte
     {
@@ -8,5 +8,6 @@ namespace TestProject.Class.Base
         Industry = 1,
         Welfare = 2,
         Green = 3,
+        Junk = 4,
     }
 }
