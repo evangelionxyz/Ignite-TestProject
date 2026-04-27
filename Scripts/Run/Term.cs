@@ -19,16 +19,14 @@ namespace TestProject.Scripts.Games
 
         private RunState _runState;
         private DeckManager _deckManager;
-        public EPhase Phase;
 
-        public TermContext TermData;
+        public TermContext State;
 
-        public Term(TermContext termData, RunState runState, DeckManager deckManager)
+        public Term(RunState runState, DeckManager deckManager)
         {
-            TermData = termData;
+            State = new(_handSize);
             _runState = runState;
             _deckManager = deckManager;
-            Phase = EPhase.Term;
         }
 
 
@@ -44,37 +42,37 @@ namespace TestProject.Scripts.Games
         public bool TryPlaceCardToDock(int handIndex, int dockIndex, out PolicyCard? card)
         {
             card = null;
-            if (dockIndex > 0 || dockIndex < TermData.Docks.Length) return false;
+            if (dockIndex > 0 || dockIndex < State.Docks.Length) return false;
 
             var temp = _deckManager.TrySelectCardFromHand(handIndex);
             if (temp == null) return false;
 
-            card = TermData.Docks[dockIndex].Card;
-            TermData.Docks[dockIndex].Card = temp;
+            card = State.Docks[dockIndex].Card;
+            State.Docks[dockIndex].Card = temp;
             return true;
         }
 
         public bool TryRemoveCardFromDock(int dockIndex, out PolicyCard? card)
         {
             card = null;
-            if (dockIndex > 0 || dockIndex < TermData.Docks.Length) return false;
+            if (dockIndex > 0 || dockIndex < State.Docks.Length) return false;
 
-            card = TermData.Docks[dockIndex].Card;
+            card = State.Docks[dockIndex].Card;
             if (card == null) return false;
 
             _deckManager.UnselectCardToHand(card);
-            TermData.Docks[dockIndex].Card = null;
+            State.Docks[dockIndex].Card = null;
             return true;
         }
 
         public TermContext ExecuteTerm()
         {
-            var pending = new TermContext(TermData.Docks.Length);
+            var pending = new TermContext(State.Docks.Length);
 
-            PolicyCard[] dock = new PolicyCard[TermData.Docks.Length];
-            for (int i = 0; i < TermData.Docks.Length; i++)
+            PolicyCard[] dock = new PolicyCard[State.Docks.Length];
+            for (int i = 0; i < State.Docks.Length; i++)
             {
-                dock[i] = TermData.Docks[i].Card;
+                dock[i] = State.Docks[i].Card;
                 pending.Docks[i] = new Slot(dock[i]);
             }
 
@@ -99,10 +97,10 @@ namespace TestProject.Scripts.Games
             {
                 if (slot.Card is null || slot.IsDisabled) continue;
 
-                TermData.TotalGdpGenerated += slot.FinalBaseGdp;
-                TermData.TotalBiosphereChange += slot.FinalEffectToNature;
-                TermData.TotalHighClassApprovalChange += slot.FinalEffectToHighClass;
-                TermData.TotalLowClassApprovalChange += slot.FinalEffectToLowClass;
+                State.TotalGdpGenerated += slot.FinalBaseGdp;
+                State.TotalBiosphereChange += slot.FinalEffectToNature;
+                State.TotalHighClassApprovalChange += slot.FinalEffectToHighClass;
+                State.TotalLowClassApprovalChange += slot.FinalEffectToLowClass;
             }
 
             return pending;
