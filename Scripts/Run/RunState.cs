@@ -40,7 +40,7 @@ namespace TestProject.Scripts.Games
         public bool isRevolution => HighClassApproval <= 0 || LowClassApproval <= 0;
         public bool isEcologicalCollapse => Biosphere <= 0;
 
-        public void AddTreasuy(int amount) => Treasury += amount;
+        public void AddTreasury(int amount) => Treasury += amount;
         public void SpendTreasury(int amount) => Treasury = Math.Max(0, Treasury - amount);
 
         public void AdvanceRound()
