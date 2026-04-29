@@ -27,7 +27,7 @@ Scene:
         LocalScale: [43.13925, 23.72659, 43.13925]
         Visible: true
       Sprite2D:
-        MaterialHandle: 10793323259493303610
+        MaterialHandle: 0
         Handle: 12365291819084358679
         Color: [0.91085273, 0.91085273, 0.91085273, 1]
         TilingFactor: [1, 1]
@@ -41,10 +41,10 @@ Scene:
       Parent: 0
       Transform:
         WorldTranslation: [0, 15, 0]
-        WorldRotation: [0.00017374392, 0.70724744, 0.7069661, -0.0001730318]
-        WorldScale: [0.99999976, 0.9999999, 0.9999999]
+        WorldRotation: [-0.7072499, 1.8901626e-06, -1.8893976e-06, 0.70696366]
+        WorldScale: [1, 1, 1]
         LocalTranslation: [0, 15, 0]
-        LocalRotation: [0.00017374389, 0.7072474, 0.70696604, -0.00017303176]
+        LocalRotation: [-0.7072499, 1.8901626e-06, -1.8893976e-06, 0.70696366]
         LocalScale: [1, 1, 1]
         Visible: true
       Camera:
@@ -56,9 +56,9 @@ Scene:
         Fov: 45
         Primary: true
         PostProcessing:
-          EnableVignette: true
-          EnableChromAb: true
-          EnableBloom: true
+          EnableVignette: false
+          EnableChromAb: false
+          EnableBloom: false
           EnableSSAO: false
           DebugSSAO: false
           BloomIntensity: 1.26
@@ -93,10 +93,10 @@ Scene:
       Type: Node
       Parent: 6226697680794071872
       Transform:
-        WorldTranslation: [2.35, 0, 0]
+        WorldTranslation: [2.35, 0, 13.649999]
         WorldRotation: [0, 0, 0, 1]
         WorldScale: [1, 1, 1]
-        LocalTranslation: [2.35, 0, 0]
+        LocalTranslation: [2.35, 0, 13.649999]
         LocalRotation: [0, 0, 0, 1]
         LocalScale: [1, 1, 1]
         Visible: true
@@ -105,10 +105,10 @@ Scene:
       Type: Node
       Parent: 6226697680794071872
       Transform:
-        WorldTranslation: [-2.4000006, 0, 0]
+        WorldTranslation: [-2.4000006, 0, 13.649999]
         WorldRotation: [0, 0, 0, 1]
         WorldScale: [1, 1, 1]
-        LocalTranslation: [-2.4000006, 0, 0]
+        LocalTranslation: [-2.4000006, 0, 13.649999]
         LocalRotation: [0, 0, 0, 1]
         LocalScale: [1, 1, 1]
         Visible: true
@@ -117,6 +117,18 @@ Scene:
       Type: Node
       Parent: 6226697680794071872
       Transform:
+        WorldTranslation: [0, 0, 13.649999]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [1, 1, 1]
+        LocalTranslation: [0, 0, 13.649999]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [1, 1, 1]
+        Visible: true
+    - ID: 12839326066179410164
+      Name: ClickSound
+      Type: Node
+      Parent: 4370258278033951322
+      Transform:
         WorldTranslation: [0, 0, 0]
         WorldRotation: [0, 0, 0, 1]
         WorldScale: [1, 1, 1]
@@ -124,6 +136,15 @@ Scene:
         LocalRotation: [0, 0, 0, 1]
         LocalScale: [1, 1, 1]
         Visible: true
+      AudioSource:
+        Handle: 1799881210558115287
+        Volume: 1
+        Pitch: 1
+        Pan: 0
+        PlayOnStart: false
+        Loop: false
+        DSPs:
+          []
     - ID: 17542772688799778957
       Name: Directional Light
       Type: Node
@@ -146,18 +167,34 @@ Scene:
         PCFRadius: 0.3
         ShadowResolution: 2
         CascadeShadow: false
-    - ID: 11423374876503025644
+    - ID: 9865094274111950938
       Name: GFX
       Type: Node
-      Parent: 17777464935153307247
+      Parent: 9881830280760123389
       Transform:
-        WorldTranslation: [2.35, 0, 0]
+        WorldTranslation: [-2.4000006, 0, 13.649999]
         WorldRotation: [0, 0, 0, 1]
         WorldScale: [1, 1, 1]
         LocalTranslation: [0, 0, 0]
         LocalRotation: [0, 0, 0, 1]
         LocalScale: [1, 1, 1]
-        Visible: false
+        Visible: true
+      Mesh:
+        Handle: 5326749717763311860
+        AnimatorHandle: 0
+        UniqueAnimator: true
+    - ID: 11423374876503025644
+      Name: GFX
+      Type: Node
+      Parent: 17777464935153307247
+      Transform:
+        WorldTranslation: [2.35, 0, 13.649999]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [1, 1, 1]
+        LocalTranslation: [0, 0, 0]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [1, 1, 1]
+        Visible: true
       Mesh:
         Handle: 775153008294271998
         AnimatorHandle: 0
@@ -167,31 +204,15 @@ Scene:
       Type: Node
       Parent: 2404672232383032878
       Transform:
-        WorldTranslation: [0, 0, 0]
+        WorldTranslation: [0, 0, 13.649999]
         WorldRotation: [-0.00019219168, 0, 0, 1]
         WorldScale: [1, 1, 1]
         LocalTranslation: [0, 0, 0]
         LocalRotation: [-0.00019219168, -0, 0, 1]
         LocalScale: [1, 1, 1]
-        Visible: false
+        Visible: true
       Mesh:
         Handle: 110278436566408583
-        AnimatorHandle: 0
-        UniqueAnimator: true
-    - ID: 9865094274111950938
-      Name: GFX
-      Type: Node
-      Parent: 9881830280760123389
-      Transform:
-        WorldTranslation: [-2.4000006, 0, 0]
-        WorldRotation: [0, 0, 0, 1]
-        WorldScale: [1, 1, 1]
-        LocalTranslation: [0, 0, 0]
-        LocalRotation: [0, 0, 0, 1]
-        LocalScale: [1, 1, 1]
-        Visible: false
-      Mesh:
-        Handle: 5326749717763311860
         AnimatorHandle: 0
         UniqueAnimator: true
     - ID: 10598226724644324950
@@ -209,27 +230,57 @@ Scene:
       Script:
         ClassName: TestProject.GameManager
         Fields:
-          - Name: cardTemplate
+          - Name: myString
+            Type: String
+            Value: Test String
+          - Name: cardMining
+            Type: Entity
+            Value: 17777464935153307247
+          - Name: cardReforestation
             Type: Entity
             Value: 2404672232383032878
-          - Name: maxFanAngle
-            Type: Float
-            Value: 0.05
+          - Name: cardEducation
+            Type: Entity
+            Value: 9881830280760123389
           - Name: hoverOffset
             Type: Float
             Value: 0
           - Name: cardCount
             Type: Int
             Value: 6
-          - Name: targetZ
-            Type: Float
-            Value: -1.6
           - Name: cardSpacing
             Type: Float
             Value: 2.7
           - Name: startZ
             Type: Float
-            Value: -8
+            Value: 8
+          - Name: targetZ
+            Type: Float
+            Value: 4
+          - Name: maxFanAngle
+            Type: Float
+            Value: 0.05
+    - ID: 8586129810928389309
+      Name: HoverSound
+      Type: Node
+      Parent: 4370258278033951322
+      Transform:
+        WorldTranslation: [0, 0, 0]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [1, 1, 1]
+        LocalTranslation: [0, 0, 0]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [1, 1, 1]
+        Visible: true
+      AudioSource:
+        Handle: 9920694308132549009
+        Volume: 0.565
+        Pitch: 1
+        Pan: 0
+        PlayOnStart: false
+        Loop: false
+        DSPs:
+          []
     - ID: 10541829669440570974
       Name: LeftPointLight
       Type: Node
@@ -281,22 +332,202 @@ Scene:
         Radius: 10.2
         Intensity: 1
         Enabled: true
-    - ID: 8817067673857289243
-      Name: Test
+    - ID: 918751774620183822
+      Name: Val_1
+      Type: Node
+      Parent: 17777464935153307247
+      Transform:
+        WorldTranslation: [2.9899998, 2.4199998, 13.679998]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [0.125, 0.125, 0.125]
+        LocalTranslation: [0.63999987, 2.4199998, 0.029999733]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [0.125, 0.125, 0.125]
+        Visible: true
+      TextComponent:
+        FontHandle: 4102674412946893508
+        Material2DHandle: 0
+        Text: "0.5\n"
+        Color: [1, 1, 1, 1]
+        Kerning: 0
+        LineSpacing: -0.025
+        ScreenSpace: false
+    - ID: 2826796893688437930
+      Name: Val_1
+      Type: Node
+      Parent: 9881830280760123389
+      Transform:
+        WorldTranslation: [-1.7600007, 2.4299998, 13.679998]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [0.125, 0.125, 0.125]
+        LocalTranslation: [0.63999987, 2.4299998, 0.029999733]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [0.125, 0.125, 0.125]
+        Visible: true
+      TextComponent:
+        FontHandle: 4102674412946893508
+        Material2DHandle: 0
+        Text: "0.5\n"
+        Color: [1, 1, 1, 1]
+        Kerning: 0
+        LineSpacing: -0.025
+        ScreenSpace: false
+    - ID: 17380560797359798382
+      Name: Val_1
+      Type: Node
+      Parent: 2404672232383032878
+      Transform:
+        WorldTranslation: [0.6399999, 2.3899999, 13.679998]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [0.125, 0.125, 0.125]
+        LocalTranslation: [0.6399999, 2.3899999, 0.029999733]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [0.125, 0.125, 0.125]
+        Visible: true
+      TextComponent:
+        FontHandle: 4102674412946893508
+        Material2DHandle: 0
+        Text: "0.5\n"
+        Color: [1, 1, 1, 1]
+        Kerning: 0
+        LineSpacing: -0.025
+        ScreenSpace: false
+    - ID: 15727440722123443677
+      Name: Val_2
+      Type: Node
+      Parent: 17777464935153307247
+      Transform:
+        WorldTranslation: [2.9899998, 2.2699997, 13.679998]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [0.125, 0.125, 0.125]
+        LocalTranslation: [0.63999987, 2.2699997, 0.029999733]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [0.125, 0.125, 0.125]
+        Visible: true
+      TextComponent:
+        FontHandle: 4102674412946893508
+        Material2DHandle: 0
+        Text: "0.5\n"
+        Color: [1, 1, 1, 1]
+        Kerning: 0
+        LineSpacing: -0.025
+        ScreenSpace: false
+    - ID: 426156124450753879
+      Name: Val_2
+      Type: Node
+      Parent: 9881830280760123389
+      Transform:
+        WorldTranslation: [-1.7600007, 2.2799997, 13.679998]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [0.125, 0.125, 0.125]
+        LocalTranslation: [0.63999987, 2.2799997, 0.029999733]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [0.125, 0.125, 0.125]
+        Visible: true
+      TextComponent:
+        FontHandle: 4102674412946893508
+        Material2DHandle: 0
+        Text: "0.5\n"
+        Color: [1, 1, 1, 1]
+        Kerning: 0
+        LineSpacing: -0.025
+        ScreenSpace: false
+    - ID: 6104492716181671339
+      Name: Val_2
+      Type: Node
+      Parent: 2404672232383032878
+      Transform:
+        WorldTranslation: [0.6399999, 2.2399998, 13.679998]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [0.125, 0.125, 0.125]
+        LocalTranslation: [0.6399999, 2.2399998, 0.029999733]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [0.125, 0.125, 0.125]
+        Visible: true
+      TextComponent:
+        FontHandle: 4102674412946893508
+        Material2DHandle: 0
+        Text: "0.5\n"
+        Color: [1, 1, 1, 1]
+        Kerning: 0
+        LineSpacing: -0.025
+        ScreenSpace: false
+    - ID: 6150944817132330697
+      Name: Val_3
+      Type: Node
+      Parent: 9881830280760123389
+      Transform:
+        WorldTranslation: [-1.7600007, 2.1399996, 13.679998]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [0.125, 0.125, 0.125]
+        LocalTranslation: [0.63999987, 2.1399996, 0.029999733]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [0.125, 0.125, 0.125]
+        Visible: true
+      TextComponent:
+        FontHandle: 4102674412946893508
+        Material2DHandle: 0
+        Text: "0.5\n"
+        Color: [1, 1, 1, 1]
+        Kerning: 0
+        LineSpacing: -0.025
+        ScreenSpace: false
+    - ID: 13116113021701638839
+      Name: Val_3
+      Type: Node
+      Parent: 2404672232383032878
+      Transform:
+        WorldTranslation: [0.6399999, 2.0999997, 13.679998]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [0.125, 0.125, 0.125]
+        LocalTranslation: [0.6399999, 2.0999997, 0.029999733]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [0.125, 0.125, 0.125]
+        Visible: true
+      TextComponent:
+        FontHandle: 4102674412946893508
+        Material2DHandle: 0
+        Text: "0.5\n"
+        Color: [1, 1, 1, 1]
+        Kerning: 0
+        LineSpacing: -0.025
+        ScreenSpace: false
+    - ID: 5748049360294812014
+      Name: Val_3
+      Type: Node
+      Parent: 17777464935153307247
+      Transform:
+        WorldTranslation: [2.9899998, 2.1299996, 13.679998]
+        WorldRotation: [0, 0, 0, 1]
+        WorldScale: [0.125, 0.125, 0.125]
+        LocalTranslation: [0.63999987, 2.1299996, 0.029999733]
+        LocalRotation: [0, 0, 0, 1]
+        LocalScale: [0.125, 0.125, 0.125]
+        Visible: true
+      TextComponent:
+        FontHandle: 4102674412946893508
+        Material2DHandle: 0
+        Text: "0.5\n"
+        Color: [1, 1, 1, 1]
+        Kerning: 0
+        LineSpacing: -0.025
+        ScreenSpace: false
+    - ID: 4370258278033951322
+      Name: Widget
       Type: Node
       Parent: 0
       Transform:
-        WorldTranslation: [0, 6.6000004, 0]
+        WorldTranslation: [0, 0, 0]
         WorldRotation: [0, 0, 0, 1]
         WorldScale: [1, 1, 1]
-        LocalTranslation: [0, 6.6000004, 0]
+        LocalTranslation: [0, 0, 0]
         LocalRotation: [0, 0, 0, 1]
         LocalScale: [1, 1, 1]
         Visible: true
-      Mesh:
-        Handle: 5326749717763311860
-        AnimatorHandle: 0
-        UniqueAnimator: true
+      WidgetComponent:
+        WidgetHandle: 4020518715610463129
+      Script:
+        ClassName: TestProject.UI.UIManager
     - ID: 8432316201469171861
       Name: World Environment
       Type: Audio
@@ -312,7 +543,7 @@ Scene:
       WorldEnvironment:
         Primary: false
         Enabled: true
-        HDRHandle: 0
+        HDRHandle: 7201159435847965647
         Exposure: 1
         Gamma: 2.075
         Ambient: 0.6

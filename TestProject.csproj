@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -20,7 +20,7 @@
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <ImplicitUsing>enable</ImplicitUsing>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
   </PropertyGroup>
   <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Reference Include="MochiSharp.Managed">
@@ -28,9 +28,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Scripts\**\*.cs" />
+    <Compile Include="Scripts\CardRegistry.cs" />
+    <Compile Include="Scripts\Cards\ActionCard.cs" />
+    <Compile Include="Scripts\Cards\Card.cs" />
+    <Compile Include="Scripts\Cards\DebtContract.cs" />
+    <Compile Include="Scripts\Cards\Effects\AdjacentMultiplierEffect.cs" />
+    <Compile Include="Scripts\Cards\Effects\EffectMisc\EAdjacentType.cs" />
+    <Compile Include="Scripts\Cards\Effects\EffectMisc\EMetrics.cs" />
+    <Compile Include="Scripts\Cards\Effects\EffectMisc\IEffect.cs" />
+    <Compile Include="Scripts\Cards\Effects\EffectMisc\StaticEffectHandler.cs" />
+    <Compile Include="Scripts\Cards\Effects\HalveNeighborDamage.cs" />
+    <Compile Include="Scripts\Cards\Effects\NullifySlotEffect.cs" />
+    <Compile Include="Scripts\Cards\Effects\PollutionEffect.cs" />
+    <Compile Include="Scripts\Cards\Effects\SpawnCardEffect.cs" />
+    <Compile Include="Scripts\Cards\Effects\SpecificIndicesFlatEffect.cs" />
+    <Compile Include="Scripts\Cards\MandateCard.cs" />
+    <Compile Include="Scripts\Cards\Misc\EPolicyType.cs" />
+    <Compile Include="Scripts\Cards\Misc\ERarity.cs" />
+    <Compile Include="Scripts\Cards\PolicyCard.cs" />
+    <Compile Include="Scripts\Cards\ProspectCard.cs" />
     <Compile Include="Scripts\GameManager.cs" />
+    <Compile Include="Scripts\Run\DeckManager.cs" />
+    <Compile Include="Scripts\Run\Misc\EGameOverReason.cs" />
+    <Compile Include="Scripts\Run\Misc\EModifierType.cs" />
+    <Compile Include="Scripts\Run\Misc\EPhase.cs" />
+    <Compile Include="Scripts\Run\Misc\EventBus.cs" />
+    <Compile Include="Scripts\Run\ModifierEntry.cs" />
+    <Compile Include="Scripts\Run\Run.cs" />
+    <Compile Include="Scripts\Run\RunState.cs" />
+    <Compile Include="Scripts\Run\Shop.cs" />
+    <Compile Include="Scripts\Run\Slot.cs" />
+    <Compile Include="Scripts\Run\Term.cs" />
+    <Compile Include="Scripts\Run\TermContext.cs" />
+    <Compile Include="Scripts\States\IState.cs" />
+    <Compile Include="Scripts\States\StateMachine.cs" />
     <Compile Include="Scripts\TestCard.cs" />
+    <Compile Include="Scripts\UI\UIManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="IgniteScriptEngine">

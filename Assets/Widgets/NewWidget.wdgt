@@ -3,17 +3,17 @@ Widget:
   Name: NewWidget
   Enabled: true
   BlocksWidgetsBelow: false
-  NextItemId: 7
   Items:
     - Name: Canvas Root
       ID: 1
       ParentID: 0
       Type: 0
-      Position: [0, 152]
+      Position: [0, 0]
       Size: [150, 170]
-      Alignment: 4
-      SizingMode: 0
+      VerticalAlignment: 0
+      HorizontalAligment: 2
       Visible: true
+      ZIndex: 0
       Layout: 1
       Padding: 0
       Gap: 10
@@ -23,16 +23,18 @@ Widget:
       Type: 1
       Position: [0, 0]
       Size: [150, 50]
-      Alignment: 1
-      SizingMode: 0
+      VerticalAlignment: 0
+      HorizontalAligment: 0
       Visible: true
+      ZIndex: 0
       ImageHandle: 0
       NormalColor: [0, 0.3488372, 0.15413727, 1]
       HoverColor: [0.7209302, 0.6538669, 0, 1]
       PressedColor: [0, 0.6538669, 0.7209302, 1]
       BorderColor: [0, 0.6538669, 0.7209302, 1]
-      Text: Start
+      CornerRadius: 0
       FontHandle: 4102674412946893508
+      Text: Start
       Color: [1, 1, 1, 1]
       FontSize: 18
       Kerning: 0
@@ -43,16 +45,18 @@ Widget:
       Type: 1
       Position: [0, 0]
       Size: [150, 50]
-      Alignment: 1
-      SizingMode: 0
+      VerticalAlignment: 0
+      HorizontalAligment: 0
       Visible: true
+      ZIndex: 0
       ImageHandle: 0
       NormalColor: [0, 0.4272579, 0.6124031, 1]
       HoverColor: [0.72156864, 0.654902, 0, 1]
       PressedColor: [0, 0.654902, 0.72156864, 1]
       BorderColor: [0, 0.654902, 0.72156864, 1]
-      Text: Options
+      CornerRadius: 0
       FontHandle: 4102674412946893508
+      Text: Options
       Color: [1, 1, 1, 1]
       FontSize: 16
       Kerning: 0
@@ -63,16 +67,18 @@ Widget:
       Type: 1
       Position: [0, 0]
       Size: [150, 50]
-      Alignment: 1
-      SizingMode: 0
+      VerticalAlignment: 0
+      HorizontalAligment: 0
       Visible: true
+      ZIndex: 0
       ImageHandle: 0
       NormalColor: [0.74418604, 0, 0, 1]
       HoverColor: [0.72156864, 0.654902, 0, 1]
       PressedColor: [0, 0.654902, 0.72156864, 1]
       BorderColor: [0, 0.654902, 0.72156864, 1]
-      Text: Exit
+      CornerRadius: 0
       FontHandle: 4102674412946893508
+      Text: Exit
       Color: [1, 1, 1, 1]
       FontSize: 16
       Kerning: 0
@@ -83,16 +89,18 @@ Widget:
       Type: 1
       Position: [0, 0]
       Size: [150, 50]
-      Alignment: 0
-      SizingMode: 0
+      VerticalAlignment: 0
+      HorizontalAligment: 0
       Visible: true
+      ZIndex: 0
       ImageHandle: 0
       NormalColor: [0.25, 0.25, 0.25, 1]
       HoverColor: [0.5, 0.5, 0.5, 1]
       PressedColor: [0.25, 0.25, 0.25, 1]
       BorderColor: [0.5, 0.5, 0.5, 1]
-      Text: Button
+      CornerRadius: 0
       FontHandle: 0
+      Text: Button
       Color: [1, 1, 1, 1]
       FontSize: 16
       Kerning: 0

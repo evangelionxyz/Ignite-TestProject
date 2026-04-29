@@ -9,7 +9,7 @@ namespace TestProject.Scripts.Cards
 {
     public abstract class Card
     {
-        private int _id;
+        private string _id;
         private string _name;
         private string _effectDesc;
         private List<IEffect> _effects;
@@ -18,7 +18,7 @@ namespace TestProject.Scripts.Cards
         public string EffectDesc => _effectDesc;
         public IReadOnlyList<IEffect> Effects => _effects;
 
-        public Card(int id, string name, string effectDesc, List<IEffect> effects)
+        public Card(string id, string name, string effectDesc, List<IEffect> effects)
         {
             _id = id;
             _name = name;

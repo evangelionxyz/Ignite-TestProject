@@ -3,82 +3,40 @@ Widget:
   Name: Play
   Enabled: true
   BlocksWidgetsBelow: false
-  NextItemId: 20
   Items:
     - Name: Test
       ID: 1
       ParentID: 0
       Type: 0
-      Position: [0, 56]
-      Size: [159.72217, 530.3336]
-      Alignment: 0
-      SizingMode: 0
+      Position: [0, 0]
+      Size: [175, 300]
+      VerticalAlignment: 2
+      HorizontalAligment: 0
       Visible: true
       ZIndex: 0
       Layout: 1
-      Padding: 0
-      Gap: 5
-    - Name: ""
-      ID: 17
-      ParentID: 1
-      Type: 1
-      Position: [0, 0]
-      Size: [159, 88]
-      Alignment: 0
-      SizingMode: 0
-      Visible: true
-      ZIndex: 0
-      ImageHandle: 0
-      NormalColor: [0.25, 0.25, 0.25, 1]
-      HoverColor: [0.5, 0.5, 0.5, 1]
-      PressedColor: [0.25, 0.25, 0.25, 1]
-      BorderColor: [0.5, 0.5, 0.5, 1]
-      Text: Button
-      FontHandle: 0
-      Color: [1, 1, 1, 1]
-      FontSize: 16
-      Kerning: 0
-      LineSpacing: -0.025
+      Padding: 12
+      Gap: 10
     - Name: start_button
       ID: 2
       ParentID: 1
       Type: 1
       Position: [0, 0]
-      Size: [157, 95]
-      Alignment: 0
-      SizingMode: 0
+      Size: [154, 54]
+      VerticalAlignment: 0
+      HorizontalAligment: 0
       Visible: true
       ZIndex: 6
       ImageHandle: 0
-      NormalColor: [0.76744187, 0, 0, 1]
+      NormalColor: [0.76862746, 0, 0, 1]
       HoverColor: [0.95348835, 0, 0, 1]
       PressedColor: [0.67441857, 0, 0, 1]
-      BorderColor: [0.5, 0.5, 0.5, 1]
-      Text: Start
+      BorderColor: [0.5019608, 0.5019608, 0.5019608, 1]
+      CornerRadius: 0
       FontHandle: 4102674412946893508
+      Text: Start
       Color: [1, 1, 1, 1]
-      FontSize: 19.525
-      Kerning: 0
-      LineSpacing: -0.025
-    - Name: ""
-      ID: 18
-      ParentID: 1
-      Type: 1
-      Position: [0, 0]
-      Size: [157, 50]
-      Alignment: 0
-      SizingMode: 0
-      Visible: true
-      ZIndex: 0
-      ImageHandle: 0
-      NormalColor: [0.25, 0.25, 0.25, 1]
-      HoverColor: [0.5, 0.5, 0.5, 1]
-      PressedColor: [0.25, 0.25, 0.25, 1]
-      BorderColor: [0.5, 0.5, 0.5, 1]
-      Text: Button
-      FontHandle: 0
-      Color: [1, 1, 1, 1]
-      FontSize: 16
+      FontSize: 24
       Kerning: 0
       LineSpacing: -0.025
     - Name: ""
@@ -87,8 +45,8 @@ Widget:
       Type: 1
       Position: [0, 0]
       Size: [150, 50]
-      Alignment: 0
-      SizingMode: 0
+      VerticalAlignment: 0
+      HorizontalAligment: 0
       Visible: true
       ZIndex: 0
       ImageHandle: 0
@@ -96,20 +54,21 @@ Widget:
       HoverColor: [0.5, 0.5, 0.5, 1]
       PressedColor: [0.25, 0.25, 0.25, 1]
       BorderColor: [0.5, 0.5, 0.5, 1]
-      Text: Button
+      CornerRadius: 0
       FontHandle: 0
+      Text: ""
       Color: [1, 1, 1, 1]
       FontSize: 16
       Kerning: 0
-      LineSpacing: -0.025
+      LineSpacing: 0.025
     - Name: ""
       ID: 14
       ParentID: 0
       Type: 1
       Position: [0, 0]
       Size: [150, 50]
-      Alignment: 0
-      SizingMode: 0
+      VerticalAlignment: 0
+      HorizontalAligment: 0
       Visible: true
       ZIndex: 0
       ImageHandle: 0
@@ -117,74 +76,56 @@ Widget:
       HoverColor: [0.5, 0.5, 0.5, 1]
       PressedColor: [0.25, 0.25, 0.25, 1]
       BorderColor: [0.5, 0.5, 0.5, 1]
-      Text: Button
+      CornerRadius: 0
       FontHandle: 0
+      Text: ""
       Color: [1, 1, 1, 1]
       FontSize: 16
       Kerning: 0
-      LineSpacing: -0.025
-    - Name: ""
-      ID: 15
-      ParentID: 1
-      Type: 1
-      Position: [0, 0]
-      Size: [155, 50]
-      Alignment: 0
-      SizingMode: 0
-      Visible: true
-      ZIndex: 0
-      ImageHandle: 0
-      NormalColor: [0.25, 0.25, 0.25, 1]
-      HoverColor: [0.5, 0.5, 0.5, 1]
-      PressedColor: [0.25, 0.25, 0.25, 1]
-      BorderColor: [0.5, 0.5, 0.5, 1]
-      Text: Button
-      FontHandle: 0
-      Color: [1, 1, 1, 1]
-      FontSize: 16
-      Kerning: 0
-      LineSpacing: -0.025
-    - Name: ""
-      ID: 16
-      ParentID: 1
-      Type: 1
-      Position: [0, 0]
-      Size: [156, 50]
-      Alignment: 0
-      SizingMode: 0
-      Visible: true
-      ZIndex: 0
-      ImageHandle: 0
-      NormalColor: [0.25, 0.25, 0.25, 1]
-      HoverColor: [0.5, 0.5, 0.5, 1]
-      PressedColor: [0.25, 0.25, 0.25, 1]
-      BorderColor: [0.5, 0.5, 0.5, 1]
-      Text: Button
-      FontHandle: 0
-      Color: [1, 1, 1, 1]
-      FontSize: 16
-      Kerning: 0
-      LineSpacing: -0.025
-    - Name: ""
+      LineSpacing: 0.025
+    - Name: stop_button
       ID: 19
       ParentID: 1
       Type: 1
       Position: [0, 0]
-      Size: [156, 50]
-      Alignment: 0
-      SizingMode: 0
+      Size: [155, 54]
+      VerticalAlignment: 0
+      HorizontalAligment: 0
+      Visible: true
+      ZIndex: 0
+      ImageHandle: 13589769746383350053
+      NormalColor: [0, 0.12745635, 0.78294575, 1]
+      HoverColor: [0.16783844, 0.2843777, 0.88372093, 1]
+      PressedColor: [0, 0.12745635, 0.78294575, 1]
+      BorderColor: [0.5, 0.5, 0.5, 1]
+      CornerRadius: 0
+      FontHandle: 4102674412946893508
+      Text: Stop
+      Color: [1, 1, 1, 1]
+      FontSize: 24
+      Kerning: 0
+      LineSpacing: -0.025
+    - Name: exit_button
+      ID: 20
+      ParentID: 1
+      Type: 1
+      Position: [0, 0]
+      Size: [155, 50]
+      VerticalAlignment: 0
+      HorizontalAligment: 0
       Visible: true
       ZIndex: 0
       ImageHandle: 0
-      NormalColor: [0.25, 0.25, 0.25, 1]
-      HoverColor: [0.5, 0.5, 0.5, 1]
-      PressedColor: [0.25, 0.25, 0.25, 1]
-      BorderColor: [0.5, 0.5, 0.5, 1]
-      Text: Button
-      FontHandle: 0
+      NormalColor: [0.79844964, 0.6127637, 0, 1]
+      HoverColor: [0.84108526, 0.77588475, 0.14018089, 1]
+      PressedColor: [0.79844964, 0.6127637, 0, 1]
+      BorderColor: [0.79844964, 0.6127637, 0, 1]
+      CornerRadius: 0
+      FontHandle: 4102674412946893508
+      Text: Exit
       Color: [1, 1, 1, 1]
-      FontSize: 16
+      FontSize: 24
       Kerning: 0
-      LineSpacing: -0.025
+      LineSpacing: 0.025
   ChildWidgets:
     []
