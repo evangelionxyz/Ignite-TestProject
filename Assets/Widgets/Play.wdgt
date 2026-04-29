@@ -9,20 +9,20 @@ Widget:
       ParentID: 0
       Type: 0
       Position: [0, 0]
-      Size: [175, 300]
+      Size: [140, 124]
       VerticalAlignment: 2
       HorizontalAligment: 0
       Visible: true
       ZIndex: 0
       Layout: 1
-      Padding: 12
-      Gap: 10
+      Padding: 10
+      Gap: 8
     - Name: start_button
       ID: 2
       ParentID: 1
       Type: 1
       Position: [0, 0]
-      Size: [154, 54]
+      Size: [120, 28]
       VerticalAlignment: 0
       HorizontalAligment: 0
       Visible: true
@@ -36,7 +36,7 @@ Widget:
       FontHandle: 4102674412946893508
       Text: Start
       Color: [1, 1, 1, 1]
-      FontSize: 24
+      FontSize: 16
       Kerning: 0
       LineSpacing: -0.025
     - Name: ""
@@ -88,7 +88,7 @@ Widget:
       ParentID: 1
       Type: 1
       Position: [0, 0]
-      Size: [155, 54]
+      Size: [120, 28]
       VerticalAlignment: 0
       HorizontalAligment: 0
       Visible: true
@@ -102,7 +102,7 @@ Widget:
       FontHandle: 4102674412946893508
       Text: Stop
       Color: [1, 1, 1, 1]
-      FontSize: 24
+      FontSize: 16
       Kerning: 0
       LineSpacing: -0.025
     - Name: exit_button
@@ -110,7 +110,7 @@ Widget:
       ParentID: 1
       Type: 1
       Position: [0, 0]
-      Size: [155, 50]
+      Size: [120, 28]
       VerticalAlignment: 0
       HorizontalAligment: 0
       Visible: true
@@ -124,7 +124,7 @@ Widget:
       FontHandle: 4102674412946893508
       Text: Exit
       Color: [1, 1, 1, 1]
-      FontSize: 24
+      FontSize: 16
       Kerning: 0
       LineSpacing: 0.025
   ChildWidgets:
