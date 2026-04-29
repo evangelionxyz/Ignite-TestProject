@@ -1,0 +1,59 @@
+Widget:
+  Version: Alpha-0.1
+  Name: OptionMenu
+  Enabled: true
+  BlocksWidgetsBelow: false
+  Items:
+    - Name: Canvas Root
+      ID: 0
+      ParentID: 0
+      Type: 0
+      Position: [0, 0]
+      Size: [450, 342]
+      VerticalAlignment: 1
+      HorizontalAligment: 1
+      Visible: true
+      ZIndex: 0
+      Layout: 0
+      Padding: 0
+      Gap: 0
+    - Name: option_title_label
+      ID: 1
+      ParentID: 0
+      Type: 2
+      Position: [0, 0]
+      Size: [48.728, 15.176]
+      VerticalAlignment: 0
+      HorizontalAligment: 0
+      Visible: true
+      ZIndex: 0
+      Text: Option
+      Color: [1, 1, 1, 1]
+      FontHandle: 4102674412946893508
+      FontSize: 16
+      Kerning: 0
+      LineSpacing: 0.025
+    - Name: exit_button
+      ID: 2
+      ParentID: 0
+      Type: 1
+      Position: [0, 0]
+      Size: [20, 20]
+      VerticalAlignment: 0
+      HorizontalAligment: 2
+      Visible: true
+      ZIndex: 0
+      ImageHandle: 0
+      NormalColor: [1, 0, 0, 0]
+      HoverColor: [1, 0, 0, 1]
+      PressedColor: [1, 0, 0, 1]
+      BorderColor: [1, 0, 0, 0]
+      CornerRadius: 0
+      FontHandle: 4102674412946893508
+      Text: X
+      Color: [1, 1, 1, 1]
+      FontSize: 16
+      Kerning: 0
+      LineSpacing: 0.025
+  ChildWidgets:
+    []
