@@ -3,282 +3,702 @@ AssetRegistry:
     - Handle: 110278436566408583
       Type: Mesh
       Filepath: Meshes/Reforestation.mesh
-    - Handle: 485990577701710798
+    - Handle: 187781206220505913
       Type: Texture
-      Filepath: Assets/Meshes/Labor Subsidies DECK.png
+      Filepath: Assets/Meshes/joker.png
+    - Handle: 234333129433759176
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-015.png
+    - Handle: 471572423256034482
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-022.png
+    - Handle: 615782353722851705
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-003.png
+    - Handle: 618581362662345151
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-016.png
     - Handle: 775153008294271998
       Type: Mesh
       Filepath: Meshes/Mining_Concession.mesh
-    - Handle: 870475206873990886
+    - Handle: 822283960320992544
       Type: Texture
-      Filepath: Assets/Meshes/Coal Subsidies DECK.png
+      Filepath: Textures/UI/Panels/panel-011.png
+    - Handle: 843998193356830675
+      Type: Texture
+      Filepath: Assets/Widgets/checker.jpg
+    - Handle: 907986024069320805
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-023.png
+    - Handle: 934957818642219951
+      Type: Material
+      Filepath: Assets/Meshes/DefaultMaterial_Copy.ixmat
+    - Handle: 972915396656847558
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-019.png
+    - Handle: 1064803511511142767
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-008.png
+    - Handle: 1109119872557502194
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-022.png
+    - Handle: 1223189782945036332
+      Type: Texture
+      Filepath: Assets/HDRIs/kiara_1_dawn_4k.hdr
+    - Handle: 1294487416645760737
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-005.png
     - Handle: 1323410658947940753
       Type: Widget
       Filepath: Widgets/OptionMenu.wdgt
     - Handle: 1450476837957949913
       Type: Texture
       Filepath: Meshes/Coal Subsidies DECK.png
-    - Handle: 1649805266904626073
-      Type: Font
-      Filepath: Assets/Fonts/segoeui.ttf
+    - Handle: 1571622681706341347
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-013.png
+    - Handle: 1594619622342824406
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-031.png
+    - Handle: 1659273877484079991
+      Type: Texture
+      Filepath: Assets/HDRIs/snowy_field_2k.hdr
     - Handle: 1671497305426399170
       Type: Texture
       Filepath: HDRIs/kiara_1_dawn_4k.hdr
+    - Handle: 1702535306342404252
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-007.png
+    - Handle: 1787352468607099896
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-020.png
     - Handle: 1799881210558115287
       Type: Audio
       Filepath: Audio/UI/click.mp3
-    - Handle: 2385759912411828739
-      Type: Mesh
-      Filepath: Assets/Meshes/plane.mesh
-    - Handle: 3627362256620773561
-      Type: Material2D
-      Filepath: Assets/Material2D/Bakcground.ixmat2d
-    - Handle: 3871117286305198113
-      Type: AnimatorController
-      Filepath: Assets/NewAnimatorController3D.ac
-    - Handle: 3962367952037934441
+    - Handle: 1962785675861764950
       Type: Texture
-      Filepath: Assets/Meshes/Water Treatment DECK.png
+      Filepath: Textures/UI/Divider/divider-004.png
+    - Handle: 2034125553515535279
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-003.png
+    - Handle: 2037353121955786097
+      Type: Material
+      Filepath: Assets/Meshes/Education_Grant.ixmat
+    - Handle: 2177063727436723186
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-005.png
+    - Handle: 2246883475108745637
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-001.png
+    - Handle: 2454617613318402026
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-025.png
+    - Handle: 2600233105990608408
+      Type: Texture
+      Filepath: Assets/Meshes/Highway Expansion DECK.png
+    - Handle: 2638729792261446111
+      Type: Texture
+      Filepath: Assets/Meshes/National Park DECK.png
+    - Handle: 2717357684585438222
+      Type: Widget
+      Filepath: Assets/Widgets/Play.wdgt
+    - Handle: 2803331895326679220
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-021.png
+    - Handle: 2991797644181944536
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-008.png
+    - Handle: 3100603006320444495
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-016.png
+    - Handle: 3408568857343577095
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-009.png
+    - Handle: 3432554031673173584
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-028.png
+    - Handle: 3526061422792247516
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-029.png
+    - Handle: 3670008509930898797
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-012.png
     - Handle: 4020518715610463129
       Type: Widget
       Filepath: Widgets/Play.wdgt
+    - Handle: 4102243660394813356
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-030.png
     - Handle: 4102674412946893508
       Type: Font
       Filepath: Fonts/LowresPixel-Regular.otf
-    - Handle: 4206777096457675764
-      Type: Widget
-      Filepath: Assets/Widgets/Play.wdgt
-    - Handle: 4218726906313820345
+    - Handle: 4301553733887846676
       Type: Texture
-      Filepath: Assets/HDRIs/snowy_cemetery_2k.hdr
-    - Handle: 4226739093425237864
+      Filepath: Textures/UI/Panels/panel-013.png
+    - Handle: 4301819427433360994
       Type: Texture
-      Filepath: Assets/Meshes/Solar Array DECK.png
-    - Handle: 4251780905906235103
-      Type: Audio
-      Filepath: Assets/Audio/UI/hover.mp3
+      Filepath: Textures/UI/Divider/divider-002.png
+    - Handle: 4333611562901357878
+      Type: Texture
+      Filepath: Textures/UI/Divider/divider-003.png
+    - Handle: 4389349248856739436
+      Type: Texture
+      Filepath: Assets/Meshes/Public Housing DECK.png
     - Handle: 4436236215480904821
       Type: Texture
       Filepath: Meshes/Reforestation DECK.png
-    - Handle: 4586488212702181790
+    - Handle: 4471295562017483234
       Type: Texture
-      Filepath: Assets/Meshes/Offshore Drilling DECK.png
+      Filepath: Assets/Textures/UI/Divider/divider-005.png
+    - Handle: 4535506162327052620
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-015.png
+    - Handle: 4587972410884634403
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-017.png
     - Handle: 4652223434774122064
       Type: Texture
       Filepath: Meshes/wood_shutter_diff_4k.jpg
-    - Handle: 4706957395218097375
+    - Handle: 4684702168369157163
       Type: Texture
-      Filepath: Assets/HDRIs/ferndale_studio_04_2k.hdr
+      Filepath: Textures/UI/Panels/panel-026.png
+    - Handle: 4772115953037587794
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-030.png
+    - Handle: 5004640126158038040
+      Type: Texture
+      Filepath: Assets/HDRIs/rogland_clear_night_4k.hdr
+    - Handle: 5025414550931748361
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-003.png
+    - Handle: 5055945254106361078
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-010.png
+    - Handle: 5112434998105973161
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-031.png
+    - Handle: 5180473852860620194
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-006.png
     - Handle: 5239166657089936602
       Type: Material
       Filepath: Meshes/Mining_Concession.ixmat
+    - Handle: 5297935937138991494
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-029.png
     - Handle: 5326749717763311860
       Type: Mesh
       Filepath: Meshes/Education_Card.mesh
     - Handle: 5429335199766536717
       Type: Texture
       Filepath: Meshes/Public Housing DECK.png
+    - Handle: 5463764891737517768
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-010.png
     - Handle: 5520978528538385175
       Type: Texture
       Filepath: Meshes/Universal Healthcare DECK.png
+    - Handle: 5579439349132876421
+      Type: Texture
+      Filepath: Assets/Textures/UI/Divider/divider-001.png
+    - Handle: 5623885307611723809
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-016.png
+    - Handle: 5631105088809428417
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-009.png
+    - Handle: 5721872211028713424
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-017.png
+    - Handle: 5742876227413745984
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-007.png
+    - Handle: 5784312282992697166
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-029.png
+    - Handle: 5784897418300913819
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-017.png
+    - Handle: 5977413154251249061
+      Type: Material
+      Filepath: Assets/Meshes/plane.ixmat
+    - Handle: 6025497325622714073
+      Type: Font
+      Filepath: Assets/Fonts/LowresPixel-Regular.otf
+    - Handle: 6186687188596317703
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-002.png
+    - Handle: 6445847056255747910
+      Type: AnimatorController
+      Filepath: Assets/NewAnimatorController3D.ac
+    - Handle: 6500969525128026455
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-009.png
     - Handle: 6503228990209563452
       Type: Mesh
       Filepath: Meshes/jokercard.mesh
+    - Handle: 6533647456868268703
+      Type: Mesh
+      Filepath: Assets/Meshes/Education_Card.mesh
+    - Handle: 6603520626330284404
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-026.png
+    - Handle: 6670864507660421473
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-025.png
+    - Handle: 6847518225035414001
+      Type: Audio
+      Filepath: Assets/Audio/UI/hover.mp3
     - Handle: 6861664923932968794
       Type: Texture
       Filepath: Meshes/Offshore Drilling DECK.png
-    - Handle: 7095783036122595199
+    - Handle: 7054592429781803237
       Type: Texture
-      Filepath: Assets/Meshes/Universal Healthcare DECK.png
-    - Handle: 7185215986763669546
-      Type: Texture
-      Filepath: Assets/Meshes/Transit Network DECK.png
+      Filepath: Assets/Meshes/Education Grantt DECK.png
     - Handle: 7201159435847965647
       Type: Texture
       Filepath: HDRIs/ferndale_studio_04_2k.hdr
-    - Handle: 7386716568166542816
-      Type: Material
-      Filepath: Assets/Meshes/Education_Grant.ixmat
+    - Handle: 7223268277102348438
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-008.png
+    - Handle: 7462221345003147787
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-009.png
     - Handle: 7504911466409295994
       Type: Texture
       Filepath: HDRIs/snowy_field_2k.hdr
-    - Handle: 7911393560455651366
-      Type: Material
-      Filepath: Assets/Meshes/Mining_Concession.ixmat
+    - Handle: 7908846797678609406
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-002.png
+    - Handle: 7941885401833868876
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-020.png
+    - Handle: 7952987271054049612
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-000.png
+    - Handle: 7987106627388202480
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-019.png
     - Handle: 8107778518442363047
       Type: Texture
       Filepath: Meshes/Solar Array DECK.png
     - Handle: 8190723956520937914
       Type: Material
       Filepath: Meshes/joker.ixmat
+    - Handle: 8268382417060634571
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-027.png
+    - Handle: 8272289131556400345
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-015.png
+    - Handle: 8310545254327598819
+      Type: Mesh
+      Filepath: Assets/Meshes/Reforestation.mesh
+    - Handle: 8310691008735093038
+      Type: Texture
+      Filepath: Assets/Meshes/Reforestation DECK.png
+    - Handle: 8313898761966298239
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-013.png
+    - Handle: 8398522153966683089
+      Type: Texture
+      Filepath: Assets/Meshes/wood_shutter_diff_4k.jpg
     - Handle: 8406749831429556630
       Type: Texture
       Filepath: HDRIs/ferndale_studio_12_2k.hdr
     - Handle: 8487866291550668718
       Type: Texture
       Filepath: HDRIs/klippad_sunrise_2_2k.hdr
-    - Handle: 8583209829286203406
-      Type: Material
-      Filepath: Assets/Meshes/plane.ixmat
-    - Handle: 8614593640393747144
+    - Handle: 8634247874677828498
       Type: Texture
-      Filepath: Assets/HDRIs/ferndale_studio_12_2k.hdr
-    - Handle: 8649703301628313036
+      Filepath: Assets/Textures/UI/Panels/panel-004.png
+    - Handle: 8679944288872957326
       Type: Texture
-      Filepath: Assets/HDRIs/snowy_field_2k.hdr
+      Filepath: Assets/Meshes/Offshore Drilling DECK.png
+    - Handle: 8682374764973011224
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-011.png
+    - Handle: 8682914070048563395
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-011.png
     - Handle: 8698036812785186765
       Type: Material
       Filepath: Meshes/DefaultMaterial_Copy.ixmat
+    - Handle: 8812114458445680986
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-025.png
+    - Handle: 8817931900739776493
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-030.png
+    - Handle: 8887259825440323135
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-022.png
     - Handle: 8887644565857882207
       Type: Mesh
       Filepath: Meshes/plane.mesh
+    - Handle: 8940353981079036625
+      Type: Texture
+      Filepath: Assets/Meshes/Carbon Tax DECK.png
+    - Handle: 8945584636719367910
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-014.png
+    - Handle: 8956437637681573613
+      Type: Widget
+      Filepath: Assets/Widgets/OptionMenu.wdgt
     - Handle: 8968735259550488797
       Type: Texture
       Filepath: Meshes/Education Grantt DECK.png
-    - Handle: 9138167836726140980
+    - Handle: 8997708948844090063
       Type: Texture
-      Filepath: Assets/Meshes/Mega Factory DECK.png
+      Filepath: Assets/Textures/UI/Borders/panel-border-004.png
+    - Handle: 9002598060248348682
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-020.png
+    - Handle: 9007277439891124198
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-021.png
+    - Handle: 9187148322154909479
+      Type: Texture
+      Filepath: Assets/HDRIs/ferndale_studio_12_2k.hdr
+    - Handle: 9358552310783005699
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-010.png
     - Handle: 9420462621085832834
       Type: Font
       Filepath: Fonts/segoeui.ttf
+    - Handle: 9595503956477070425
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-006.png
+    - Handle: 9609415913350799389
+      Type: Texture
+      Filepath: Assets/Meshes/Universal Healthcare DECK.png
+    - Handle: 9657533683122286188
+      Type: Texture
+      Filepath: Assets/Meshes/Mega Factory DECK.png
+    - Handle: 9724992936898486014
+      Type: Mesh
+      Filepath: Assets/Meshes/plane.mesh
+    - Handle: 9728512547957065183
+      Type: Font
+      Filepath: Assets/Fonts/segoeui.ttf
     - Handle: 9750024373799495320
       Type: Texture
       Filepath: Meshes/Highway Expansion DECK.png
-    - Handle: 9894499539729128604
-      Type: Mesh
-      Filepath: Assets/Meshes/Mining_Concession.mesh
+    - Handle: 9777166124861831149
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-024.png
+    - Handle: 9892700858651133303
+      Type: Audio
+      Filepath: Assets/Audio/UI/click.mp3
     - Handle: 9920694308132549009
       Type: Audio
       Filepath: Audio/UI/hover.mp3
+    - Handle: 10019974365279150505
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-028.png
+    - Handle: 10023358768895642240
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-019.png
+    - Handle: 10097259683631043566
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-001.png
     - Handle: 10125969547390959480
       Type: Scene
       Filepath: Scene/MainScene.ixscene
-    - Handle: 10582838025029632194
+    - Handle: 10434626139844427892
       Type: Texture
-      Filepath: Assets/HDRIs/rogland_clear_night_4k.hdr
+      Filepath: Textures/UI/Borders/panel-border-031.png
+    - Handle: 10444472048063475423
+      Type: Material
+      Filepath: Assets/Meshes/joker.ixmat
+    - Handle: 10465116858144993875
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-026.png
     - Handle: 10675971286390682307
       Type: AnimatorController
       Filepath: NewAnimatorController3D.ac
+    - Handle: 10698342878058057962
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-023.png
+    - Handle: 10732548636041708608
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-023.png
+    - Handle: 10746322547105586647
+      Type: Texture
+      Filepath: Assets/HDRIs/ferndale_studio_04_2k.hdr
     - Handle: 10793323259493303610
       Type: Material2D
       Filepath: Material2D/Bakcground.ixmat2d
+    - Handle: 10896267912241006037
+      Type: Material
+      Filepath: Assets/Meshes/DefaultMaterial.ixmat
+    - Handle: 10927103364407368117
+      Type: Mesh
+      Filepath: Assets/Meshes/Mining_Concession.mesh
+    - Handle: 10942690078844704687
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-027.png
+    - Handle: 11227374179670777357
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-010.png
+    - Handle: 11266284326458206198
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-000.png
+    - Handle: 11292061745503838382
+      Type: Texture
+      Filepath: Assets/Meshes/Solar Array DECK.png
+    - Handle: 11322801604896445018
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-030.png
+    - Handle: 11399517956513408142
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-012.png
+    - Handle: 11428908946618806613
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-002.png
+    - Handle: 11431141592211955055
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-022.png
+    - Handle: 11438059180902400699
+      Type: Texture
+      Filepath: Assets/Meshes/Water Treatment DECK.png
     - Handle: 11479500516007491390
       Type: Texture
       Filepath: Meshes/National Park DECK.png
-    - Handle: 11582843436815355210
-      Type: Mesh
-      Filepath: Assets/Meshes/Reforestation.mesh
-    - Handle: 12093168697164082278
+    - Handle: 11499158905156388768
       Type: Texture
-      Filepath: Assets/Meshes/wood_shutter_diff_4k.jpg
+      Filepath: Assets/Meshes/Labor Subsidies DECK.png
+    - Handle: 11504071894804015362
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-021.png
+    - Handle: 11571944563706445974
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-001.png
+    - Handle: 11648469552503430326
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-007.png
+    - Handle: 11665699111813351333
+      Type: Texture
+      Filepath: Assets/HDRIs/snowy_cemetery_2k.hdr
+    - Handle: 11668310296538627730
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-013.png
+    - Handle: 11848527975795701545
+      Type: Texture
+      Filepath: Assets/HDRIs/klippad_sunrise_2_2k.hdr
+    - Handle: 11902990635523786219
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-012.png
+    - Handle: 11938477057617454005
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-005.png
+    - Handle: 12184680137950014024
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-031.png
     - Handle: 12365291819084358679
       Type: Texture
       Filepath: Textures/board.jpg
-    - Handle: 12505133556066889767
+    - Handle: 12422634928548455424
       Type: Texture
-      Filepath: Assets/Meshes/National Park DECK.png
-    - Handle: 12548683708420246583
+      Filepath: Textures/UI/Borders/panel-border-008.png
+    - Handle: 12520893235235347284
+      Type: Scene
+      Filepath: Assets/Scene/MainScene.ixscene
+    - Handle: 12613689979702324617
       Type: Texture
-      Filepath: Assets/Meshes/joker.png
+      Filepath: Assets/Textures/UI/Panels/panel-011.png
+    - Handle: 12639336087394322551
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-020.png
     - Handle: 12657237909441167439
       Type: Material
       Filepath: Meshes/plane.ixmat
-    - Handle: 12717979090303179730
-      Type: Material
-      Filepath: Assets/Meshes/DefaultMaterial_Copy.ixmat
-    - Handle: 12956167018128209608
-      Type: Font
-      Filepath: Assets/Fonts/LowresPixel-Regular.otf
-    - Handle: 12984286418405959999
+    - Handle: 12705176339539650262
       Type: Texture
-      Filepath: Assets/Meshes/Mining Confession DECK.png
-    - Handle: 13004093120013332364
+      Filepath: Textures/UI/Panels/panel-003.png
+    - Handle: 12857802128541659892
       Type: Texture
-      Filepath: Assets/Textures/board.jpg
-    - Handle: 13006516826205471168
+      Filepath: Assets/Textures/UI/Panels/panel-024.png
+    - Handle: 12891118034740303976
       Type: Texture
-      Filepath: Assets/Meshes/Highway Expansion DECK.png
+      Filepath: Textures/UI/Borders/panel-border-004.png
+    - Handle: 12918364941377905581
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-023.png
     - Handle: 13145865869329975401
       Type: Texture
       Filepath: Meshes/Transit Network DECK.png
-    - Handle: 13216128240090387885
+    - Handle: 13178753174389229898
       Type: Texture
-      Filepath: Assets/Meshes/Reforestation DECK.png
-    - Handle: 13258754611717144164
+      Filepath: Textures/UI/Borders/panel-border-007.png
+    - Handle: 13437332198961850676
       Type: Texture
-      Filepath: Assets/Meshes/Public Housing DECK.png
+      Filepath: Assets/Textures/UI/Panels/panel-014.png
     - Handle: 13589769746383350053
       Type: Texture
       Filepath: Widgets/checker.jpg
+    - Handle: 13592848803460133259
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-001.png
+    - Handle: 13663095365662878537
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-005.png
     - Handle: 13833614530098331060
       Type: Texture
       Filepath: Meshes/Labor Subsidies DECK.png
-    - Handle: 13887460449825273309
-      Type: Material
-      Filepath: Assets/Meshes/DefaultMaterial.ixmat
+    - Handle: 14048885009435548676
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-000.png
     - Handle: 14155115580574106734
       Type: Material
       Filepath: Meshes/Reforestation.ixmat
-    - Handle: 14341808233035716960
+    - Handle: 14186809263143911270
       Type: Texture
-      Filepath: Assets/HDRIs/klippad_sunrise_2_2k.hdr
+      Filepath: Assets/Textures/UI/Divider/divider-002.png
+    - Handle: 14189211824961351025
+      Type: Texture
+      Filepath: Textures/UI/Divider/divider-000.png
+    - Handle: 14365326237624932238
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-018.png
+    - Handle: 14377320329831620909
+      Type: Texture
+      Filepath: Assets/Textures/UI/Divider/divider-003.png
+    - Handle: 14378301361582769417
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-027.png
+    - Handle: 14383480302632066039
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-018.png
+    - Handle: 14606523843461407065
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-024.png
+    - Handle: 14700222535088173077
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-014.png
+    - Handle: 14793451131698767455
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-026.png
     - Handle: 14798869311340847312
       Type: Texture
       Filepath: HDRIs/rogland_clear_night_4k.hdr
-    - Handle: 14798973788621076517
-      Type: Material
-      Filepath: Assets/Meshes/Reforestation.ixmat
-    - Handle: 14940824013565600895
+    - Handle: 15069560184505555804
       Type: Texture
-      Filepath: Assets/Meshes/Education Grantt DECK.png
+      Filepath: Textures/UI/Panels/panel-027.png
     - Handle: 15132198631710456398
       Type: Texture
       Filepath: HDRIs/snowy_cemetery_2k.hdr
+    - Handle: 15191916395755317831
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-014.png
     - Handle: 15252055945203357401
       Type: Texture
       Filepath: Meshes/joker.png
-    - Handle: 15279426418011120408
+    - Handle: 15329943344635682369
       Type: Texture
-      Filepath: Assets/Widgets/checker.jpg
+      Filepath: Textures/UI/Panels/panel-006.png
+    - Handle: 15370343506273333423
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-004.png
     - Handle: 15387786149627755007
       Type: Texture
       Filepath: Meshes/Water Treatment DECK.png
-    - Handle: 15468089695827763122
-      Type: Widget
-      Filepath: Assets/Widgets/OptionMenu.wdgt
-    - Handle: 15613266634345647753
+    - Handle: 15511129479795033091
       Type: Texture
-      Filepath: Assets/Meshes/Carbon Tax DECK.png
-    - Handle: 15889920755653707437
-      Type: Mesh
-      Filepath: Assets/Meshes/jokercard.mesh
-    - Handle: 16029439159159362136
-      Type: Mesh
-      Filepath: Assets/Meshes/Education_Card.mesh
-    - Handle: 16558302356513498499
-      Type: Scene
-      Filepath: Assets/Scene/MainScene.ixscene
-    - Handle: 17044944050644085679
+      Filepath: Assets/Textures/UI/Panels/panel-000.png
+    - Handle: 15617713142026975078
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-029.png
+    - Handle: 15750178267398655829
+      Type: Texture
+      Filepath: Assets/Textures/UI/Divider/divider-004.png
+    - Handle: 15881999752129266393
       Type: Material
-      Filepath: Assets/Meshes/joker.ixmat
+      Filepath: Assets/Meshes/Mining_Concession.ixmat
+    - Handle: 16100310312281411180
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-012.png
+    - Handle: 16102593170797254557
+      Type: Texture
+      Filepath: Assets/Meshes/Transit Network DECK.png
+    - Handle: 16138175985326040807
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-015.png
+    - Handle: 16163031789700022133
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-006.png
+    - Handle: 16174390693855213961
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-017.png
+    - Handle: 16180422675955713771
+      Type: Texture
+      Filepath: Textures/UI/Panels/panel-024.png
+    - Handle: 16204512005274913409
+      Type: Texture
+      Filepath: Assets/Textures/board.jpg
+    - Handle: 16526767922206048865
+      Type: Material
+      Filepath: Assets/Meshes/Reforestation.ixmat
+    - Handle: 16636798029370789434
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-018.png
+    - Handle: 16831306086156068150
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-028.png
+    - Handle: 16897827821840083513
+      Type: Texture
+      Filepath: Textures/UI/Divider/divider-001.png
+    - Handle: 17069242535552289058
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-021.png
+    - Handle: 17137690217002062862
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-016.png
+    - Handle: 17139494526602208973
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-028.png
     - Handle: 17352258573520661566
       Type: Material
       Filepath: Meshes/DefaultMaterial.ixmat
+    - Handle: 17438209624557859291
+      Type: Texture
+      Filepath: Textures/UI/Divider/divider-005.png
+    - Handle: 17485208085441902212
+      Type: Texture
+      Filepath: Assets/Meshes/Coal Subsidies DECK.png
+    - Handle: 17549651536068230051
+      Type: Texture
+      Filepath: Assets/Textures/UI/Panels/panel-025.png
     - Handle: 17722789919744133663
       Type: Material
       Filepath: Meshes/Education_Grant.ixmat
     - Handle: 17774775725597609298
       Type: Texture
       Filepath: Meshes/Carbon Tax DECK.png
+    - Handle: 17869483620584221151
+      Type: Texture
+      Filepath: Assets/Textures/UI/Borders/panel-border-019.png
+    - Handle: 17931535512553593612
+      Type: Texture
+      Filepath: Textures/UI/Borders/panel-border-018.png
+    - Handle: 17938314120475840058
+      Type: Texture
+      Filepath: Assets/Meshes/Mining Confession DECK.png
     - Handle: 17953553219306833066
       Type: Texture
       Filepath: Meshes/Mega Factory DECK.png
     - Handle: 17972497409201856646
       Type: Texture
       Filepath: Meshes/Mining Confession DECK.png
-    - Handle: 18222392178741127205
-      Type: Audio
-      Filepath: Assets/Audio/UI/click.mp3
-    - Handle: 18410884456960475582
+    - Handle: 17976285818568490660
+      Type: Mesh
+      Filepath: Assets/Meshes/jokercard.mesh
+    - Handle: 18160878255651379652
       Type: Texture
-      Filepath: Assets/HDRIs/kiara_1_dawn_4k.hdr
+      Filepath: Assets/Textures/UI/Panels/panel-002.png
+    - Handle: 18225787658344910655
+      Type: Texture
+      Filepath: Assets/Textures/UI/Divider/divider-000.png
+    - Handle: 18394734685372571667
+      Type: Material2D
+      Filepath: Assets/Material2D/Bakcground.ixmat2d

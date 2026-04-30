@@ -10,9 +10,9 @@ namespace TestProject.UI;
 
 internal class UIManager : Entity
 {
-    private Widget widget;
-    private AudioSource hoverAudio;
-    private AudioSource clickAudio;
+    private WidgetComponent widget;
+    private AudioSourceComponent hoverAudio;
+    private AudioSourceComponent clickAudio;
 
     private WidgetButton startButton;
     private WidgetButton stopButton;
@@ -21,12 +21,12 @@ internal class UIManager : Entity
     public override void OnCreate()
     {
         Entity hoverEntity = FindChild("HoverSound");
-        hoverAudio = hoverEntity.GetComponent<AudioSource>();
+        hoverAudio = hoverEntity.GetComponent<AudioSourceComponent>();
 
         Entity clickEntity = FindChild("ClickSound");
-        clickAudio = clickEntity.GetComponent<AudioSource>();
+        clickAudio = clickEntity.GetComponent<AudioSourceComponent>();
 
-        widget = GetComponent<Widget>();
+        widget = GetComponent<WidgetComponent>();
         startButton = widget.GetButton("start_button");
         stopButton = widget.GetButton("stop_button");
         exitButton = widget.GetButton("exit_button");

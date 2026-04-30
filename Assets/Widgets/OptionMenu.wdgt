@@ -10,11 +10,11 @@ Widget:
       Type: 0
       Position: [0, 0]
       Size: [450, 342]
-      VerticalAlignment: 1
-      HorizontalAligment: 1
+      VerticalAlignment: 3
+      HorizontalAligment: 3
       Visible: true
       ZIndex: 0
-      Layout: 0
+      Layout: 3
       Padding: 0
       Gap: 0
     - Name: option_title_label
@@ -40,7 +40,7 @@ Widget:
       Position: [0, 0]
       Size: [20, 20]
       VerticalAlignment: 0
-      HorizontalAligment: 2
+      HorizontalAligment: 0
       Visible: true
       ZIndex: 0
       ImageHandle: 0
@@ -55,5 +55,29 @@ Widget:
       FontSize: 16
       Kerning: 0
       LineSpacing: 0.025
+    - Name: top_bar_container
+      ID: 3
+      ParentID: 0
+      Type: 0
+      Position: [0, 0]
+      Size: [150, 50]
+      VerticalAlignment: 0
+      HorizontalAligment: 0
+      Visible: true
+      ZIndex: 0
+      Layout: 1
+      Padding: 0
+      Gap: 0
+    - Name: ""
+      ID: 4
+      ParentID: 0
+      Type: 3
+      Position: [0, 0]
+      Size: [200, 200]
+      VerticalAlignment: 3
+      HorizontalAligment: 3
+      Visible: true
+      ZIndex: 0
+      ImageHandle: 7908846797678609406
   ChildWidgets:
     []

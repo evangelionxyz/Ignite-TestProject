@@ -9,22 +9,22 @@ Widget:
       ParentID: 0
       Type: 0
       Position: [0, 0]
-      Size: [140, 124]
-      VerticalAlignment: 2
-      HorizontalAligment: 0
+      Size: [160, 124]
+      VerticalAlignment: 3
+      HorizontalAlignment: 0
       Visible: true
       ZIndex: 0
       Layout: 1
-      Padding: 10
-      Gap: 8
+      Padding: 0
+      Gap: 0
     - Name: start_button
       ID: 2
-      ParentID: 1
+      ParentID: 21
       Type: 1
       Position: [0, 0]
-      Size: [120, 28]
+      Size: [120, 30]
       VerticalAlignment: 0
-      HorizontalAligment: 0
+      HorizontalAlignment: 3
       Visible: true
       ZIndex: 6
       ImageHandle: 0
@@ -46,7 +46,7 @@ Widget:
       Position: [0, 0]
       Size: [150, 50]
       VerticalAlignment: 0
-      HorizontalAligment: 0
+      HorizontalAlignment: 0
       Visible: true
       ZIndex: 0
       ImageHandle: 0
@@ -61,6 +61,19 @@ Widget:
       FontSize: 16
       Kerning: 0
       LineSpacing: 0.025
+    - Name: MenuContainer
+      ID: 21
+      ParentID: 1
+      Type: 0
+      Position: [0, 0]
+      Size: [86, 130]
+      VerticalAlignment: 2
+      HorizontalAlignment: 3
+      Visible: true
+      ZIndex: 0
+      Layout: 1
+      Padding: 3.5
+      Gap: 4
     - Name: ""
       ID: 14
       ParentID: 0
@@ -68,7 +81,7 @@ Widget:
       Position: [0, 0]
       Size: [150, 50]
       VerticalAlignment: 0
-      HorizontalAligment: 0
+      HorizontalAlignment: 0
       Visible: true
       ZIndex: 0
       ImageHandle: 0
@@ -85,12 +98,12 @@ Widget:
       LineSpacing: 0.025
     - Name: stop_button
       ID: 19
-      ParentID: 1
+      ParentID: 21
       Type: 1
       Position: [0, 0]
-      Size: [120, 28]
+      Size: [120, 30]
       VerticalAlignment: 0
-      HorizontalAligment: 0
+      HorizontalAlignment: 3
       Visible: true
       ZIndex: 0
       ImageHandle: 13589769746383350053
@@ -107,12 +120,12 @@ Widget:
       LineSpacing: -0.025
     - Name: exit_button
       ID: 20
-      ParentID: 1
+      ParentID: 21
       Type: 1
       Position: [0, 0]
-      Size: [120, 28]
+      Size: [120, 30]
       VerticalAlignment: 0
-      HorizontalAligment: 0
+      HorizontalAlignment: 3
       Visible: true
       ZIndex: 0
       ImageHandle: 0
@@ -127,5 +140,27 @@ Widget:
       FontSize: 16
       Kerning: 0
       LineSpacing: 0.025
+    - Name: image_1
+      ID: 23
+      ParentID: 0
+      Type: 3
+      Position: [0, 0]
+      Size: [54, 54]
+      VerticalAlignment: 0
+      HorizontalAlignment: 0
+      Visible: true
+      ZIndex: 0
+      ImageHandle: 0
+    - Name: image_2
+      ID: 24
+      ParentID: 0
+      Type: 3
+      Position: [0, 0]
+      Size: [72, 72]
+      VerticalAlignment: 0
+      HorizontalAlignment: 0
+      Visible: true
+      ZIndex: 0
+      ImageHandle: 0
   ChildWidgets:
     []
