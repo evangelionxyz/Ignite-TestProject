@@ -6,6 +6,7 @@ using TestProject.Scripts.Cards;
 using TestProject.Scripts.Run;
 using TestProject.Scripts.Run.Misc;
 
+using static Ignite.Mathf;
 namespace TestProject;
 
 public class GameManager  : Entity

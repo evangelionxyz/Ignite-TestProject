@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Ignite;
+﻿using Ignite;
 
 namespace TestProject.UI;
 
@@ -48,11 +42,13 @@ internal class UIManager : Entity
 
     private void Buttons_OnHoverEnterEvent()
     {
+        Debug.Log("button hovered", Debug.LogLevel.Debug);
         hoverAudio.Play();
     }
 
     private void Buttons_OnClickEvent()
     {
+        Debug.Log("button clicked", Debug.LogLevel.Trace);
         clickAudio.Play();
     }
 
