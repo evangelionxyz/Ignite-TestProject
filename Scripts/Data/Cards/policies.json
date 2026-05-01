@@ -1,0 +1,125 @@
+[
+  {
+    "id": "POL_1",
+    "name": "Coal Subsidies",
+    "effectDesc": "Sends 'Smog' modifier to the card in the slot to its Right.",
+    "type": 1,
+    "baseGdp": 40,
+    "effectToNature": -3,
+    "effectToHighClass": 2,
+    "effectToLowClass": -1,
+    "effects": [
+      {
+        "$type": "SpawnCardEffect",
+        "cardId": 101
+      }
+    ]
+  },
+  {
+    "id": "POL_2",
+    "name": "Mega-Factory",
+    "effectDesc": "x2 GDP if placed next to Mining Concession.",
+    "type": 1,
+    "baseGdp": 50,
+    "effectToNature": -4,
+    "effectToHighClass": 4,
+    "effectToLowClass": -3,
+    "effects": [
+      {
+        "$type": "AdjacentMultiplierEffect",
+        "multiplier": 2.0,
+        "metricsApplied": 1,
+        "adjacentType": 1
+      }
+    ]
+  },
+  {
+    "id": "POL_3",
+    "name": "Mining Concession",
+    "effectDesc": "Raw output.",
+    "type": 1,
+    "baseGdp": 30,
+    "effectToNature": -5,
+    "effectToHighClass": 2,
+    "effectToLowClass": -2,
+    "effects": []
+  },
+  {
+    "id": "POL_6",
+    "name": "Public Housing",
+    "effectDesc": "Does not yield positive Approval if placed next to Industry.",
+    "type": 2,
+    "baseGdp": 10,
+    "effectToNature": -1,
+    "effectToHighClass": -2,
+    "effectToLowClass": 4,
+    "effects": [
+      {
+        "$type": "NullifySpecificMetricEffect",
+        "targetMetric": 3,
+        "adjacentType": 3,
+        "forbiddenNeighborType": 1
+      }
+    ]
+  },
+  {
+    "id": "POL_11",
+    "name": "National Park",
+    "effectDesc": "Halves Biosphere damage of adjacent cards.",
+    "type": 3,
+    "baseGdp": 5,
+    "effectToNature": 3,
+    "effectToHighClass": -1,
+    "effectToLowClass": 3,
+    "effects": [
+      {
+        "$type": "HalveNeighborDamage",
+        "metricsApplied": 2,
+        "adjacentType": 3
+      }
+    ]
+  },
+  {
+    "id": "POL_101",
+    "name": "Smog",
+    "effectDesc": "Unplayable. If in hand at the end of term, lose -1 Low Class Approval.",
+    "type": 4,
+    "baseGdp": 0,
+    "effectToNature": 0,
+    "effectToHighClass": 0,
+    "effectToLowClass": -1,
+    "effects": [
+      {
+        "$type": "HandPenaltyEffect",
+        "approvalPenalty": -1
+      }
+    ]
+  },
+  {
+    "id": "POL_102",
+    "name": "Bureaucratic Red Tape",
+    "effectDesc": "Must be played to clear from hand. Yields 0 stats.",
+    "type": 4,
+    "baseGdp": 0,
+    "effectToNature": 0,
+    "effectToHighClass": 0,
+    "effectToLowClass": 0,
+    "effects": []
+  },
+  {
+    "id": "POL_103",
+    "name": "Protest",
+    "effectDesc": "Unplayable. Nullifies the GDP output of your middle dock slot.",
+    "type": 4,
+    "baseGdp": 0,
+    "effectToNature": 0,
+    "effectToHighClass": 0,
+    "effectToLowClass": 0,
+    "effects": [
+      {
+        "$type": "NullifySlotEffect",
+        "slotIndexToNullify": 1
+      }
+    ]
+  }
+]

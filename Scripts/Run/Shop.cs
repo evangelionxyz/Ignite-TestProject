@@ -18,9 +18,9 @@ namespace TestProject.Scripts.Run
         private RunState _runState;
         private DeckManager _deckManager;
 
-        private List<PolicyCard> allPoliciesCard = CardRegistry.GetAll().OfType<PolicyCard>().ToList();
-        private List<MandateCard> allMandateCard = CardRegistry.GetAll().OfType<MandateCard>().ToList();
-        private List<ActionCard> allActionCard = CardRegistry.GetAll().OfType<ActionCard>().ToList();
+        private List<PolicyCard> allPoliciesCard = CardRegistry.GetAll<PolicyCard>();
+        private List<MandateCard> allMandateCard = CardRegistry.GetAll<MandateCard>();
+        private List<ActionCard> allActionCard = CardRegistry.GetAll<ActionCard>();
 
         private int _rerollCount;
         public int RerollCost => ComputeRerollCost();

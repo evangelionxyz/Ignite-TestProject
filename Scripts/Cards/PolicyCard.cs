@@ -16,7 +16,7 @@ namespace TestProject.Scripts.Cards
         public int EffectToHighClass;
         public int EffectToLowClass;
 
-        PolicyCard(
+        public PolicyCard(
             string id,
             string name, 
             string effectDesc, 

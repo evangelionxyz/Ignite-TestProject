@@ -14,12 +14,13 @@ namespace TestProject.Scripts.Cards.Effects
     public class AdjacentMultiplierEffect : IEffect
     {
         private float _multiplier;
-        private EMetrics _metricsApplied;
+        private EMetrics _metricsApplied = EMetrics.Default;
         private EAdjacentType _adjacentType;
 
-        public AdjacentMultiplierEffect(float multiplier, EAdjacentType adjacentType)
+        public AdjacentMultiplierEffect(float multiplier, EMetrics metricApplied, EAdjacentType adjacentType)
         {
             _multiplier = multiplier;
+            _metricsApplied = metricApplied;
             _adjacentType = adjacentType;
         }
 

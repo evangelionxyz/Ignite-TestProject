@@ -7,7 +7,7 @@ using TestProject.Scripts.Cards.Effects.EffectMisc;
 
 namespace TestProject.Scripts.Cards
 {
-    public abstract class ActionCard: Card
+    public class ActionCard: Card
     {
         public readonly int SellPrice;
 

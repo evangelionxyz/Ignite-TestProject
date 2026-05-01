@@ -213,6 +213,7 @@ public class GameManager  : Entity
         return a + (b - a) * t;
     }
 
+    // All Run Method
     public void NewRun(string seed)
     {
         _run = new Run(seed);
@@ -284,8 +285,7 @@ public class GameManager  : Entity
     {
         foreach (var cardId in result.CardIdToSpawn)
         {
-            if (cardId == null) continue;
-            var card = CardRegistry.Get(cardId) as PolicyCard;
+            var card = CardRegistry.Get<PolicyCard>(cardId);
             
             if (card == null) continue;
             _run!.DeckManager.TryAddCardToDeck(card);

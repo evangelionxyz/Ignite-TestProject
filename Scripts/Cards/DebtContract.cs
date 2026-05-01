@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestProject.Scripts.Cards
 {
-    public abstract class DebtContract
+    public class DebtContract
     {
         public readonly string Id;
         public readonly string Name;

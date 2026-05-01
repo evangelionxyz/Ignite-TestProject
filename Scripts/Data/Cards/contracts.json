@@ -1,0 +1,18 @@
+[
+  {
+    "id": "DBT_1",
+    "name": "The Balloon Payment",
+    "amountToGet": 200,
+    "countdown": 3,
+    "penaltyDesc": "Foreign Resource Seizure: Takes an instant -30 Biosphere penalty.",
+    "mandatesIdToChange": "MAN_6"
+  },
+  {
+    "id": "DBT_2",
+    "name": "The Austerity Clause",
+    "amountToGet": 150,
+    "countdown": 2,
+    "penaltyDesc": "Public Sector Collapse: Takes -20 Approval and permanently deletes your highest-tier Welfare card.",
+    "mandatesIdToChange": "MAN_7"
+  }
+]

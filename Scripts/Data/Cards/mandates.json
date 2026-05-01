@@ -1,0 +1,47 @@
+[
+  {
+    "id": "MAN_1",
+    "name": "The Concrete Lobbyist",
+    "effectDesc": "+20 Base GDP to all Industry cards.",
+    "rarity": 0,
+    "isSellable": false,
+    "sellPrice": 0,
+    "effects": []
+  },
+  {
+    "id": "MAN_2",
+    "name": "The PR Firm",
+    "effectDesc": "+1 Approval every time you spend Treasury cash.",
+    "rarity": 0,
+    "isSellable": false,
+    "sellPrice": 0,
+    "effects": []
+  },
+  {
+    "id": "MAN_3",
+    "name": "Special Economic Zone",
+    "effectDesc": "Slot 3 costs 0 Action Points, but deals double Biosphere damage.",
+    "rarity": 1,
+    "isSellable": true,
+    "sellPrice": 50,
+    "effects": []
+  },
+  {
+    "id": "MAN_4",
+    "name": "The Chicago School",
+    "effectDesc": "All Industry cards get x2 GDP, but their positive Approval is deleted.",
+    "rarity": 1,
+    "isSellable": false,
+    "sellPrice": 0,
+    "effects": []
+  },
+  {
+    "id": "MAN_5",
+    "name": "Deregulation",
+    "effectDesc": "You gain +2 Action Points per term, but you can no longer Discard.",
+    "rarity": 3,
+    "isSellable": false,
+    "sellPrice": 0,
+    "effects": []
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ACT_1",
+    "name": "Executive Veto",
+    "effectDesc": "Target 1 card in your hand. Remove it from the game entirely. (Costs $15 Treasury)",
+    "sellPrice": 5,
+    "effects": []
+  },
+  {
+    "id": "ACT_2",
+    "name": "Stimulus Check",
+    "effectDesc": "Add +30 Base GDP to the selected policy card. (Costs $20 Treasury)",
+    "sellPrice": 10,
+    "effects": []
+  },
+  {
+    "id": "ACT_3",
+    "name": "Lobbyist Push",
+    "effectDesc": "Add a x1.5 Multiplier to the selected policy card. (Costs $30 Treasury)",
+    "sellPrice": 15,
+    "effects": []
+  }
+]
