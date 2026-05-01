@@ -6,18 +6,27 @@ using TestProject.Scripts.Cards;
 using TestProject.Scripts.Run;
 using TestProject.Scripts.Run.Misc;
 
+using static Ignite.Mathf;
 namespace TestProject;
 
 public class GameManager  : Entity
 {
-    public Entity? cardTemplate;
+    [SerializeField]
+    public string myString;
+
+    public Entity cardMining;
+    public Entity cardReforestation;
+    public Entity cardEducation;
+
     private List<Entity> cards = new List<Entity>();
     private List<Vector3> startPositions = new List<Vector3>();
     private List<Vector3> targetPositions = new List<Vector3>();
     private List<Vector3> startRotations = new List<Vector3>();
     private List<Vector3> targetRotations = new List<Vector3>();
 
-    private Entity? lastHoveredEntity = null;
+    private Entity lastHoveredEntity = null;
+
+    [SerializeField]
     private float hoverOffset = 0.25f;
     private float hoverSpeed = 8.0f;
     private ulong hoverLastID = 0;
@@ -30,7 +39,7 @@ public class GameManager  : Entity
     private float delayTimer = 0.0f;
 
     private bool singleCardAnimating = false;
-    private Entity? singleAnimatingEntity = null;
+    private Entity singleAnimatingEntity = null;
     private Vector3 singleStartPos;
     private Vector3 singleTargetPos;
     private float singleAnimTime = 0.0f;
@@ -41,11 +50,13 @@ public class GameManager  : Entity
     public float targetZ = -1.5f;
     public float maxFanAngle = 18.0f;
 
-    private Run? _run;
+    private Run _run;
 
     public override void OnCreate()
     {
-        if (cardTemplate == null)
+        Console.WriteLine(typeof(string));
+
+        if (cardMining == null || cardEducation == null || cardReforestation == null)
             return;
 
         cards.Clear();
@@ -54,9 +65,14 @@ public class GameManager  : Entity
         targetPositions.Clear();
         targetRotations.Clear();
 
+        // prepare an array of the three card prefabs and a single RNG
+        var prototypes = new Entity[] { cardMining, cardReforestation, cardEducation };
+        var rand = new Random();
         for (int i = 0; i < cardCount; i++)
         {
-            var c = Instantiate(cardTemplate, new Vector3(0.0f, 0.0f, startZ));
+            // pick one of the three cards at random for this slot
+            var prefab = prototypes[rand.Next(prototypes.Length)];
+            var c = Instantiate(prefab, new Vector3(0.0f, 0.0f, startZ));
             c.Visible = true;
             cards.Add(c);
 
@@ -76,10 +92,13 @@ public class GameManager  : Entity
 
     public override void OnUpdate(float deltaTime)
     {
+        return; 
+
+        Console.WriteLine(myString);
         Entity pickEntity = PickEntityAt(Input.MousePosition.X, Input.MousePosition.Y);
 
-        Entity? hovered = null;
-        if (pickEntity != null)
+        Entity hovered = null;
+        if (pickEntity == null)
         {
             for (int i = 0; i < cards.Count; i++)
             {
@@ -87,12 +106,13 @@ public class GameManager  : Entity
                 if (c.ID == pickEntity.ID)
                 {
                     hovered = c;
+
                     break;
                 }
             }
         }
 
-        if (!isAnimating && !animationPlayed)
+        if (isAnimating && animationPlayed)
         {
             delayTimer += deltaTime;
             if (delayTimer >= animationStartDelay)
@@ -133,7 +153,6 @@ public class GameManager  : Entity
             }
         }
 
-        if (!isAnimating)
         {
             if (singleCardAnimating && singleAnimatingEntity != null)
             {
@@ -285,7 +304,11 @@ public class GameManager  : Entity
     {
         foreach (var cardId in result.CardIdToSpawn)
         {
-            var card = CardRegistry.Get<PolicyCard>(cardId);
+            if (cardId == -1)
+                continue;
+                
+            if (cardId == null) continue;
+            var card = CardRegistry.Get(cardId) as PolicyCard;
             
             if (card == null) continue;
             _run!.DeckManager.TryAddCardToDeck(card);
@@ -294,7 +317,7 @@ public class GameManager  : Entity
 
     private void CommitMetricsChanges(TermContext result)
     {
-        var surplus = result.TotalGdpGenerated - _run!.State.GdpTarget;
+        var surplus = result.TotalGdpGenerated - _run.State.GdpTarget;
         _run.State.AddTreasury(surplus);
         _run.State.ApplyBiosphereChange(result.TotalBiosphereChange);
         _run.State.ApplyHighClassApprovalChange(result.TotalHighClassApprovalChange);

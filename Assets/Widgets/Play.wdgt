@@ -3,39 +3,164 @@ Widget:
   Name: Play
   Enabled: true
   BlocksWidgetsBelow: false
-  NextItemId: 3
   Items:
-    - Name: Canvas Root
+    - Name: Test
       ID: 1
       ParentID: 0
       Type: 0
       Position: [0, 0]
-      Size: [252, 344]
-      Alignment: 6
-      SizingMode: 0
+      Size: [160, 124]
+      VerticalAlignment: 3
+      HorizontalAlignment: 0
       Visible: true
+      ZIndex: 0
       Layout: 1
       Padding: 0
       Gap: 0
     - Name: start_button
       ID: 2
-      ParentID: 1
+      ParentID: 21
       Type: 1
       Position: [0, 0]
-      Size: [150, 35]
-      Alignment: 6
-      SizingMode: 0
+      Size: [120, 30]
+      VerticalAlignment: 0
+      HorizontalAlignment: 3
       Visible: true
+      ZIndex: 6
       ImageHandle: 0
-      NormalColor: [0.76744187, 0, 0, 1]
+      NormalColor: [0.76862746, 0, 0, 1]
       HoverColor: [0.95348835, 0, 0, 1]
       PressedColor: [0.67441857, 0, 0, 1]
-      BorderColor: [0.5, 0.5, 0.5, 1]
-      Text: Start
+      BorderColor: [0.5019608, 0.5019608, 0.5019608, 1]
+      CornerRadius: 0
       FontHandle: 4102674412946893508
+      Text: Start
       Color: [1, 1, 1, 1]
-      FontSize: 19.525
+      FontSize: 16
       Kerning: 0
       LineSpacing: -0.025
+    - Name: ""
+      ID: 13
+      ParentID: 0
+      Type: 1
+      Position: [0, 0]
+      Size: [150, 50]
+      VerticalAlignment: 0
+      HorizontalAlignment: 0
+      Visible: true
+      ZIndex: 0
+      ImageHandle: 0
+      NormalColor: [0.25, 0.25, 0.25, 1]
+      HoverColor: [0.5, 0.5, 0.5, 1]
+      PressedColor: [0.25, 0.25, 0.25, 1]
+      BorderColor: [0.5, 0.5, 0.5, 1]
+      CornerRadius: 0
+      FontHandle: 0
+      Text: ""
+      Color: [1, 1, 1, 1]
+      FontSize: 16
+      Kerning: 0
+      LineSpacing: 0.025
+    - Name: MenuContainer
+      ID: 21
+      ParentID: 1
+      Type: 0
+      Position: [0, 0]
+      Size: [86, 130]
+      VerticalAlignment: 2
+      HorizontalAlignment: 3
+      Visible: true
+      ZIndex: 0
+      Layout: 1
+      Padding: 3.5
+      Gap: 4
+    - Name: ""
+      ID: 14
+      ParentID: 0
+      Type: 1
+      Position: [0, 0]
+      Size: [150, 50]
+      VerticalAlignment: 0
+      HorizontalAlignment: 0
+      Visible: true
+      ZIndex: 0
+      ImageHandle: 0
+      NormalColor: [0.25, 0.25, 0.25, 1]
+      HoverColor: [0.5, 0.5, 0.5, 1]
+      PressedColor: [0.25, 0.25, 0.25, 1]
+      BorderColor: [0.5, 0.5, 0.5, 1]
+      CornerRadius: 0
+      FontHandle: 0
+      Text: ""
+      Color: [1, 1, 1, 1]
+      FontSize: 16
+      Kerning: 0
+      LineSpacing: 0.025
+    - Name: stop_button
+      ID: 19
+      ParentID: 21
+      Type: 1
+      Position: [0, 0]
+      Size: [120, 30]
+      VerticalAlignment: 0
+      HorizontalAlignment: 3
+      Visible: true
+      ZIndex: 0
+      ImageHandle: 13589769746383350053
+      NormalColor: [0, 0.12745635, 0.78294575, 1]
+      HoverColor: [0.16783844, 0.2843777, 0.88372093, 1]
+      PressedColor: [0, 0.12745635, 0.78294575, 1]
+      BorderColor: [0.5, 0.5, 0.5, 1]
+      CornerRadius: 0
+      FontHandle: 4102674412946893508
+      Text: Stop
+      Color: [1, 1, 1, 1]
+      FontSize: 16
+      Kerning: 0
+      LineSpacing: -0.025
+    - Name: exit_button
+      ID: 20
+      ParentID: 21
+      Type: 1
+      Position: [0, 0]
+      Size: [120, 30]
+      VerticalAlignment: 0
+      HorizontalAlignment: 3
+      Visible: true
+      ZIndex: 0
+      ImageHandle: 0
+      NormalColor: [0.79844964, 0.6127637, 0, 1]
+      HoverColor: [0.84108526, 0.77588475, 0.14018089, 1]
+      PressedColor: [0.79844964, 0.6127637, 0, 1]
+      BorderColor: [0.79844964, 0.6127637, 0, 1]
+      CornerRadius: 0
+      FontHandle: 4102674412946893508
+      Text: Exit
+      Color: [1, 1, 1, 1]
+      FontSize: 16
+      Kerning: 0
+      LineSpacing: 0.025
+    - Name: image_1
+      ID: 23
+      ParentID: 0
+      Type: 3
+      Position: [0, 0]
+      Size: [54, 54]
+      VerticalAlignment: 0
+      HorizontalAlignment: 0
+      Visible: true
+      ZIndex: 0
+      ImageHandle: 0
+    - Name: image_2
+      ID: 24
+      ParentID: 0
+      Type: 3
+      Position: [0, 0]
+      Size: [72, 72]
+      VerticalAlignment: 0
+      HorizontalAlignment: 0
+      Visible: true
+      ZIndex: 0
+      ImageHandle: 0
   ChildWidgets:
     []

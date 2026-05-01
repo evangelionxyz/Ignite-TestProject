@@ -1,0 +1,18 @@
+Material:
+  Version: Alpha-0.1
+  Name: Education_Grant
+  Type: 0
+  BaseColorTextureHandle: 8968735259550488797
+  EmissiveTextureHandle: 0
+  MetallicTextureHandle: 0
+  RoughnessTextureHandle: 0
+  NormalTextureHandle: 0
+  OcclusionTextureHandle: 0
+  GPUData:
+    BaseColorFactor: [0.8, 0.8, 0.8, 1]
+    EmissiveFactor: [1, 1, 1, 1]
+    MetallicFactor: 0
+    RoughnessFactor: 0.75
+    OcclusionStrength: 0
+    MetallicChannel: 2
+    RoughnessChannel: 1
