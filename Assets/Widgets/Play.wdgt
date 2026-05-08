@@ -33,12 +33,25 @@ Widget:
       PressedColor: [0.67441857, 0, 0, 1]
       BorderColor: [0.5019608, 0.5019608, 0.5019608, 1]
       CornerRadius: 0
-      FontHandle: 4102674412946893508
+      FontHandle: 8540147510640274260
       Text: Start
       Color: [1, 1, 1, 1]
       FontSize: 16
       Kerning: 0
       LineSpacing: -0.025
+    - Name: MenuContainer
+      ID: 21
+      ParentID: 1
+      Type: 0
+      Position: [0, 0]
+      Size: [86, 130]
+      VerticalAlignment: 2
+      HorizontalAlignment: 3
+      Visible: true
+      ZIndex: 0
+      Layout: 1
+      Padding: 3.5
+      Gap: 4
     - Name: ""
       ID: 13
       ParentID: 0
@@ -61,19 +74,6 @@ Widget:
       FontSize: 16
       Kerning: 0
       LineSpacing: 0.025
-    - Name: MenuContainer
-      ID: 21
-      ParentID: 1
-      Type: 0
-      Position: [0, 0]
-      Size: [86, 130]
-      VerticalAlignment: 2
-      HorizontalAlignment: 3
-      Visible: true
-      ZIndex: 0
-      Layout: 1
-      Padding: 3.5
-      Gap: 4
     - Name: ""
       ID: 14
       ParentID: 0
@@ -106,13 +106,13 @@ Widget:
       HorizontalAlignment: 3
       Visible: true
       ZIndex: 0
-      ImageHandle: 13589769746383350053
+      ImageHandle: 0
       NormalColor: [0, 0.12745635, 0.78294575, 1]
       HoverColor: [0.16783844, 0.2843777, 0.88372093, 1]
       PressedColor: [0, 0.12745635, 0.78294575, 1]
       BorderColor: [0.5, 0.5, 0.5, 1]
       CornerRadius: 0
-      FontHandle: 4102674412946893508
+      FontHandle: 8540147510640274260
       Text: Stop
       Color: [1, 1, 1, 1]
       FontSize: 16
@@ -134,7 +134,7 @@ Widget:
       PressedColor: [0.79844964, 0.6127637, 0, 1]
       BorderColor: [0.79844964, 0.6127637, 0, 1]
       CornerRadius: 0
-      FontHandle: 4102674412946893508
+      FontHandle: 8540147510640274260
       Text: Exit
       Color: [1, 1, 1, 1]
       FontSize: 16

@@ -1,9 +1,0 @@
-AnimatorController:
-  DefaultState: ""
-  SkeletonHandle: 0
-  States:
-    []
-  Params:
-    []
-  Transitions:
-    []

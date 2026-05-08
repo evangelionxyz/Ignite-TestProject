@@ -2,5 +2,12 @@
   <Configurations>
     <BuildType Name="Release" />
   </Configurations>
+  <Folder Name="/IgniteManaged/">
+    <Project Path="../../Ignite/scriptengine/IgniteScriptEngine.csproj" />
+    <Project Path="../../Ignite/thirdparty/MochiSharp/MochiSharp.Managed/MochiSharp.Managed.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+  </Folder>
   <Project Path="TestProject.csproj" Id="9c4befc7-0801-68bd-91f5-6194fda95ec1" />
 </Solution>

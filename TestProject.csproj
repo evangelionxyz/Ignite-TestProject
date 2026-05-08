@@ -22,11 +22,6 @@
     <ImplicitUsing>enable</ImplicitUsing>
     <Nullable>disable</Nullable>
   </PropertyGroup>
-  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <Reference Include="MochiSharp.Managed">
-      <HintPath>Bin\MochiSharp.Managed.dll</HintPath>
-    </Reference>
-  </ItemGroup>
   <ItemGroup>
     <Compile Include="Scripts\CardRegistry.cs" />
     <Compile Include="Scripts\Cards\ActionCard.cs" />
@@ -66,8 +61,7 @@
     <Compile Include="Scripts\UI\UIManager.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="IgniteScriptEngine">
-      <HintPath>Bin\IgniteScriptEngine.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\Ignite\scriptengine\IgniteScriptEngine.csproj" />
+    <ProjectReference Include="..\..\Ignite\thirdparty\MochiSharp\MochiSharp.Managed\MochiSharp.Managed.csproj" />
   </ItemGroup>
 </Project>

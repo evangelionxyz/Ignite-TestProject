@@ -1,236 +1,209 @@
 AssetRegistry:
   Assets:
-    - Handle: 110278436566408583
+    - Handle: 56810698378882188
       Type: Mesh
-      Filepath: Assets/Meshes/Reforestation.mesh
-    - Handle: 512353058481829395
-      Type: Texture
-      Filepath: Assets/Meshes/Highway Expansion DECK.png
-    - Handle: 775153008294271998
+      Filepath: Assets/Test/sword_1handed.mesh
+    - Handle: 260009666938718256
       Type: Mesh
-      Filepath: Assets/Meshes/Mining_Concession.mesh
-    - Handle: 1085976849160563879
-      Type: Texture
-      Filepath: Assets/Meshes/Carbon Tax DECK.png
-    - Handle: 1323410658947940753
-      Type: Widget
-      Filepath: Assets/Widgets/OptionMenu.wdgt
-    - Handle: 1417664545423078051
-      Type: Texture
-      Filepath: Assets/Meshes/Labor Subsidies DECK.png
-    - Handle: 1450476837957949913
-      Type: Texture
-      Filepath: Assets/Meshes/Coal Subsidies DECK.png
-    - Handle: 1671497305426399170
-      Type: Texture
-      Filepath: Assets/HDRIs/kiara_1_dawn_4k.hdr
-    - Handle: 1799881210558115287
-      Type: Audio
-      Filepath: Assets/Audio/UI/click.mp3
-    - Handle: 2005104704104439850
-      Type: Texture
-      Filepath: Assets/HDRIs/snowy_field_2k.hdr
-    - Handle: 2633303442274934334
-      Type: Material
-      Filepath: Assets/Meshes/Mining_Concession.ixmat
-    - Handle: 2710602715285342894
-      Type: Texture
-      Filepath: Assets/Meshes/Solar Array DECK.png
-    - Handle: 2858381848351226909
-      Type: Texture
-      Filepath: Assets/Meshes/Water Treatment DECK.png
-    - Handle: 3328541958228590552
-      Type: Texture
-      Filepath: Assets/Widgets/checker.jpg
-    - Handle: 4015354320422608108
-      Type: Material
-      Filepath: Assets/Meshes/Reforestation.ixmat
-    - Handle: 4020518715610463129
-      Type: Widget
-      Filepath: Assets/Widgets/Play.wdgt
-    - Handle: 4102674412946893508
-      Type: Font
-      Filepath: Assets/Fonts/LowresPixel-Regular.otf
-    - Handle: 4436236215480904821
+      Filepath: Assets/Test/staff.mesh
+    - Handle: 312648132176305222
       Type: Texture
       Filepath: Assets/Meshes/Reforestation DECK.png
-    - Handle: 5071529282580120068
-      Type: Widget
-      Filepath: Assets/Widgets/Play.wdgt
-    - Handle: 5163821733624245656
-      Type: Texture
-      Filepath: Assets/HDRIs/klippad_sunrise_2_2k.hdr
-    - Handle: 5239166657089936602
-      Type: Material
-      Filepath: Assets/Meshes/Mining_Concession.ixmat
-    - Handle: 5326749717763311860
-      Type: Mesh
-      Filepath: Assets/Meshes/Education_Card.mesh
-    - Handle: 5429335199766536717
-      Type: Texture
-      Filepath: Assets/Meshes/Public Housing DECK.png
-    - Handle: 5520978528538385175
-      Type: Texture
-      Filepath: Assets/Meshes/Universal Healthcare DECK.png
-    - Handle: 6290283528465495729
-      Type: Mesh
-      Filepath: Assets/Meshes/Education_Card.mesh
-    - Handle: 6849453451733802149
-      Type: Texture
-      Filepath: Assets/Meshes/Reforestation DECK.png
-    - Handle: 6861664923932968794
-      Type: Texture
-      Filepath: Assets/Meshes/Offshore Drilling DECK.png
-    - Handle: 7201159435847965647
-      Type: Texture
-      Filepath: Assets/HDRIs/ferndale_studio_04_2k.hdr
-    - Handle: 7504911466409295994
-      Type: Texture
-      Filepath: Assets/HDRIs/snowy_field_2k.hdr
-    - Handle: 8107778518442363047
-      Type: Texture
-      Filepath: Assets/Meshes/Solar Array DECK.png
-    - Handle: 8193681670745273873
-      Type: Texture
-      Filepath: Assets/Meshes/Mining Confession DECK.png
-    - Handle: 8406749831429556630
-      Type: Texture
-      Filepath: Assets/HDRIs/ferndale_studio_12_2k.hdr
-    - Handle: 8487866291550668718
-      Type: Texture
-      Filepath: Assets/HDRIs/klippad_sunrise_2_2k.hdr
-    - Handle: 8669753767113032478
-      Type: Texture
-      Filepath: Assets/Meshes/Coal Subsidies DECK.png
-    - Handle: 8968735259550488797
-      Type: Texture
-      Filepath: Assets/Meshes/Education Grantt DECK.png
-    - Handle: 9391692126589029369
-      Type: Texture
-      Filepath: Assets/Meshes/National Park DECK.png
-    - Handle: 9393520554076448638
-      Type: Texture
-      Filepath: Assets/Meshes/Mega Factory DECK.png
-    - Handle: 9420462621085832834
-      Type: Font
-      Filepath: Assets/Fonts/segoeui.ttf
-    - Handle: 9750024373799495320
-      Type: Texture
-      Filepath: Assets/Meshes/Highway Expansion DECK.png
-    - Handle: 9920694308132549009
-      Type: Audio
-      Filepath: Assets/Audio/UI/hover.mp3
-    - Handle: 9970204269587194455
-      Type: Texture
-      Filepath: Assets/HDRIs/snowy_cemetery_2k.hdr
-    - Handle: 10125969547390959480
-      Type: Scene
-      Filepath: Assets/Scene/MainScene.ixscene
-    - Handle: 10627845679883089386
-      Type: Font
-      Filepath: Assets/Fonts/segoeui.ttf
-    - Handle: 10675971286390682307
-      Type: AnimatorController
-      Filepath: Assets/NewAnimatorController3D.ac
-    - Handle: 10793323259493303610
-      Type: Material2D
-      Filepath: Assets/Material2D/Bakcground.ixmat2d
-    - Handle: 11148577061625364990
-      Type: Audio
-      Filepath: Assets/Audio/UI/hover.mp3
-    - Handle: 11479500516007491390
-      Type: Texture
-      Filepath: Assets/Meshes/National Park DECK.png
-    - Handle: 12159434539265251104
-      Type: AnimatorController
-      Filepath: Assets/NewAnimatorController3D.ac
-    - Handle: 12365291819084358679
-      Type: Texture
-      Filepath: Assets/Textures/board.jpg
-    - Handle: 12632029455603533965
-      Type: Texture
-      Filepath: Assets/Meshes/Transit Network DECK.png
-    - Handle: 12893712573697181940
-      Type: Scene
-      Filepath: Assets/Scene/MainScene.ixscene
-    - Handle: 13145865869329975401
-      Type: Texture
-      Filepath: Assets/Meshes/Transit Network DECK.png
-    - Handle: 13309008892168709445
-      Type: Audio
-      Filepath: Assets/Audio/UI/click.mp3
-    - Handle: 13341793632395862041
-      Type: Widget
-      Filepath: Assets/Widgets/OptionMenu.wdgt
-    - Handle: 13589769746383350053
-      Type: Texture
-      Filepath: Assets/Widgets/checker.jpg
-    - Handle: 13833614530098331060
+    - Handle: 324292370803469862
       Type: Texture
       Filepath: Assets/Meshes/Labor Subsidies DECK.png
-    - Handle: 14155115580574106734
-      Type: Material
-      Filepath: Assets/Meshes/Reforestation.ixmat
-    - Handle: 14571478911412722116
+    - Handle: 391301000506068861
       Type: Texture
-      Filepath: Assets/Meshes/Public Housing DECK.png
-    - Handle: 14798869311340847312
-      Type: Texture
-      Filepath: Assets/HDRIs/rogland_clear_night_4k.hdr
-    - Handle: 15132198631710456398
-      Type: Texture
-      Filepath: Assets/HDRIs/snowy_cemetery_2k.hdr
-    - Handle: 15387786149627755007
+      Filepath: Assets/Test/barbarian_texture.png
+    - Handle: 455891236014209429
+      Type: Mesh
+      Filepath: Assets/Test/shield_square_color.mesh
+    - Handle: 720531887802543265
       Type: Texture
       Filepath: Assets/Meshes/Water Treatment DECK.png
-    - Handle: 15523119602859940562
-      Type: Font
-      Filepath: Assets/Fonts/LowresPixel-Regular.otf
-    - Handle: 15868251833154460899
-      Type: Mesh
-      Filepath: Assets/Meshes/Reforestation.mesh
-    - Handle: 15961304355244349103
-      Type: Material
-      Filepath: Assets/Meshes/Education_Grant.ixmat
-    - Handle: 15995981177487439163
+    - Handle: 1761493190985447581
       Type: Texture
       Filepath: Assets/Meshes/Offshore Drilling DECK.png
-    - Handle: 16817142207487594121
-      Type: Texture
-      Filepath: Assets/Meshes/Universal Healthcare DECK.png
-    - Handle: 17225593048170790267
-      Type: Texture
-      Filepath: Assets/HDRIs/kiara_1_dawn_4k.hdr
-    - Handle: 17722789919744133663
-      Type: Material
-      Filepath: Assets/Meshes/Education_Grant.ixmat
-    - Handle: 17774775725597609298
-      Type: Texture
-      Filepath: Assets/Meshes/Carbon Tax DECK.png
-    - Handle: 17854104198685770712
+    - Handle: 2263878162086305200
       Type: Mesh
-      Filepath: Assets/Meshes/Mining_Concession.mesh
-    - Handle: 17888885793484462978
-      Type: Texture
-      Filepath: Assets/Textures/board.jpg
-    - Handle: 17899681720543316127
-      Type: Texture
-      Filepath: Assets/Meshes/Education Grantt DECK.png
-    - Handle: 17953553219306833066
+      Filepath: Assets/Test/sword_2handed.mesh
+    - Handle: 2289606610722130704
+      Type: Mesh
+      Filepath: Assets/Test/shield_square.mesh
+    - Handle: 2470609415228399921
       Type: Texture
       Filepath: Assets/Meshes/Mega Factory DECK.png
-    - Handle: 17972497409201856646
+    - Handle: 3206621611054344468
       Type: Texture
-      Filepath: Assets/Meshes/Mining Confession DECK.png
-    - Handle: 17994366841854493348
-      Type: Texture
-      Filepath: Assets/HDRIs/rogland_clear_night_4k.hdr
-    - Handle: 18159819380938074159
+      Filepath: Assets/Meshes/Public Housing DECK.png
+    - Handle: 3547203377910939524
+      Type: Mesh
+      Filepath: Assets/Test/spellbook_open.mesh
+    - Handle: 3804949383072630171
+      Type: Material
+      Filepath: Assets/Test/knight.ixmat
+    - Handle: 3829344749087761044
       Type: Texture
       Filepath: Assets/HDRIs/ferndale_studio_12_2k.hdr
-    - Handle: 18218262222413293981
+    - Handle: 4275032857904321345
+      Type: Texture
+      Filepath: Assets/Test/knight_texture.png
+    - Handle: 4423156052651382960
+      Type: Texture
+      Filepath: Assets/HDRIs/rogland_clear_night_4k.hdr
+    - Handle: 4767585072708772990
+      Type: Mesh
+      Filepath: Assets/Meshes/Mining_Concession.mesh
+    - Handle: 5036045617928549847
+      Type: Texture
+      Filepath: Assets/Meshes/Transit Network DECK.png
+    - Handle: 5051447917925111842
+      Type: Material
+      Filepath: Assets/Meshes/Education_Grant.ixmat
+    - Handle: 5444935851377726071
+      Type: Texture
+      Filepath: Assets/Meshes/Coal Subsidies DECK.png
+    - Handle: 5829658421640784743
+      Type: Mesh
+      Filepath: Assets/Test/wand.mesh
+    - Handle: 6082699181734344388
+      Type: Texture
+      Filepath: Assets/Test/rogue_texture.png
+    - Handle: 6442012503652515830
+      Type: Texture
+      Filepath: Assets/HDRIs/snowy_cemetery_2k.hdr
+    - Handle: 6666518004732537090
+      Type: Mesh
+      Filepath: Assets/Test/shield_spikes_color.mesh
+    - Handle: 6769870344284950637
+      Type: Font
+      Filepath: Assets/Fonts/segoeui.ttf
+    - Handle: 6942365311390200766
+      Type: Mesh
+      Filepath: Assets/Test/shield_round.mesh
+    - Handle: 7578662614024039704
+      Type: Material
+      Filepath: Assets/Test/DefaultMaterial.ixmat
+    - Handle: 7619311922986312088
+      Type: Material
+      Filepath: Assets/Test/ranger.ixmat
+    - Handle: 7715756090124608588
+      Type: Mesh
+      Filepath: Assets/Test/spellbook_closed.mesh
+    - Handle: 7847967721913143486
+      Type: Mesh
+      Filepath: Assets/Meshes/Education_Card.mesh
+    - Handle: 7902946211468222477
+      Type: Mesh
+      Filepath: Assets/Meshes/Reforestation.mesh
+    - Handle: 7976568348439390939
+      Type: Texture
+      Filepath: Assets/HDRIs/klippad_sunrise_2_2k.hdr
+    - Handle: 8132256527131867623
+      Type: Mesh
+      Filepath: Assets/Test/shield_spikes.mesh
+    - Handle: 8173740620321870046
       Type: Material2D
       Filepath: Assets/Material2D/Bakcground.ixmat2d
-    - Handle: 18242689461199638886
+    - Handle: 8293706827158100626
+      Type: Mesh
+      Filepath: Assets/Test/axe_1handed.mesh
+    - Handle: 8540147510640274260
+      Type: Font
+      Filepath: Assets/Fonts/LowresPixel-Regular.otf
+    - Handle: 8852604534217307833
+      Type: Widget
+      Filepath: Assets/Widgets/OptionMenu.wdgt
+    - Handle: 9277985447810951900
+      Type: Texture
+      Filepath: Assets/Meshes/Highway Expansion DECK.png
+    - Handle: 9455524092802395846
+      Type: Scene
+      Filepath: Assets/Scene/MainScene.ixscene
+    - Handle: 9619626255186171100
+      Type: Texture
+      Filepath: Assets/Meshes/Universal Healthcare DECK.png
+    - Handle: 9712357892029974473
+      Type: Texture
+      Filepath: Assets/Meshes/Solar Array DECK.png
+    - Handle: 9741063533984420874
+      Type: Texture
+      Filepath: Assets/HDRIs/kiara_1_dawn_4k.hdr
+    - Handle: 9832032677391371977
       Type: Texture
       Filepath: Assets/HDRIs/ferndale_studio_04_2k.hdr
+    - Handle: 10043554977444521064
+      Type: Material
+      Filepath: Assets/Meshes/Mining_Concession.ixmat
+    - Handle: 10399659570565655529
+      Type: Material
+      Filepath: Assets/Test/rogue.ixmat
+    - Handle: 10996414771768181850
+      Type: Texture
+      Filepath: Assets/Meshes/National Park DECK.png
+    - Handle: 11490707720842841448
+      Type: Mesh
+      Filepath: Assets/Test/shield_badge_color.mesh
+    - Handle: 11496953833044084793
+      Type: Mesh
+      Filepath: Assets/Test/sword_2handed_color.mesh
+    - Handle: 11695677817370624709
+      Type: Audio
+      Filepath: Assets/Audio/UI/click.mp3
+    - Handle: 11863926446403165781
+      Type: Texture
+      Filepath: Assets/Meshes/Education Grantt DECK.png
+    - Handle: 11988390071806257344
+      Type: Mesh
+      Filepath: Assets/Test/arrow_bow_bundle.mesh
+    - Handle: 12056936178156928665
+      Type: Texture
+      Filepath: Assets/Test/mage_texture.png
+    - Handle: 12779225342876668868
+      Type: Mesh
+      Filepath: Assets/Test/shield_round_color.mesh
+    - Handle: 13126193955954379350
+      Type: Mesh
+      Filepath: Assets/Test/shield_round_barbarian.mesh
+    - Handle: 13142015588779095987
+      Type: Widget
+      Filepath: Assets/Widgets/Play.wdgt
+    - Handle: 13181265746475709721
+      Type: Material
+      Filepath: Assets/Meshes/Reforestation.ixmat
+    - Handle: 13692310686553866989
+      Type: Material
+      Filepath: Assets/Test/barbarian.ixmat
+    - Handle: 13731169920133318373
+      Type: Mesh
+      Filepath: Assets/Test/smokebomb.mesh
+    - Handle: 13753375447973595426
+      Type: Mesh
+      Filepath: Assets/Test/plane.mesh
+    - Handle: 14581595720510041312
+      Type: Texture
+      Filepath: Assets/Widgets/checker.jpg
+    - Handle: 15179492458381431059
+      Type: Texture
+      Filepath: Assets/Meshes/Mining Confession DECK.png
+    - Handle: 15421818152247124853
+      Type: Texture
+      Filepath: Assets/HDRIs/snowy_field_2k.hdr
+    - Handle: 15473488362362431873
+      Type: Material
+      Filepath: Assets/Test/mage.ixmat
+    - Handle: 16082459728017263359
+      Type: Texture
+      Filepath: Assets/Meshes/Carbon Tax DECK.png
+    - Handle: 16775692884815417219
+      Type: Audio
+      Filepath: Assets/Audio/UI/hover.mp3
+    - Handle: 16781602476986999167
+      Type: Mesh
+      Filepath: Assets/Test/arrow_crossbow.mesh
+    - Handle: 17491240773781215610
+      Type: Mesh
+      Filepath: Assets/Test/arrow_crossbow_bundle.mesh
+    - Handle: 17569299480252000562
+      Type: Texture
+      Filepath: Assets/Textures/board.jpg
