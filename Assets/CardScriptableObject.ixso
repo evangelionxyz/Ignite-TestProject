@@ -1,0 +1,6 @@
+ScriptableObject:
+  ClassName: TestProject.CardScriptableObject
+  Fields:
+    name: ""
+    id: 0
+    type: 0

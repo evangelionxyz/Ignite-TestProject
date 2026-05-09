@@ -1,8 +1,8 @@
 AssetRegistry:
   Assets:
-    - Handle: 179254728542285357
+    - Handle: 67545527920970421
       Type: ScriptableObject
-      Filepath: Assets/Test_SO2.ixso
+      Filepath: Assets/CardScriptableObject.ixso
     - Handle: 234424214434647457
       Type: Texture
       Filepath: Assets/Meshes/Table/Mahogony_Legs_and_Rails_HP_-_COL.png
