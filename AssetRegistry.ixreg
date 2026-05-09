@@ -135,6 +135,9 @@ AssetRegistry:
     - Handle: 14581595720510041312
       Type: Texture
       Filepath: Assets/Widgets/checker.jpg
+    - Handle: 15066992581258862276
+      Type: ScriptableObject
+      Filepath: Assets/TestScriptableObject.ixso
     - Handle: 15179492458381431059
       Type: Texture
       Filepath: Assets/Meshes/Mining Confession DECK.png

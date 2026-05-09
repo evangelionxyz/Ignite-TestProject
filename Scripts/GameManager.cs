@@ -11,24 +11,9 @@ namespace TestProject;
 
 public class GameManager  : Entity
 {
-    enum EMyEnum
-    {
-        Default = 0,
-        Test,
-        HelloWorld
-    }
-
-    [SerializeField]
-    private EMyEnum myEnum = EMyEnum.Default;
-    
-    [SerializeField]
-    private Entity cardMining;
-    
-    [SerializeField]
-    private Entity cardReforestation;
-    
-    [SerializeField]
-    private Entity cardEducation;
+    [SerializeField] private Entity cardMining;
+    [SerializeField] private Entity cardReforestation;
+    [SerializeField] private Entity cardEducation;
 
     private List<Entity> cards = new List<Entity>();
     private List<Vector3> startPositions = new List<Vector3>();
@@ -71,7 +56,10 @@ public class GameManager  : Entity
     public override void OnCreate()
     {
         if (cardMining == null || cardEducation == null || cardReforestation == null)
+        {
+            Debug.Log("Error on create, cards are null", Debug.LogLevel.Error);
             return;
+        }
 
         cards.Clear();
         startPositions.Clear();
@@ -105,7 +93,6 @@ public class GameManager  : Entity
 
     public override void OnUpdate(float deltaTime)
     {
-        // Console.WriteLine(myString);
         Ray ray = Physics.ScreenToWorldRay(Input.MousePosition);
         Entity hovered = Physics.Raycast(ray);
         
@@ -184,7 +171,7 @@ public class GameManager  : Entity
 
                 float lerpFactor = MathF.Min(1.0f, deltaTime * hoverSpeed);
                 card.Translation = Vector3.Lerp(card.Translation, desiredPos, lerpFactor);
-                card.Rotation = LerpQuaternion(card.Rotation, desiredRot, lerpFactor);
+                card.Rotation = Quaternion.Lerp(card.Rotation, desiredRot, lerpFactor);
             }
         }
     }
@@ -208,27 +195,6 @@ public class GameManager  : Entity
             float zRotRad = angle * Mathf.Deg2Rad;
             targetRotations.Add(new Vector3(0.0f, yRotRad, zRotRad));
         }
-    }
-
-    private Quaternion LerpQuaternion(Quaternion a, Quaternion b, float t)
-    {
-        float dot = a.X * b.X + a.Y * b.Y + a.Z * b.Z + a.W * b.W;
-        if (dot < 0.0f)
-        {
-            b.X = -b.X; b.Y = -b.Y; b.Z = -b.Z; b.W = -b.W;
-        }
-        return new Quaternion(
-            Lerp(a.X, b.X, t),
-            Lerp(a.Y, b.Y, t),
-            Lerp(a.Z, b.Z, t),
-            Lerp(a.W, b.W, t)
-        ).Normalized;
-    }
-
-    // Helper linear interpolation
-    private static float Lerp(float a, float b, float t)
-    {
-        return a + (b - a) * t;
     }
 
     // All Run Method

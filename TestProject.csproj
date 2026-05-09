@@ -55,6 +55,7 @@
     <Compile Include="Scripts\Run\Slot.cs" />
     <Compile Include="Scripts\Run\Term.cs" />
     <Compile Include="Scripts\Run\TermContext.cs" />
+    <Compile Include="Scripts\ScriptableObject\TestScriptableObject.cs" />
     <Compile Include="Scripts\States\IState.cs" />
     <Compile Include="Scripts\States\StateMachine.cs" />
     <Compile Include="Scripts\TestCard.cs" />

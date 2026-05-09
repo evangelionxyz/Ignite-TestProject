@@ -1,0 +1,8 @@
+ScriptableObject:
+  ClassName: TestProject.TestScriptableObject
+  Fields:
+    MyString: Evangelion Hello World
+    MyInt: 1
+    MyFloat: 0.2
+    MyVector3: [0, 0, 0]
+    MyEntity: 14847496867223129834
