@@ -84,10 +84,6 @@ namespace TestProject.Scripts
                     foreach (var cardData in cards)
                     {
                         var card = cardData.ToCard();
-                        if (card != null)
-                        {
-                            policyDictionary[cardData.Id] = card;
-                        }
                     }
                 }
             }
