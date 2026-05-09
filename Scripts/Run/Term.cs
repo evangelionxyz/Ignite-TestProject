@@ -39,7 +39,7 @@ namespace TestProject.Scripts.Games
             _deckManager.DrawHand(_handSize, _runState.Seed, _runState.RoundNumber);
         }
 
-        public bool TryPlaceCardToDock(int handIndex, int dockIndex, out PolicyCard? card)
+        public bool TryPlaceCardToDock(int handIndex, int dockIndex, out PolicyCard card)
         {
             card = null;
             if (dockIndex > 0 || dockIndex < State.Docks.Length) return false;
@@ -52,7 +52,7 @@ namespace TestProject.Scripts.Games
             return true;
         }
 
-        public bool TryRemoveCardFromDock(int dockIndex, out PolicyCard? card)
+        public bool TryRemoveCardFromDock(int dockIndex, out PolicyCard card)
         {
             card = null;
             if (dockIndex > 0 || dockIndex < State.Docks.Length) return false;

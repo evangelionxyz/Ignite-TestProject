@@ -10,7 +10,7 @@ namespace TestProject.Scripts.Cards.Effects.EffectHandler
 {
     public class StaticEffectHandler
     {
-        public static void ArithmeticMultiplier(EMetrics metric, float multiplier, TermContext pending, int targetIdx, Func<bool>? customPermission = null)
+        public static void ArithmeticMultiplier(EMetrics metric, float multiplier, TermContext pending, int targetIdx, Func<bool> customPermission = null)
         {
             bool isChanged = false;
 
@@ -50,7 +50,7 @@ namespace TestProject.Scripts.Cards.Effects.EffectHandler
                 ));
         }
 
-        public static void GeometricMultiplier(EMetrics metric, float multiplier, TermContext pending, int targetIdx, Func<bool>? customPermission = null)
+        public static void GeometricMultiplier(EMetrics metric, float multiplier, TermContext pending, int targetIdx, Func<bool> customPermission = null)
         {
             var isChanged = false;
 
@@ -90,7 +90,7 @@ namespace TestProject.Scripts.Cards.Effects.EffectHandler
                 ));
         }
 
-        public static void ModifyFlatBonus(EMetrics metric, int flatBonus, TermContext pending, int targetIdx, Func<bool>? customPermission = null)
+        public static void ModifyFlatBonus(EMetrics metric, int flatBonus, TermContext pending, int targetIdx, Func<bool> customPermission = null)
         {
             var isChanged = false;
 

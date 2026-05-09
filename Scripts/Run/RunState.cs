@@ -29,7 +29,7 @@ namespace TestProject.Scripts.Games
         public int WelfareProspectsLevel;
         public int GreenProspectsLevel;
 
-        private List<DebtContract> _contracts;
+        private List<DebtContract> _contracts = new();
         public IReadOnlyList<DebtContract> Contracts => _contracts;
 
         public RunState(string seed)
