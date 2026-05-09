@@ -1,5 +1,8 @@
 AssetRegistry:
   Assets:
+    - Handle: 179254728542285357
+      Type: ScriptableObject
+      Filepath: Assets/Test_SO2.ixso
     - Handle: 234424214434647457
       Type: Texture
       Filepath: Assets/Meshes/Table/Mahogony_Legs_and_Rails_HP_-_COL.png
@@ -137,7 +140,7 @@ AssetRegistry:
       Filepath: Assets/Widgets/checker.jpg
     - Handle: 15066992581258862276
       Type: ScriptableObject
-      Filepath: Assets/TestScriptableObject.ixso
+      Filepath: Assets/Test_SO1.ixso
     - Handle: 15179492458381431059
       Type: Texture
       Filepath: Assets/Meshes/Mining Confession DECK.png
