@@ -14,8 +14,33 @@ namespace TestProject.Scripts
     public class CardRegistry
     {
         const string CARD_DATA_PATH = "data/cards/";
+        const string POLICY_PATH = "";
+        const string ACTION_PATH = "";
+        const string MANDATE_PATH = "";
+        const string PROSPECT_PATH = "";
+        const string CONTRACT_PATH = "";
 
-        private static Dictionary<int, Card> cardsDictionary = new();
+
+        private static Dictionary<string, Card> cardsDictionary;
+        private static Dictionary<string, PolicyCard> policyDictionary;
+        private static Dictionary<string, ActionCard> actionDictionary;
+        private static Dictionary<string, MandateCard> mandateDictionary;
+        private static Dictionary<string, ProspectCard> prospectDictionary;
+        private static Dictionary<string, DebtContract> debtDictionary;
+
+        private static string GetCardId<T>(int numericId)
+        {
+            string prefix = typeof(T) switch
+            {
+                var t when t == typeof(PolicyCard) => "POL",
+                var t when t == typeof(ActionCard) => "ACT",
+                var t when t == typeof(MandateCard) => "MAN",
+                var t when t == typeof(ProspectCard) => "PRO",
+                var t when t == typeof(DebtContract) => "CON",
+                _ => throw new ArgumentException($"Unknown card type: {typeof(T).Name}")
+            };
+            return $"{prefix}_{numericId}";
+        }
 
         private static void LoadCardData()
         {
@@ -25,7 +50,7 @@ namespace TestProject.Scripts
             prospectDictionary = [];
             debtDictionary = [];
 
-            string basePath = CARD_BASE_DATA_PATH;
+            string basePath = CARD_DATA_PATH;
 
             try
             {

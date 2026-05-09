@@ -307,7 +307,7 @@ public class GameManager  : Entity
                 continue;
                 
             if (cardId == null) continue;
-            var card = CardRegistry.Get(cardId) as PolicyCard;
+            var card = CardRegistry.Get<PolicyCard>(cardId);
             
             if (card == null) continue;
             _run!.DeckManager.TryAddCardToDeck(card);
