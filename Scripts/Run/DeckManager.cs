@@ -45,7 +45,7 @@ namespace TestProject.Scripts.Games
             _deck.RemoveRange(0, handSize);
         }
 
-        public PolicyCard? TrySelectCardFromHand(int index) 
+        public PolicyCard TrySelectCardFromHand(int index) 
         {
             if (index < 0 || index >= _hand.Count()) return null;
 
@@ -103,7 +103,7 @@ namespace TestProject.Scripts.Games
             return false;
         }
 
-        public MandateCard? ReplaceMandate(int slotIndex, MandateCard mandate)
+        public MandateCard ReplaceMandate(int slotIndex, MandateCard mandate)
         {
             if (!mandate.IsSellable) return null;
 
@@ -114,7 +114,7 @@ namespace TestProject.Scripts.Games
             return old;
         }
 
-        public ActionCard? ReplaceActionCard(int slotIndex, ActionCard card)
+        public ActionCard ReplaceActionCard(int slotIndex, ActionCard card)
         {
             if (slotIndex < 0 || slotIndex >= _actionCards.Count) return null;
 
@@ -123,7 +123,7 @@ namespace TestProject.Scripts.Games
             return old;
         }
 
-        public MandateCard? SellMandate(int slotIndex)
+        public MandateCard SellMandate(int slotIndex)
         {
             if (!_mandates[slotIndex].IsSellable) return null;
 
@@ -134,7 +134,7 @@ namespace TestProject.Scripts.Games
             return sold;  
         }
 
-        public ActionCard? SellActionCard(int slotIndex)
+        public ActionCard SellActionCard(int slotIndex)
         {
             if (slotIndex < 0 || slotIndex >= _actionCards.Count) return null;
 

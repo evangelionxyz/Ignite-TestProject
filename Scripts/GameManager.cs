@@ -11,12 +11,24 @@ namespace TestProject;
 
 public class GameManager  : Entity
 {
-    [SerializeField]
-    public string myString;
+    enum EMyEnum
+    {
+        Default = 0,
+        Test,
+        HelloWorld
+    }
 
-    public Entity cardMining;
-    public Entity cardReforestation;
-    public Entity cardEducation;
+    [SerializeField]
+    private EMyEnum myEnum = EMyEnum.Default;
+    
+    [SerializeField]
+    private Entity cardMining;
+    
+    [SerializeField]
+    private Entity cardReforestation;
+    
+    [SerializeField]
+    private Entity cardEducation;
 
     private List<Entity> cards = new List<Entity>();
     private List<Vector3> startPositions = new List<Vector3>();
@@ -28,6 +40,7 @@ public class GameManager  : Entity
 
     [SerializeField]
     private float hoverOffset = 0.25f;
+
     private float hoverSpeed = 8.0f;
     private ulong hoverLastID = 0;
 
@@ -38,32 +51,31 @@ public class GameManager  : Entity
     private float animationStartDelay = 0.2f;
     private float delayTimer = 0.0f;
 
-    private bool singleCardAnimating = false;
-    private Entity singleAnimatingEntity = null;
-    private Vector3 singleStartPos;
-    private Vector3 singleTargetPos;
-    private float singleAnimTime = 0.0f;
-    private float singleAnimDuration = 0.5f;
-    public int cardCount = 8;
-    public float cardSpacing = 0.5f;
-    public float startZ = -3.0f;
-    public float targetZ = -1.5f;
-    public float maxFanAngle = 18.0f;
+    [SerializeField]
+    private int cardCount = 8;
+
+    [SerializeField]
+    private float cardSpacing = 0.5f;
+
+    [SerializeField]
+    private float startZ = -3.0f;
+    
+    [SerializeField]
+    private float targetZ = -1.5f;
+    
+    [SerializeField]
+    private float maxFanAngle = 18.0f;
 
     private Run _run;
 
     public override void OnCreate()
     {
-        Console.WriteLine(typeof(string));
-
         if (cardMining == null || cardEducation == null || cardReforestation == null)
             return;
 
         cards.Clear();
         startPositions.Clear();
         startRotations.Clear();
-        targetPositions.Clear();
-        targetRotations.Clear();
 
         // prepare an array of the three card prefabs and a single RNG
         var prototypes = new Entity[] { cardMining, cardReforestation, cardEducation };
@@ -81,7 +93,8 @@ public class GameManager  : Entity
         }
 
         RecomputeTargets();
-        isAnimating = false;
+
+        isAnimating = true;
         animationPlayed = false;
         delayTimer = 0.0f;
     }
@@ -92,26 +105,10 @@ public class GameManager  : Entity
 
     public override void OnUpdate(float deltaTime)
     {
-        return; 
-
-        Console.WriteLine(myString);
-        Entity pickEntity = PickEntityAt(Input.MousePosition.X, Input.MousePosition.Y);
-
-        Entity hovered = null;
-        if (pickEntity == null)
-        {
-            for (int i = 0; i < cards.Count; i++)
-            {
-                var c = cards[i];
-                if (c.ID == pickEntity.ID)
-                {
-                    hovered = c;
-
-                    break;
-                }
-            }
-        }
-
+        // Console.WriteLine(myString);
+        Ray ray = Physics.ScreenToWorldRay(Input.MousePosition);
+        Entity hovered = Physics.Raycast(ray);
+        
         if (isAnimating && animationPlayed)
         {
             delayTimer += deltaTime;
@@ -129,6 +126,11 @@ public class GameManager  : Entity
             float t = MathF.Min(1.0f, animationTime / animationDuration);
 
             float ease = 1 - MathF.Pow(1 - t, 3);
+
+            if (animationTime <= deltaTime) // First frame of animation
+            {
+                Debug.Log($"GameManager: Animation Started - Duration: {animationDuration}, Cards: {cards.Count}");
+            }
 
             for (int i = 0; i < cards.Count; i++)
             {
@@ -150,23 +152,12 @@ public class GameManager  : Entity
             {
                 isAnimating = false;
                 animationPlayed = true;
+                Debug.Log("GameManager: Animation Finished");
             }
         }
 
+        if (!isAnimating && animationPlayed)
         {
-            if (singleCardAnimating && singleAnimatingEntity != null)
-            {
-                singleAnimTime += deltaTime;
-                float t2 = MathF.Min(1.0f, singleAnimTime / singleAnimDuration);
-                float ease2 = 1 - MathF.Pow(1 - t2, 3);
-                singleAnimatingEntity.Translation = Vector3.Lerp(singleStartPos, singleTargetPos, ease2);
-                if (t2 >= 1.0f)
-                {
-                    singleCardAnimating = false;
-                    singleAnimatingEntity = null;
-                }
-            }
-
             if (hovered != null)
             {
                 lastHoveredEntity = hovered;
@@ -174,37 +165,26 @@ public class GameManager  : Entity
                 {
                     hoverLastID = hovered.ID;
                 }
-
-                for (int i = 0; i < cards.Count; i++)
-                {
-                    var card = cards[i];
-                    var target = targetPositions[i];
-                    float desiredZ = target.Z + (card == hovered ? hoverOffset : 0.0f);
-                    var desired = new Vector3(card.Translation.X, card.Translation.Y, desiredZ);
-                    var before = card.Translation;
-                    var after = Vector3.Lerp(before, desired, MathF.Min(1.0f, deltaTime * hoverSpeed));
-                    card.Translation = after;
-                }
             }
-            else
-            {
-                if (lastHoveredEntity != null)
-                {
-                    if (cards.Contains(lastHoveredEntity))
-                    {
-                        cards.Remove(lastHoveredEntity);
-                        cards.Add(lastHoveredEntity);
 
-                        singleStartPos = lastHoveredEntity.Translation;
-                        singleTargetPos = lastHoveredEntity.Translation;
-                        singleAnimatingEntity = lastHoveredEntity;
-                        singleAnimTime = 0.0f;
-                        singleAnimDuration = 0.5f;
-                        singleCardAnimating = true;
-                    }
-                    lastHoveredEntity = null;
-                    hoverLastID = 0;
-                }
+            for (int i = 0; i < cards.Count; i++)
+            {
+                var card = cards[i];
+                var targetPos = targetPositions[i];
+                var targetRot = targetRotations[i];
+                bool isHovered = (hovered != null) && (card == hovered || hovered.GetParent() == card);
+                
+                // Move with Z axis Forward/Backward
+                float desiredZ = targetPos.Z + (isHovered ? hoverOffset : 0.0f);
+                Vector3 desiredPos = new Vector3(targetPos.X, targetPos.Y, desiredZ);
+                
+                // Un-rotate the card so we can read it when hovered
+                Vector3 desiredRotEuler = isHovered ? new Vector3(targetRot.X, targetRot.Y, 0.0f) : targetRot;
+                Quaternion desiredRot = Quaternion.Euler(desiredRotEuler.X, desiredRotEuler.Y, desiredRotEuler.Z);
+
+                float lerpFactor = MathF.Min(1.0f, deltaTime * hoverSpeed);
+                card.Translation = Vector3.Lerp(card.Translation, desiredPos, lerpFactor);
+                card.Rotation = LerpQuaternion(card.Rotation, desiredRot, lerpFactor);
             }
         }
     }
@@ -218,12 +198,31 @@ public class GameManager  : Entity
         for (int i = 0; i < cards.Count; i++)
         {
             float x = (i - mid) * cardSpacing;
-            float z = targetZ + MathF.Abs(i - mid) * 0.03f;
-            targetPositions.Add(new Vector3(x, 0.0f, z));
-            float angle = ((i - mid) / MathF.Max(1.0f, mid)) * maxFanAngle;
+            // Arc downwards on Y axis to create a fan shape
+            float y = -MathF.Pow(MathF.Abs(i - mid), 2) * 0.05f;
+            float z = targetZ + MathF.Abs(i - mid) * 0.01f;
+            targetPositions.Add(new Vector3(x, y, z));
+            
+            float angle = -((i - mid) / MathF.Max(1.0f, mid)) * maxFanAngle;
             float yRotRad = -90.0f * Mathf.Deg2Rad;
-            targetRotations.Add(new Vector3(0.0f, yRotRad, 0.0f));
+            float zRotRad = angle * Mathf.Deg2Rad;
+            targetRotations.Add(new Vector3(0.0f, yRotRad, zRotRad));
         }
+    }
+
+    private Quaternion LerpQuaternion(Quaternion a, Quaternion b, float t)
+    {
+        float dot = a.X * b.X + a.Y * b.Y + a.Z * b.Z + a.W * b.W;
+        if (dot < 0.0f)
+        {
+            b.X = -b.X; b.Y = -b.Y; b.Z = -b.Z; b.W = -b.W;
+        }
+        return new Quaternion(
+            Lerp(a.X, b.X, t),
+            Lerp(a.Y, b.Y, t),
+            Lerp(a.Z, b.Z, t),
+            Lerp(a.W, b.W, t)
+        ).Normalized;
     }
 
     // Helper linear interpolation

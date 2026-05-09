@@ -11,7 +11,7 @@ namespace TestProject.Scripts
     {
         const string CARD_DATA_PATH = "data/cards/";
 
-        private static Dictionary<int, Card> cardsDictionary;
+        private static Dictionary<int, Card> cardsDictionary = new();
 
         private static void LoadCardData()
         {

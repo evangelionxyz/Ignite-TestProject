@@ -14,8 +14,8 @@ namespace TestProject.Scripts.Run
         public DeckManager DeckManager;
         public EPhase CurrentPhase = EPhase.Shop;
 
-        public Term? CurrentTerm;
-        public Shop? CurrentShop;
+        public Term CurrentTerm;
+        public Shop CurrentShop;
 
         public Run(string seed)
         {

@@ -1,53 +1,41 @@
 AssetRegistry:
   Assets:
-    - Handle: 56810698378882188
-      Type: Mesh
-      Filepath: Assets/Test/sword_1handed.mesh
-    - Handle: 260009666938718256
-      Type: Mesh
-      Filepath: Assets/Test/staff.mesh
+    - Handle: 234424214434647457
+      Type: Texture
+      Filepath: Assets/Meshes/Table/Mahogony_Legs_and_Rails_HP_-_COL.png
     - Handle: 312648132176305222
       Type: Texture
       Filepath: Assets/Meshes/Reforestation DECK.png
     - Handle: 324292370803469862
       Type: Texture
       Filepath: Assets/Meshes/Labor Subsidies DECK.png
-    - Handle: 391301000506068861
-      Type: Texture
-      Filepath: Assets/Test/barbarian_texture.png
-    - Handle: 455891236014209429
-      Type: Mesh
-      Filepath: Assets/Test/shield_square_color.mesh
     - Handle: 720531887802543265
       Type: Texture
       Filepath: Assets/Meshes/Water Treatment DECK.png
+    - Handle: 1337568141259018752
+      Type: Material
+      Filepath: Assets/TestMesh/knight.ixmat
     - Handle: 1761493190985447581
       Type: Texture
       Filepath: Assets/Meshes/Offshore Drilling DECK.png
-    - Handle: 2263878162086305200
-      Type: Mesh
-      Filepath: Assets/Test/sword_2handed.mesh
-    - Handle: 2289606610722130704
-      Type: Mesh
-      Filepath: Assets/Test/shield_square.mesh
+    - Handle: 1761553184268643950
+      Type: Texture
+      Filepath: Assets/Meshes/Table/Mahogony top -  - COLOR.png
+    - Handle: 2449904082136123044
+      Type: Texture
+      Filepath: Assets/Meshes/Table/Mahogony Legs and Rails HP - NORM.png
     - Handle: 2470609415228399921
       Type: Texture
       Filepath: Assets/Meshes/Mega Factory DECK.png
     - Handle: 3206621611054344468
       Type: Texture
       Filepath: Assets/Meshes/Public Housing DECK.png
-    - Handle: 3547203377910939524
-      Type: Mesh
-      Filepath: Assets/Test/spellbook_open.mesh
-    - Handle: 3804949383072630171
-      Type: Material
-      Filepath: Assets/Test/knight.ixmat
+    - Handle: 3796819586037520565
+      Type: Texture
+      Filepath: Assets/Meshes/Table/Brass - NORM.png
     - Handle: 3829344749087761044
       Type: Texture
       Filepath: Assets/HDRIs/ferndale_studio_12_2k.hdr
-    - Handle: 4275032857904321345
-      Type: Texture
-      Filepath: Assets/Test/knight_texture.png
     - Handle: 4423156052651382960
       Type: Texture
       Filepath: Assets/HDRIs/rogland_clear_night_4k.hdr
@@ -63,33 +51,18 @@ AssetRegistry:
     - Handle: 5444935851377726071
       Type: Texture
       Filepath: Assets/Meshes/Coal Subsidies DECK.png
-    - Handle: 5829658421640784743
+    - Handle: 5715218163732028339
+      Type: Material
+      Filepath: Assets/Meshes/Table/Mahogany Sides and Legs.ixmat
+    - Handle: 6385038870801113841
       Type: Mesh
-      Filepath: Assets/Test/wand.mesh
-    - Handle: 6082699181734344388
-      Type: Texture
-      Filepath: Assets/Test/rogue_texture.png
+      Filepath: Assets/TestMesh/Knight.mesh
     - Handle: 6442012503652515830
       Type: Texture
       Filepath: Assets/HDRIs/snowy_cemetery_2k.hdr
-    - Handle: 6666518004732537090
-      Type: Mesh
-      Filepath: Assets/Test/shield_spikes_color.mesh
     - Handle: 6769870344284950637
       Type: Font
       Filepath: Assets/Fonts/segoeui.ttf
-    - Handle: 6942365311390200766
-      Type: Mesh
-      Filepath: Assets/Test/shield_round.mesh
-    - Handle: 7578662614024039704
-      Type: Material
-      Filepath: Assets/Test/DefaultMaterial.ixmat
-    - Handle: 7619311922986312088
-      Type: Material
-      Filepath: Assets/Test/ranger.ixmat
-    - Handle: 7715756090124608588
-      Type: Mesh
-      Filepath: Assets/Test/spellbook_closed.mesh
     - Handle: 7847967721913143486
       Type: Mesh
       Filepath: Assets/Meshes/Education_Card.mesh
@@ -99,15 +72,9 @@ AssetRegistry:
     - Handle: 7976568348439390939
       Type: Texture
       Filepath: Assets/HDRIs/klippad_sunrise_2_2k.hdr
-    - Handle: 8132256527131867623
-      Type: Mesh
-      Filepath: Assets/Test/shield_spikes.mesh
     - Handle: 8173740620321870046
       Type: Material2D
       Filepath: Assets/Material2D/Bakcground.ixmat2d
-    - Handle: 8293706827158100626
-      Type: Mesh
-      Filepath: Assets/Test/axe_1handed.mesh
     - Handle: 8540147510640274260
       Type: Font
       Filepath: Assets/Fonts/LowresPixel-Regular.otf
@@ -135,51 +102,36 @@ AssetRegistry:
     - Handle: 10043554977444521064
       Type: Material
       Filepath: Assets/Meshes/Mining_Concession.ixmat
-    - Handle: 10399659570565655529
+    - Handle: 10192160576157564099
+      Type: Skeleton
+      Filepath: Assets/TestMesh/Knight.ixskel
+    - Handle: 10958740275451963646
       Type: Material
-      Filepath: Assets/Test/rogue.ixmat
+      Filepath: Assets/Meshes/Table/Mahogany Top.001.ixmat
     - Handle: 10996414771768181850
       Type: Texture
       Filepath: Assets/Meshes/National Park DECK.png
-    - Handle: 11490707720842841448
-      Type: Mesh
-      Filepath: Assets/Test/shield_badge_color.mesh
-    - Handle: 11496953833044084793
-      Type: Mesh
-      Filepath: Assets/Test/sword_2handed_color.mesh
+    - Handle: 11225021797775884047
+      Type: Texture
+      Filepath: Assets/Meshes/Table/Brass - COL.jpeg
     - Handle: 11695677817370624709
       Type: Audio
       Filepath: Assets/Audio/UI/click.mp3
+    - Handle: 11803512268766467870
+      Type: Mesh
+      Filepath: Assets/Meshes/Table/Table.mesh
     - Handle: 11863926446403165781
       Type: Texture
       Filepath: Assets/Meshes/Education Grantt DECK.png
-    - Handle: 11988390071806257344
-      Type: Mesh
-      Filepath: Assets/Test/arrow_bow_bundle.mesh
-    - Handle: 12056936178156928665
-      Type: Texture
-      Filepath: Assets/Test/mage_texture.png
-    - Handle: 12779225342876668868
-      Type: Mesh
-      Filepath: Assets/Test/shield_round_color.mesh
-    - Handle: 13126193955954379350
-      Type: Mesh
-      Filepath: Assets/Test/shield_round_barbarian.mesh
+    - Handle: 12734319355258994902
+      Type: Material
+      Filepath: Assets/Meshes/Table/Brass.001.ixmat
     - Handle: 13142015588779095987
       Type: Widget
       Filepath: Assets/Widgets/Play.wdgt
     - Handle: 13181265746475709721
       Type: Material
       Filepath: Assets/Meshes/Reforestation.ixmat
-    - Handle: 13692310686553866989
-      Type: Material
-      Filepath: Assets/Test/barbarian.ixmat
-    - Handle: 13731169920133318373
-      Type: Mesh
-      Filepath: Assets/Test/smokebomb.mesh
-    - Handle: 13753375447973595426
-      Type: Mesh
-      Filepath: Assets/Test/plane.mesh
     - Handle: 14581595720510041312
       Type: Texture
       Filepath: Assets/Widgets/checker.jpg
@@ -189,21 +141,12 @@ AssetRegistry:
     - Handle: 15421818152247124853
       Type: Texture
       Filepath: Assets/HDRIs/snowy_field_2k.hdr
-    - Handle: 15473488362362431873
-      Type: Material
-      Filepath: Assets/Test/mage.ixmat
     - Handle: 16082459728017263359
       Type: Texture
       Filepath: Assets/Meshes/Carbon Tax DECK.png
     - Handle: 16775692884815417219
       Type: Audio
       Filepath: Assets/Audio/UI/hover.mp3
-    - Handle: 16781602476986999167
-      Type: Mesh
-      Filepath: Assets/Test/arrow_crossbow.mesh
-    - Handle: 17491240773781215610
-      Type: Mesh
-      Filepath: Assets/Test/arrow_crossbow_bundle.mesh
     - Handle: 17569299480252000562
       Type: Texture
       Filepath: Assets/Textures/board.jpg

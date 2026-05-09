@@ -13,9 +13,9 @@ namespace TestProject.Scripts.Cards.Effects
 {
     public class AdjacentMultiplierEffect : IEffect
     {
-        private float _multiplier;
-        private EMetrics _metricsApplied;
-        private EAdjacentType _adjacentType;
+        private readonly float _multiplier;
+        private readonly EMetrics _metricsApplied = EMetrics.Default;
+        private readonly EAdjacentType _adjacentType = EAdjacentType.Both;
 
         public AdjacentMultiplierEffect(float multiplier, EAdjacentType adjacentType)
         {

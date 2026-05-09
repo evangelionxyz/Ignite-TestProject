@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -61,7 +61,8 @@
     <Compile Include="Scripts\UI\UIManager.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Ignite\scriptengine\IgniteScriptEngine.csproj" />
-    <ProjectReference Include="..\..\Ignite\thirdparty\MochiSharp\MochiSharp.Managed\MochiSharp.Managed.csproj" />
+    <Reference Include="IgniteScriptEngine">
+      <HintPath>Bin\IgniteScriptEngine.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

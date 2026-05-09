@@ -2,10 +2,6 @@
   <Configurations>
     <BuildType Name="Release" />
   </Configurations>
-  <Folder Name="/IgniteManaged/">
-    <Project Path="../../Ignite/scriptengine/IgniteScriptEngine.csproj" />
-    <Project Path="../../Ignite/thirdparty/MochiSharp/MochiSharp.Managed/MochiSharp.Managed.csproj" />
-  </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".editorconfig" />
   </Folder>

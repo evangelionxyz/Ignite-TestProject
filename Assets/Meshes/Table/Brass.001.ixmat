@@ -1,0 +1,18 @@
+Material:
+  Version: Alpha-0.1
+  Name: Brass.001
+  Type: 0
+  BaseColorTextureHandle: 11225021797775884047
+  EmissiveTextureHandle: 0
+  MetallicTextureHandle: 0
+  RoughnessTextureHandle: 0
+  NormalTextureHandle: 3796819586037520565
+  OcclusionTextureHandle: 0
+  GPUData:
+    BaseColorFactor: [0.80566543, 0.71344614, 0.26951647, 1]
+    EmissiveFactor: [1, 1, 1, 1]
+    MetallicFactor: 0
+    RoughnessFactor: 0.51475275
+    OcclusionStrength: 0
+    MetallicChannel: 2
+    RoughnessChannel: 1
